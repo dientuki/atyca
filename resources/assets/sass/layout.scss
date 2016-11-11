@@ -1,0 +1,136 @@
+@import 'mixin';
+
+$fs:16;
+
+.login-box {
+  float:left;
+  width: (300em/$fs);
+  margin-right: (20em/$fs);
+
+  .login-form {
+    padding: (20em/$fs);
+    box-sizing: padding-box;
+  }
+
+
+
+}
+
+.tactic {
+  padding: (25em/$fs) 0 (30em/$fs) 0;
+  .tactic-item {
+    float:left;
+    width: (300em/$fs);
+    margin-left: (20em/$fs);
+    height: (169em/$fs);
+
+    &:first-of-type {
+      margin: 0;
+    }
+  }
+}
+
+.destinations {
+  padding: 0 0 (64em/$fs) 0;
+}
+
+.destinations-list {
+  .destinations-place {
+    float:left;
+    width: (300em/$fs);
+    margin: (34em/$fs) 0 0 (20em/$fs);
+    height: 0;
+    padding-bottom: (52%/940*100);
+    position: relative;
+
+    &:nth-child(-n+3) {
+      margin-top: 0;
+    }
+
+   &:nth-child(3n+1) {
+      margin-left: 0;
+   }
+  }
+}
+
+.deco-box,
+.info-box{
+  float:right;
+  width: (300em/$fs);
+}
+
+.entry {
+  float:left;
+  width: (620em/$fs);
+  margin-right: (20em/$fs);
+  box-sizing: border-box;
+  min-height: (349em/$fs);
+}
+
+.main-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+#header {
+  height: (140em/$fs);
+  margin-bottom: (30em/$fs);
+
+  $tfs: 14;
+
+  .contact-info {
+    font-size: #{$tfs/$fs}em;
+    position: absolute;
+    right: 0;
+    height:(20em/$tfs);
+    line-height:(20em/$tfs);
+    top:(30em/$tfs);
+  }
+
+  .contact-info-item {
+    margin-left: (13em/$tfs);
+
+
+    &:first-of-type{
+      margin:0;
+    }
+  }
+
+  .contact-info-link {
+
+    &:after {
+      line-height:(20em/$tfs);
+    }
+  }
+
+  .menu-container {
+    position: absolute;
+    right: 0;
+    height: (45em/$fs);
+    line-height: (45em/$fs);
+    bottom:(22em/$fs);
+  }
+}
+
+#header,
+.work-us,
+#footer{
+  position: relative;
+  z-index: 5;
+}
+
+#header,
+#footer {
+  background: #336699;
+}
+
+#main {
+  &:before {
+    position: absolute;
+    top:(-30em/$fs);
+    height: (918em/$fs);
+    content:"";
+    background: url(../images/big-bg.jpg) no-repeat center center #f2f4f5;
+    width: 100%;
+  }
+}

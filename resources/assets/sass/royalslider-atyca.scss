@@ -1,0 +1,608 @@
+@import 'royalslider-core';
+
+/******************************
+*
+*  RoyalSlider Default Skin 
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*    
+*  Sprite: 'rs-default.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+$fs: 16;
+
+/* Background */
+.rs-atyca,
+.rs-atyca .rsOverflow,
+.rs-atyca .rsSlide,
+.rs-atyca .rsVideoFrameHolder,
+.rs-atyca .rsThumbs {
+	background: #336699;
+	color: #FFF;
+}
+
+.rs-atyca {
+	overflow: hidden;
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rs-atyca .rsArrow {
+	height: 100%;
+	width: 46px;
+	float:left;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+	border-right: solid 1px rgba(0,0,0,.5);
+    position: relative;
+}
+.rs-atyca.rsVer .rsArrow {
+	width: 100%;
+	height: 44px;
+}
+/*
+.rs-atyca.rsVer .rsArrowLeft { top: 0; left: 0; }
+.rs-atyca.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.rs-atyca.rsHor .rsArrowLeft { left: 0; top: 0; }
+.rs-atyca.rsHor .rsArrowRight { left: 47px; top:0; }
+*/
+.rs-atyca .rsArrowIcn {
+	$h: 20px;
+	$w: 23px;
+	
+	width: $w;
+	height: $h;
+	top: 50%;
+	left: 50%;
+	margin: ($h / -2) 0 0 ($w / -2);	
+
+  position: absolute;	
+	cursor: pointer;	
+	background: url(../images/gallery-skin.png);
+}
+
+.rs-atyca.rsHor .rsArrowLeft .rsArrowIcn { background-position: 0 0; }
+.rs-atyca.rsHor .rsArrowRight .rsArrowIcn { background-position: -24px 0; }
+
+.rs-atyca.rsHor .rsArrowLeft:hover .rsArrowIcn { background-position: 0 -21px; }
+.rs-atyca.rsHor .rsArrowRight:hover .rsArrowIcn { background-position: -24px -21px; }
+/*
+.rs-atyca.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rs-atyca.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rs-atyca .rsArrowDisabled .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+*/
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rs-atyca .rsBullets {
+	position: absolute;
+	z-index: 35;
+	left: 0;
+	bottom: 15px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto; 
+	text-align: center;
+	line-height: 12px;
+	overflow: hidden;
+
+}
+.rs-atyca .rsBullet {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 0;
+	margin-left: 5px;
+
+	&:first-of-type {
+		margin:0;
+	}
+}
+.rs-atyca .rsBullet span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+	border: solid 1px white;
+	cursor: pointer;
+}
+.rs-atyca .rsBullet.rsNavSelected span {
+	background-color: #265686;
+}
+
+
+
+
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.rs-atyca .rsThumbsHor {
+	width: 100%;
+	height: auto;
+}
+.rs-atyca .rsThumbsVer {
+	width: 96px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.rs-atyca.rsWithThumbsHor .rsThumbsContainer {
+	position: relative;
+	height: 100%;
+}
+.rs-atyca.rsWithThumbsVer .rsThumbsContainer {
+	position: relative;
+	width: 100%;
+}
+.rs-atyca .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 96px;
+	height: 72px;
+}
+.rs-atyca .rsThumb img {
+	width: 100%;
+	height: 100%;
+}
+.rs-atyca .rsThumb.rsNavSelected {
+	background: #02874a;
+}
+.rs-atyca .rsThumb.rsNavSelected img {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+.rs-atyca .rsTmb {
+	display: block;
+}
+
+/* Thumbnails with text */
+.rs-atyca .rsTmb h5 {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	color: #FFF;
+}
+.rs-atyca .rsTmb span {
+	color: #DDD;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
+
+/* Thumbnails arrow icons */
+.rs-atyca .rsThumbsArrow {
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	display: block;
+	cursor: pointer;	
+	z-index: 21;	
+	background: #000;
+	background: rgba(0,0,0,0.75);
+}
+.rs-atyca .rsThumbsArrow:hover {
+	background: rgba(0,0,0,0.9);
+}
+.rs-atyca.rsWithThumbsVer .rsThumbsArrow {
+	width: 100%;
+	height: 20px;
+}
+.rs-atyca.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+.rs-atyca.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+.rs-atyca.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.rs-atyca.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+.rs-atyca .rsThumbsArrowIcn {
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	left: 50%;
+	margin-top:-8px;	
+	margin-left: -8px;
+	position: absolute;	
+	cursor: pointer;	
+	background: url('rs-default.png');
+}
+
+.rs-atyca.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+.rs-atyca.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+.rs-atyca.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+.rs-atyca.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+.rs-atyca .rsThumbsArrowDisabled { display: none !important; }
+
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+	.rs-atyca .rsThumb {
+		width: 59px;
+		height: 44px;
+	}
+	.rs-atyca .rsThumbsHor {
+		height: 44px;
+	}
+	.rs-atyca .rsThumbsVer {
+		width: 59px;
+	}
+}
+
+
+
+
+/***************
+*
+*  4. Tabs
+*
+****************/
+
+.rs-atyca .rsTabs {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align:center;
+	overflow: hidden; padding-top: 12px; position: relative;
+}
+.rs-atyca .rsTab {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	height: auto;
+	width: auto;
+	color: #333;
+	padding: 5px 13px 6px;
+	min-width: 72px;
+	border: 1px solid #D9D9DD;
+	border-right: 1px solid #f5f5f5;
+	text-decoration: none;
+
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4); 
+	background-image:    -moz-linear-gradient(top, #fefefe, #f4f4f4);
+	background-image:         linear-gradient(to bottom, #fefefe, #f4f4f4);
+
+	-webkit-box-shadow: inset 1px 0 0 #fff;
+	box-shadow: inset 1px 0 0 #fff;
+
+	*display:inline; 
+	*zoom:1;
+}
+.rs-atyca .rsTab:first-child {
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.rs-atyca .rsTab:last-child {
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	border-right:  1px solid #cfcfcf;
+}
+.rs-atyca .rsTab:active {
+	border: 1px solid #D9D9DD;   
+	background-color: #f4f4f4;
+	box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.rs-atyca .rsTab.rsNavSelected {
+	color: #FFF;
+	border: 1px solid #999;
+	text-shadow: 1px 1px #838383;
+	box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+	background: #ACACAC;
+	background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
+	background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
+	background-image: linear-gradient(to bottom, #ACACAC, #BBB);
+}
+
+
+
+
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+/*
+
+.rs-atyca .rsFullscreenBtn {
+	right: 0;
+	bottom: 0;
+	width: 46px;
+	height: 46px;
+	z-index: 22;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	border-left:solid 1px rgba(0,0,0,.5);
+}
+.rs-atyca .rsFullscreenIcn {
+	$h: 20px;
+	display: block;
+	width: $h;
+	height: $h;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin: ($h / -2) 0 0 ($h / -2);
+
+	background: url('../images/gallery-skin.png') -48px 0;
+
+}
+.rs-atyca .rsFullscreenBtn:hover .rsFullscreenIcn{
+	background-position: -48px -21px;
+}
+*/
+
+
+
+
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+/*
+.rs-atyca .rsPlayBtn {
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3);
+	width:64px;
+	height:64px;
+	margin-left:-32px;
+	margin-top:-32px;
+	cursor: pointer;
+}
+.rs-atyca .rsPlayBtnIcon {
+	width:64px;
+	display:block;
+	height:64px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+
+	background:url(rs-default.png) no-repeat 0 -32px;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+}
+.rs-atyca .rsPlayBtn:hover .rsPlayBtnIcon {
+	background-color: rgba(0,0,0,0.9);
+}
+.rs-atyca .rsBtnCenterer {
+	position:absolute;
+	left:50%;
+	top:50%;
+}
+.rs-atyca .rsCloseVideoBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 500;
+	position: absolute;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	
+}
+.rs-atyca .rsCloseVideoBtn.rsiOSBtn {
+	top: -38px;
+	right: -6px;
+}
+
+.rs-atyca .rsCloseVideoIcn {
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+	background: url('rs-default.png') -64px 0;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+}
+.rs-atyca .rsCloseVideoIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+*/
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rs-atyca .rsPreloader {
+	width:100%;
+	height:100%;
+	background:url("../images/preloader.svg") no-repeat center center;
+	background-size: auto 50%;
+}
+
+
+
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rs-atyca .rsGCaption {
+  float:left;
+	text-align: left;
+  height:46px;
+  line-height: 46px;
+  padding-left: .5em;
+	color: black;
+	width: auto;
+	font-size: (12em/16);
+	margin-right: 46px;
+}
+
+.rsController {
+	position: absolute;
+	bottom:0;
+	height: 46px;
+	background: rgba(255,255,255,.5);
+	width: 100%;
+}
+
+/***************
+*
+*  9. Custom shit
+*
+****************/
+
+.rs-atyca {
+	position: relative;
+
+	.rsContent {
+		&:before {
+			content:"";
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(black, .4));
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			position: absolute;
+		}
+	}
+
+	img {
+		position: relative;
+		z-index: 0;
+	}
+
+	.rsTitle {
+		$tfs:24;
+		font-size: (24em/16);
+		background: none;
+		position: absolute;
+		left: (16em/$tfs);
+		right: (16em/$tfs);
+		bottom: (35em/$tfs);
+		z-index: 5;
+		color:white;
+	}
+
+	.days {
+		color:#8cc8eb;
+	}
+
+}
+
+.rs-big {
+
+	.rsArrow {
+		width: (41em/$fs);
+		height: (51em/$fs);
+		top: 50%;
+		margin-top: (-51px/2);
+		position: absolute;
+		float:none;
+		border:none;
+
+
+		&:before {
+			content:"";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: url(../images/big-arrow.png) no-repeat center center;
+		}
+
+	}
+
+	.rsArrowLeft {
+		left:0;
+
+		&:before {
+			transform: scaleX(-1);
+		}
+	}
+
+	.rsArrowRight {
+		right: 0;
+	}
+
+	.rsArrowIcn {
+		display:none;
+		visibility: hidden;
+	}
+}
+
+.rs-small {
+	.rsArrow {
+		width: (13em/$fs);
+		height: (18em/$fs);
+		top: 50%;
+		margin-top: (-18px/2);
+		position: absolute;
+		float:none;
+		border:none;
+
+		&:before {
+			content:"";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: url(../images/small-arrow.png) no-repeat center center;
+		}
+
+	}
+
+	.rsArrowLeft {
+		left:(14em/$fs);
+
+		&:before {
+			transform: scaleX(-1);
+		}
+	}
+
+	.rsArrowRight {
+		right: (14em/$fs);
+	}
+
+	.rsArrowIcn {
+		display:none;
+		visibility: hidden;
+	}
+}

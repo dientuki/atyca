@@ -1,0 +1,17 @@
+/* This is Hell on earth */
+
+@import 'mixin';
+
+@media screen and (min-width: (940em/16)) {
+  .main-wrapper {
+    width: (940em/16);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: (939em/16)) {
+  .main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
