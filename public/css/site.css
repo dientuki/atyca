@@ -537,7 +537,7 @@ ol {
   top: -1.875em;
   height: 57.375em;
   content: "";
-  background: url(../images/big-bg.jpg) no-repeat center center #f2f4f5;
+  background: url(../images/big-bg.jpg) no-repeat center center;
   width: 100%; }
 
 @font-face {
@@ -562,7 +562,8 @@ ol {
   font-style: normal; }
 
 body {
-  font-family: "Avenir Heavy"; }
+  font-family: "Avenir Heavy";
+  background: #f2f4f5; }
 
 form label {
   display: block;
@@ -833,7 +834,8 @@ form .text-box {
   height: 0;
   padding-bottom: 42.8571428571%;
   position: relative;
-  margin-bottom: 0.9375em; }
+  margin-bottom: 0.9375em;
+  display: block; }
   .tariff .tariff-title-wrapper:after, .tariff .tariff-title-wrapper:before {
     position: absolute;
     content: ""; }
