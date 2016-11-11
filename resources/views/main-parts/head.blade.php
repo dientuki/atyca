@@ -14,16 +14,11 @@
 <meta content="on" http-equiv="cleartype">
 
 @if (App::environment('local'))
-  <?php $css = array('normalize', 'layout', 'styles', 'royalslider-atyca', 'mediaqueries'); ?>
-  @foreach ($css as $file)
-    {!! Html::style('css/' . $file . '.css', array('media' => 'screen'))  !!}
-  @endforeach
+  <link href='{{URL::asset('css/site.css')}}' rel='stylesheet'>
+
 
 @else
-  <?php $css = array('normalize', 'layout', 'styles', 'royalslider-atyca', 'mediaqueries'); ?>
-  @foreach ($css as $file)
-    {!! Html::style('css/' . $file . '.css', array('media' => 'screen'))  !!}
-  @endforeach
+  <link href='{{URL::asset('css/site.css')}}' rel='stylesheet'>
 @endif
 
 <!-- Favicon -->

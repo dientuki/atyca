@@ -41,6 +41,7 @@ $buttonfs: 10;
 
 body {
   font-family: "Avenir Heavy";
+  background:  #f2f4f5;
 }
 
 form {
@@ -413,6 +414,7 @@ form {
     padding-bottom: (120%/280*100);
     position: relative;
     margin-bottom: (15em/$fs);
+    display:block;
 
     &:after,
     &:before {

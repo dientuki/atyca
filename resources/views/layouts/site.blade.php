@@ -14,12 +14,8 @@
     </main>
 
     <aside id="aside">
-      <div class="main-wrapper">
-        @include ('widgets/tactic')
-      </div>
-      <div class="main-wrapper">
-        @include ('widgets/work-us')
-      </div>
+      @include ('widgets/tactic')
+      @include ('widgets/work-us')
     </aside>
 
     @include ('main-parts/footer')

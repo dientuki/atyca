@@ -19,7 +19,7 @@ elixir(mix => {
               'styles.scss',
               'royalslider-atyca.scss',
               'mediaqueries.scss'],
-              
+
               'public/css/site.css')
        .webpack('app.js');
 });
