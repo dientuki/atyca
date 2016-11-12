@@ -5,12 +5,9 @@
     "dev": "gulp watch"
   },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
     "buble": "^0.14.2",
     "gulp": "^3.9.1",
     "laravel-elixir": "^6.0.0-9",
-    "laravel-elixir-vue-2": "^0.2.0",
-    "laravel-elixir-webpack-official": "^1.0.2",
-    "lodash": "^4.16.2"
+    "laravel-elixir-webpack-official": "^1.0.2"
   }
 }
