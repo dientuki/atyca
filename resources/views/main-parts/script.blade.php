@@ -1,8 +1,8 @@
 @if (App::environment('local'))
-  <script type="text/javascript" src="{{URL::asset('js/libs/require-min.js')}}" data-main="/js/front"></script>
+  <script type="text/javascript" src="{{URL::asset('/js/app.js')}}"></script>
 
 @else
-  <script type="text/javascript" src="{{URL::asset('js/libs/require-min.js')}}" data-main="/js/front"></script>
+  <script type="text/javascript" src="{{URL::asset('/js/app.js')}}"></script>
 @endif
 
 

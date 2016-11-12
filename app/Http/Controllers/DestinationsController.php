@@ -6,10 +6,6 @@ use Illuminate\Support\Facades\View;
 
 class DestinationsController extends Controller
 {
-  public function index() {
-    return view('destinos');
-  }
-
   public function show($slug) {
 
     $slug = 'destino.' . $slug;
