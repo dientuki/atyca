@@ -2,18 +2,31 @@
 
 $fs:16;
 
-.login-box {
-  float:left;
-  width: (300em/$fs);
-  margin-right: (20em/$fs);
 
+
+[class*="-main"] {
+  width: (620em/$fs);
+}
+
+[class*="-aside"] {
+  width: (300em/$fs);
+}
+
+[class*="-left"] {
+  float:left;
+  margin-right: (20em/$fs);
+}
+
+[class*="-right"] {
+  float: right;
+}
+
+
+.login-box {
   .login-form {
     padding: (20em/$fs);
     box-sizing: padding-box;
   }
-
-
-
 }
 
 .tactic {
@@ -53,16 +66,7 @@ $fs:16;
   }
 }
 
-.deco-box,
-.info-box{
-  float:right;
-  width: (300em/$fs);
-}
-
 .entry {
-  float:left;
-  width: (620em/$fs);
-  margin-right: (20em/$fs);
   box-sizing: border-box;
   min-height: (349em/$fs);
 }

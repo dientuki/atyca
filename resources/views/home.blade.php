@@ -2,7 +2,7 @@
 
 @section ('content')
 
-  <div class="login-box">
+  <div class="login-box block-aside-left">
     <form class="login-form">
       <fieldset>
         <div class="login-item">
@@ -28,7 +28,9 @@
     </form>
     <a class="operator" href="#" title="Ingreso a operadores">Ingreso a operadores</a>
   </div>
-  <div class="main-slider rs-atyca rs-big" id="main-slider">
+
+
+  <div class="main-slider rs-atyca rs-big block-main" id="main-slider">
     <div class="rsContent">
       <a class="rsTitle" href="files/atyca-glaciares.pdf" target="_blank">
         Expedicion glaciares

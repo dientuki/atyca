@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('home')->with('selected','home');
 })->name('home');
 
+Route::get('/tarifario.html', function () {
+    return view('private.tarifario')->with('selected','home');
+})->name('tarifario');
+
 Route::get('/destino/{slug}.html', array('as' => 'destinations.show', 'uses' => 'DestinationsController@show'));
 Route::get('/{slug}.html', array('as' => 'pages.show', 'uses' => 'PagesController@show'));

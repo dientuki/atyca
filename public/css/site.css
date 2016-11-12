@@ -450,13 +450,22 @@ ol {
 .clearfix {
   *zoom: 1; }
 
-.login-box {
+[class*="-main"] {
+  width: 38.75em; }
+
+[class*="-aside"] {
+  width: 18.75em; }
+
+[class*="-left"] {
   float: left;
-  width: 18.75em;
   margin-right: 1.25em; }
-  .login-box .login-form {
-    padding: 1.25em;
-    box-sizing: padding-box; }
+
+[class*="-right"] {
+  float: right; }
+
+.login-box .login-form {
+  padding: 1.25em;
+  box-sizing: padding-box; }
 
 .tactic {
   padding: 1.5625em 0 1.875em 0; }
@@ -483,15 +492,7 @@ ol {
   .destinations-list .destinations-place:nth-child(3n+1) {
     margin-left: 0; }
 
-.deco-box,
-.info-box {
-  float: right;
-  width: 18.75em; }
-
 .entry {
-  float: left;
-  width: 38.75em;
-  margin-right: 1.25em;
   box-sizing: border-box;
   min-height: 21.8125em; }
 
