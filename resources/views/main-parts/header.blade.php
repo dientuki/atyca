@@ -1,7 +1,7 @@
 <header id="header">
   <h1 class="visuallyhidden">Atyca</h1>
   <div class="main-wrapper">
-    <a class="logo" href="./" title="Home">Home</a>
+    <a class="logo" href="{{ route('home') }}" title="Home">Home</a>
     <ul class="contact-info">
       <li class="contact-info-item">
         <a class="contact-info-link email" href="mailto:info@atyca.tur.ar" title="info@atyca.tur.ar">info@atyca.tur.ar</a>
@@ -17,10 +17,10 @@
       <h6 class="visuallyhidden">Navegación</h6>
       <ul class="clearfix menu-container">
         <li class="menu-item">
-          <a class="menu-link {{ $selected == 'home' ? 'selected' : '' }}" href="index.html" title="Inicio">Inicio</a>
+          <a class="menu-link {{ isset($selected) && $selected == 'home' ? 'selected' : '' }}" href="{{ route('home') }}" title="Inicio">Inicio</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link {{ $selected == 'empresa' ? 'selected' : '' }}" href="empresa.html" title="La empresa">La empresa</a>
+          <a class="menu-link {{ isset($selected) && $selected == 'empresa' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'empresa']) }}" title="La empresa">La empresa</a>
         </li>
         <li class="menu-item">
           <a class="menu-link" href="circuitos.html" title="Circuitos">Circuitos</a>
@@ -29,7 +29,7 @@
           <a class="menu-link" href="excursiones.html" title="Excursiones">Excursiones</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link {{ $selected == 'destinos' ? 'selected' : '' }}" href="destinos.html" title="Destinos">Destinos</a>
+          <a class="menu-link {{ isset($selected) && $selected == 'destinos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'destinos']) }}" title="Destinos">Destinos</a>
         </li>
       </ul>
     </nav>

@@ -2,6 +2,6 @@
 
 @section ('content')
 
-destinos
+bs as
 
 @endsection

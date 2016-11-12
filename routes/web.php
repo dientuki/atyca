@@ -13,7 +13,8 @@
 
 Route::get('/', function () {
     return view('home')->with('selected','home');
-});
+})->name('home');
 
+Route::get('/destinos.html', array('as' => 'destinations.index', 'uses' => 'DestinationsController@index'));
+Route::get('/destino/{slug}.html', array('as' => 'destinations.show', 'uses' => 'DestinationsController@show'));
 Route::get('/{slug}.html', array('as' => 'pages.show', 'uses' => 'PagesController@show'));
-Route::get('/destinos/{slug}.html', array('as' => 'pages.show', 'uses' => 'PagesController@show'));
