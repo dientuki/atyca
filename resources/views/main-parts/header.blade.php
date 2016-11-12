@@ -23,10 +23,10 @@
           <a class="menu-link {{ isset($selected) && $selected == 'empresa' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'empresa']) }}" title="La empresa">La empresa</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link" href="circuitos.html" title="Circuitos">Circuitos</a>
+          <a class="menu-link" href="#" title="Circuitos">Circuitos</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link" href="excursiones.html" title="Excursiones">Excursiones</a>
+          <a class="menu-link" href="#" title="Excursiones">Excursiones</a>
         </li>
         <li class="menu-item">
           <a class="menu-link {{ isset($selected) && $selected == 'destinos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'destinos']) }}" title="Destinos">Destinos</a>
