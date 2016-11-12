@@ -17,10 +17,10 @@
       <h6 class="visuallyhidden">Navegación</h6>
       <ul class="clearfix menu-container">
         <li class="menu-item">
-          <a class="menu-link selected" href="index.html" title="Inicio">Inicio</a>
+          <a class="menu-link {{ $selected == 'home' ? 'selected' : '' }}" href="index.html" title="Inicio">Inicio</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link" href="empresa.html" title="La empresa">La empresa</a>
+          <a class="menu-link {{ $selected == 'empresa' ? 'selected' : '' }}" href="empresa.html" title="La empresa">La empresa</a>
         </li>
         <li class="menu-item">
           <a class="menu-link" href="circuitos.html" title="Circuitos">Circuitos</a>
@@ -29,7 +29,7 @@
           <a class="menu-link" href="excursiones.html" title="Excursiones">Excursiones</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link" href="destinos.html" title="Destinos">Destinos</a>
+          <a class="menu-link {{ $selected == 'destinos' ? 'selected' : '' }}" href="destinos.html" title="Destinos">Destinos</a>
         </li>
       </ul>
     </nav>

@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home')->with('selected','home');
 });
+
+Route::get('/{slug}.html', array('as' => 'pages.show', 'uses' => 'PagesController@show'));
+Route::get('/destinos/{slug}.html', array('as' => 'pages.show', 'uses' => 'PagesController@show'));
