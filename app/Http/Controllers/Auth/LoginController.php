@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
-
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Support\Facades\Auth;
 
 
 class LoginController extends Controller
@@ -41,15 +40,15 @@ class LoginController extends Controller
     }
 
     /**
-     * Handle an authentication attempt.
+     * Get the needed authorization credentials from the request.
      *
-     * @return Response
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
      */
-    public function authenticated()
+    protected function credentials(Request $request)
     {
-        if (Auth::attempt(['email' => $email, 'password' => $password])) {
-            // Authentication passed...
-            return redirect()->intended('dashboard');
-        }
+        $data = $request->only($this->username(), 'password');
+        $data['active'] = 1;
+        return $data;
     }
 }
