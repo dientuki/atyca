@@ -34,4 +34,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+
+    static public function getInactiveUsers(){
+        return User::select('users.id as id', 'name', 'email', 'business', 'country', 'rol')
+            ->join('countries', 'countries.id', '=', 'users.fk_country')
+            ->orderBy('email')
+            ->where('rol', 0)
+            ->where('active', 0)->get();
+    }
+
 }

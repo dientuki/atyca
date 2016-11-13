@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\User;
 
 class ShowDashboard extends Controller
 {
@@ -13,6 +14,7 @@ class ShowDashboard extends Controller
    */
   public function __invoke()
   {
-    return view('admin/dashboard');
+    $inactives = User::getInactiveUsers();
+    return view('admin/dashboard', compact('inactives'));
   }
 }

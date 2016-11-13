@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder
             'rol' => 1
         ]);
 
-        /*
+
         DB::table('users')->insert([
             'name' => 'Atyca',
             'email' => 'dientuki@gmail.com',
@@ -30,6 +30,6 @@ class UsersTableSeeder extends Seeder
             'business' => 'Atyca',
             'active' => false
         ]);
-        */
+
     }
 }

@@ -56,7 +56,7 @@ Route::group(['prefix' => 'admin',
     'as' => 'admin::'], function() {
 
     //Dashboard
-    Route::get('dashboard', ['uses' => 'Admin\ShowDashboard', 'as' => 'dashboard']);
+    Route::get('dashboard.html', ['uses' => 'Admin\ShowDashboard', 'as' => 'dashboard']);
 
     //Spideys
     /*
