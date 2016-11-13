@@ -1,0 +1,46 @@
+$fs:16;
+
+
+
+.main-wrapper {
+  width: (940em/16);
+  margin: 0 auto;
+}
+
+.main-content {
+  padding-bottom:  (30em/$fs);
+
+  &:before {
+    background: none;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+
+#header {
+  height: (70em/$fs);
+
+  .logo {
+    $h:(56em/$fs);
+    height: $h;
+    width: (76em/$fs);
+    margin-top: ($h/-2);
+
+    &:before {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .menu-container {
+    $h: (45em/$fs);
+    bottom:auto;
+    top:50%;
+    margin-top: ($h/-2);
+  }
+}
+
+#footer {
+  padding: (10em/$fs) 0;
+}

@@ -16,11 +16,20 @@ require('laravel-elixir-vue-2');
 elixir(mix => {
     mix.sass(['normalize.scss',
               'layout.scss',
+              'common.scss',
               'styles.scss',
               'royalslider-atyca.scss',
               'pages.scss',
               'mediaqueries.scss'],
 
               'public/css/site.css');
+
+mix.sass(['normalize.scss',
+      'layout.scss',
+      'common.scss',
+      'admin.scss'],
+
+    'public/css/admin.css');
+
     mix.webpack(['app.js'], 'public/js/app.js');
 });

@@ -1,0 +1,161 @@
+$fs:16;
+
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('../fonts/AvenirLTStd-Medium-eot.eot');
+  src: local('Avenir LT Std 65 Medium'), local('AvenirLTStd-Medium'),
+  url('../fonts/AvenirLTStd-Medium-eot.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirLTStd-Medium-woff.woff') format('woff'),
+  url('../fonts/AvenirLTStd-Medium-ttf.ttf') format('truetype'),
+  url('../fonts/AvenirLTStd-Medium-svg.svg#AvenirLTStd-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('../fonts/AvenirLTStd-Black-eot.eot');
+  src: local('Avenir LT Std 95 Black'), local('AvenirLTStd-Black'),
+  url('../fonts/AvenirLTStd-Black-eot.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirLTStd-Black-woff.woff') format('woff'),
+  url('../fonts/AvenirLTStd-Black-ttf.ttf') format('truetype'),
+  url('../fonts/AvenirLTStd-Black-svg.svg#AvenirLTStd-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('../fonts/AvenirLTStd-Heavy-eot.eot');
+  src: local('Avenir LT Std 85 Heavy'), local('AvenirLTStd-Heavy'),
+  url('../fonts/AvenirLTStd-Heavy-eot.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirLTStd-Heavy-woff.woff') format('woff'),
+  url('../fonts/AvenirLTStd-Heavy-ttf.ttf') format('truetype'),
+  url('../fonts/AvenirLTStd-Heavy-svg.svg#AvenirLTStd-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+$buttonfs: 10;
+
+
+
+body {
+  font-family: "Avenir Heavy";
+  background:  #f2f4f5;
+}
+
+form {
+  label {
+    $tfs: 14;
+    display: block;
+    font-size: #{$tfs/$fs}em;
+    line-height: (19em/$tfs);
+  }
+
+  .text-box {
+    $tfs: 14;
+    font-size: #{$tfs/$fs}em;
+    border: solid (1em/$tfs) #8cc8eb;
+    box-sizing: border-box;
+    height: (28em/$tfs);
+    line-height: (19em/$tfs);
+    padding: 0 1em;
+    margin-top: (5em/$tfs);
+  }
+}
+
+.afterload {
+  background: url(../images/logo-atyca.svg) no-repeat center center #336699;
+  background-size:60% 40%;
+  text-indent: -999em;
+}
+
+[class*="button"] {
+  font-size: #{$buttonfs/$fs}em;
+  line-height: (33em/$buttonfs);
+  height: (33em/$buttonfs);
+  font-family: "Avenir Black";
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: (1em/$buttonfs);
+  display: block;
+}
+
+.menu-container {
+  .menu-item {
+    float:left;
+    width: (118em/$fs);
+    margin-left:(8em/$fs);
+
+    &:first-of-type {
+      margin-left:0 ;
+    }
+  }
+
+  .menu-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color:white;
+    font-size: (14em/$fs);
+  }
+
+  .selected,
+  .menu-link:hover {
+    border-radius:(8em/$fs);
+    background: #265686;
+  }
+}
+
+#header {
+  overflow: hidden;
+  .logo {
+    display: block;
+    position: absolute;
+    height: (111em/$fs);
+    width: (152em/$fs);
+    left: 0;
+    background: url(../images/logo-atyca.svg) no-repeat center center;
+    top:50%;
+    margin-top: (55em/-16);
+    text-indent: -9999em;
+
+    &:before {
+      $tfs: 11;
+      content:"Operador Mayorista";
+      position: absolute;
+      font-size: #{$tfs/$fs}em;
+      line-height: 1em;
+      color:#8cc8eb;
+      text-indent: 0;
+      bottom: (11em/$tfs);
+      left: (96em/$tfs);
+      width: (110em/$tfs);
+    }
+  }
+}
+
+#footer {
+  text-align: center;
+  padding: (36em/$fs) 0 (20em/$fs) 0;
+  color: white;
+
+  .footer-title{
+    $tfs: 12;
+    font-size: #{$tfs/$fs}em;
+    line-height: (16em/$tfs);
+  }
+
+  .footer-title,
+  .footer-highlight {
+    color:#8cc8eb;
+  }
+
+  p {
+    $pfs: 10;
+    font-size: #{$pfs/$fs}em;
+    line-height: (16em/$pfs);
+  }
+}
