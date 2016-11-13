@@ -9,7 +9,7 @@
           <a class="menu-link {{ isset($selected) && $selected == 'users' ? 'selected' : '' }}" href="{{ route('home') }}" title="Usuarios">Usuarios</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link" href="{{ route('logout') }}" title="Salir">Salir</a>
+          <a class="menu-link" href="{{ route('user::logout') }}" title="Salir">Salir</a>
         </li>
       </ul>
     </nav>

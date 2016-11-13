@@ -4,7 +4,7 @@
 
     <div class="login-box block-aside-center">
 
-        <form class="login-form" role="form" method="POST" action="{{ route('login.post') }}">
+        <form class="login-form" role="form" method="POST" action="{{ route('user::login.post') }}">
             {{ csrf_field() }}
 
             <div class="login-item">Favor de loguearse antes de entrar</div>

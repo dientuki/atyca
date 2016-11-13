@@ -31,12 +31,13 @@ Route::get('/{slug}.html', array('as' => 'pages.show', 'uses' => 'PagesControlle
 
 
 Route::group(['prefix' => 'user',
-              'middleware' => ['web']], function() {
+              'middleware' => ['web'],
+              'as' => 'user::'], function() {
 
     // Login Routes...
     Route::get('login.html', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
     Route::post('login.html', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
-    Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+    Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
     // Registration Routes...
     Route::get('registro.html', ['as' => 'register', 'uses' => 'Auth\RegisterController@showRegistrationForm']);
@@ -52,7 +53,7 @@ Route::group(['prefix' => 'user',
 
 
 Route::group(['prefix' => 'admin',
-    'middleware' => ['auth'],
+    'middleware' => ['auth', 'can:admin'],
     'as' => 'admin::'], function() {
 
     //Dashboard
