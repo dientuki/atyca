@@ -27,7 +27,8 @@ class AlterUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function ($table) {
-            $table->dropForeign('fk_country');
+            $table->dropForeign('users_fk_country_foreign');
+            $table->dropColumn('fk_country');
         });
     }
 }
