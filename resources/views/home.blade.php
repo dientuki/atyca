@@ -3,7 +3,7 @@
 @section ('content')
 
   <div class="login-box block-aside-left">
-    <form class="login-form">
+    <form class="login-form-arrow">
       <fieldset>
         <div class="login-item">
           <label for="username">Usuario</label>
@@ -16,7 +16,7 @@
       </fieldset>
       <div class="login-action clearfix">
         <input class="button-submit" type="submit" value="Ingresar">
-        <a class="button-register" href="#" title="Registrarse">Registrarse</a>
+        <a class="button-register" href="{{ route('register') }}" title="Registrarse">Registrarse</a>
       </div>
       <div class="forgot-password">
         <p>Olvidó su contraseña?</p>

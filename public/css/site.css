@@ -463,7 +463,7 @@ ol {
 [class*="-right"] {
   float: right; }
 
-.login-box .login-form {
+.login-box [class*="login-form"] {
   padding: 1.25em;
   box-sizing: padding-box; }
 
@@ -753,11 +753,14 @@ form .text-box {
     .info-box .info-row:first-of-type {
       margin: 0; }
 
-.login-box .login-form {
+.login-box [class*="login-form"] {
   background: white;
   box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
   position: relative; }
-  .login-box .login-form:before {
+
+.login-box [class*="-arrow"] {
+  position: relative; }
+  .login-box [class*="-arrow"]:before {
     content: "";
     position: absolute;
     bottom: -0.625em;

@@ -307,9 +307,13 @@ form {
 
 .login-box {
 
-  .login-form {
+  [class*="login-form"] {
     background: white;
     box-shadow: 0 (2em/$fs) (4em/$fs) 0 rgba(black, .2);
+    position: relative;
+  }
+
+  [class*="-arrow"] {
     position: relative;
 
     &:before {

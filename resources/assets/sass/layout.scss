@@ -23,7 +23,7 @@ $fs:16;
 
 
 .login-box {
-  .login-form {
+  [class*="login-form"] {
     padding: (20em/$fs);
     box-sizing: padding-box;
   }
