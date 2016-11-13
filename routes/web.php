@@ -34,8 +34,8 @@ Route::group(['prefix' => 'user',
               'middleware' => ['web']], function() {
 
     // Login Routes...
-    Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-    Route::post('login', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
+    Route::get('login.html', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+    Route::post('login.html', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
     Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
     // Registration Routes...

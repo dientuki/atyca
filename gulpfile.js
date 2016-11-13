@@ -18,6 +18,7 @@ elixir(mix => {
               'layout.scss',
               'styles.scss',
               'royalslider-atyca.scss',
+              'pages.scss',
               'mediaqueries.scss'],
 
               'public/css/site.css');

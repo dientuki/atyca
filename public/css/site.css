@@ -463,6 +463,9 @@ ol {
 [class*="-right"] {
   float: right; }
 
+[class*="-center"] {
+  margin: 0 auto; }
+
 .login-box [class*="login-form"] {
   padding: 1.25em;
   box-sizing: padding-box; }
@@ -501,8 +504,7 @@ ol {
   height: 100%; }
 
 #header {
-  height: 8.75em;
-  margin-bottom: 1.875em; }
+  height: 8.75em; }
   #header .contact-info {
     font-size: 0.875em;
     position: absolute;
@@ -533,13 +535,17 @@ ol {
 #footer {
   background: #336699; }
 
-#main:before {
-  position: absolute;
-  top: -1.875em;
-  height: 57.375em;
-  content: "";
-  background: url(../images/big-bg.jpg) no-repeat center center;
-  width: 100%; }
+.main-content {
+  position: relative;
+  padding-top: 1.875em;
+  overflow: hidden; }
+  .main-content:before {
+    position: absolute;
+    height: 57.375em;
+    content: "";
+    background: url(../images/big-bg.jpg) no-repeat center center;
+    width: 100%;
+    top: 0; }
 
 @font-face {
   font-family: 'Avenir Medium';
@@ -1711,6 +1717,9 @@ img.rsImg {
 .rs-small .rsArrowIcn {
   display: none;
   visibility: hidden; }
+
+.login-page .main-content {
+  padding-bottom: 1.875em; }
 
 /* This is Hell on earth */
 @media screen and (min-width: 58.75em) {

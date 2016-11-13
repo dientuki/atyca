@@ -21,6 +21,10 @@ $fs:16;
   float: right;
 }
 
+[class*="-center"] {
+  margin: 0 auto;
+}
+
 
 .login-box {
   [class*="login-form"] {
@@ -78,7 +82,6 @@ $fs:16;
 
 #header {
   height: (140em/$fs);
-  margin-bottom: (30em/$fs);
 
   $tfs: 14;
 
@@ -128,13 +131,17 @@ $fs:16;
   background: #336699;
 }
 
-#main {
+.main-content {
+  position: relative;
+  padding-top: (30em/$fs);
+  overflow: hidden;
+
   &:before {
     position: absolute;
-    top:(-30em/$fs);
     height: (918em/$fs);
     content:"";
     background: url(../images/big-bg.jpg) no-repeat center center;
     width: 100%;
+    top:0;
   }
 }
