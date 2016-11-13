@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="login-box block-main-left tariff clearfix">
-        <form class="login-form" role="form" method="POST" action="{{ url('/register') }}">
+        <form class="login-form" role="form" method="POST" action="{{ route('register') }}">
             {{ csrf_field() }}
 
             <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
@@ -49,7 +49,7 @@
             </div>
 
             <div class="login-item {{ $errors->has('email') ? ' has-error' : '' }}">
-                <label for="email">E-Mail Address</label>
+                <label for="email">E-Mail</label>
 
                 <div >
                     <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required>

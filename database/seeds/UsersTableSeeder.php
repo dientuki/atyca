@@ -15,7 +15,9 @@ class UsersTableSeeder extends Seeder
             'name' => 'Atyca',
             'email' => 'info@atyca.tur.ar',
             'password' => bcrypt('admin'),
-            'fk_country' => 13
+            'fk_country' => 13,
+            'business' => 'Atyca',
+            'active' => true
         ]);
     }
 }
