@@ -17,7 +17,8 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('admin'),
             'fk_country' => 13,
             'business' => 'Atyca',
-            'active' => true
+            'active' => true,
+            'rol' => 1
         ]);
 
         /*

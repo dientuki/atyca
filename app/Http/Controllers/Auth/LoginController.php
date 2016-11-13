@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 
 class LoginController extends Controller
@@ -29,6 +30,14 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/private/tarifario.html';
 
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+    protected $redirectAdmin = '/admin/dashboard.html';
+
     /**
      * Create a new controller instance.
      *
@@ -50,5 +59,26 @@ class LoginController extends Controller
         $data = $request->only($this->username(), 'password');
         $data['active'] = 1;
         return $data;
+    }
+
+    /**
+     * Send the response after the user was authenticated.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    protected function sendLoginResponse(Request $request)
+    {
+        $request->session()->regenerate();
+
+        $this->clearLoginAttempts($request);
+
+        // Get the currently authenticated user...
+        if (Auth::user()->rol == 1){
+            $this->redirectTo = $this->redirectAdmin;
+        }
+
+        return $this->authenticated($request, $this->guard()->user())
+            ?: redirect()->intended($this->redirectPath());
     }
 }

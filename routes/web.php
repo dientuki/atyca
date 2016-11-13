@@ -49,3 +49,14 @@ Route::group(['prefix' => 'user',
     Route::get('password/reset/{token}', ['as' => 'password.reset.token', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
     Route::post('password/reset', ['as' => 'password.reset.post', 'uses' => 'Auth\ResetPasswordController@reset']);
 });
+
+
+Route::group(['prefix' => 'admin',
+    'middleware' => ['auth']], function() {
+
+    Route::get('/tarifario.html', function () {
+        return view('private.tarifario')->with('selected','home');
+    })->name('tarifario');
+
+});
+
