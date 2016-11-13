@@ -60,7 +60,7 @@
         <a href="skype:atyca.pablo.martin?chat" title="atyca.pablo.martin">atyca.pablo.martin</a>
       </p>
     </div>
-    <a class="button-logout" href="#" title="Salir">Salir</a>
+    <a class="button-logout" href="{{ route('logout') }}" title="Salir">Salir</a>
   </div>
 
 @endsection

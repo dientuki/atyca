@@ -3,16 +3,32 @@
 @section ('content')
 
   <div class="login-box block-aside-left">
-    <form class="login-form-arrow">
+    <form class="login-form-arrow" role="form" method="POST" action="{{ route('login.post') }}">
+      {{ csrf_field() }}
       <fieldset>
-        <div class="login-item">
-          <label for="username">Usuario</label>
-          <input class="text-box" id="username" type="text">
+        <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
+          @if ($errors->has('email'))
+            <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+          @endif
+          <label for="email">E-Mail</label>
+          <input id="email" type="email" name="email" class="text-box" value="{{ old('email') }}" required />
         </div>
-        <div class="login-item">
+
+        <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
+
+          @if ($errors->has('password'))
+            <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+          @endif
+
+
           <label for="password">Contraseña</label>
-          <input class="text-box" id="username" type="password">
+          <input class="text-box" id="password" type="password" name="password">
         </div>
+
       </fieldset>
       <div class="login-action clearfix">
         <input class="button-submit" type="submit" value="Ingresar">

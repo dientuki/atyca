@@ -15,9 +15,16 @@ Route::get('/', function () {
     return view('home')->with('selected','home');
 })->name('home');
 
-Route::get('/tarifario.html', function () {
-    return view('private.tarifario')->with('selected','home');
-})->name('tarifario');
+Route::group(['prefix' => 'private',
+              'middleware' => ['auth']], function() {
+
+    Route::get('/tarifario.html', function () {
+        return view('private.tarifario')->with('selected','home');
+    })->name('tarifario');
+
+});
+
+
 
 Route::get('/destino/{slug}.html', array('as' => 'destinations.show', 'uses' => 'DestinationsController@show'));
 Route::get('/{slug}.html', array('as' => 'pages.show', 'uses' => 'PagesController@show'));
@@ -32,8 +39,9 @@ Route::group(['prefix' => 'user',
     Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
     // Registration Routes...
-    Route::get('register.html', ['as' => 'register', 'uses' => 'Auth\RegisterController@showRegistrationForm']);
-    Route::post('register.html', ['as' => 'register.post', 'uses' => 'Auth\RegisterController@register']);
+    Route::get('registro.html', ['as' => 'register', 'uses' => 'Auth\RegisterController@showRegistrationForm']);
+    Route::post('registro.html', ['as' => 'register.post', 'uses' => 'Auth\RegisterController@register']);
+    Route::get('registrado.html', ['as' => 'registred', 'uses' => 'Auth\RegisterController@showRegistratedInfo']);
 
     // Password Reset Routes...
     Route::get('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
