@@ -21,10 +21,10 @@
             </div>
 
             <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
-                <label for="name">Empresa</label>
+                <label for="business">Empresa</label>
 
                 <div>
-                    <input id="name" type="text" class="text-box" name="name" value="{{ old('name') }}" required autofocus>
+                    <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus>
 
                     @if ($errors->has('name'))
                         <span class="help-block">
@@ -35,10 +35,10 @@
             </div>
 
             <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
-                <label for="name">Pais</label>
+                <label for="fk_country">Pais</label>
 
                 <div>
-                    <input id="name" type="text" class="text-box" name="name" value="{{ old('name') }}" required autofocus>
+                    <input id="fk_country" type="text" class="text-box" name="fk_country" value="{{ old('fk_country') }}" required autofocus>
 
                     @if ($errors->has('name'))
                         <span class="help-block">
