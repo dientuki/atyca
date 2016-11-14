@@ -2,7 +2,7 @@
 
 @section ('content')
 
-  @if (isset($cards))
+  @if (isset($inactives))
     <table class="table table-hover table-striped" id="list-table">
       <thead>
       <tr>

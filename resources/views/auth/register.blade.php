@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="login-box block-main-left tariff clearfix">
-        <form class="login-form" role="form" method="POST" action="{{ route('register.post') }}">
+        <form class="login-form" role="form" method="POST" action="{{ route('user::register.post') }}">
             {{ csrf_field() }}
 
             <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
