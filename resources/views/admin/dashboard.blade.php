@@ -21,9 +21,19 @@
           <td>{{ $inactive->country }}</td>
           <td>{{ $inactive->email }}</td>
           <td class="column-action">
-            <a href="#" class="btn btn-primary btn-sm" role="button" title="Editar {{ $inactive->name }}">Editar</a>
-            <a href="#" class="btn btn-primary btn-sm" role="button" title="Editar {{ $inactive->name }}">Activar</a>
-            <a href="#" class="btn btn-primary btn-sm" role="button" title="Editar {{ $inactive->name }}">Borrar</a>
+            <a href="{{route('admin::users::edit', $inactive->id)}}" class="btn btn-primary btn-sm" role="button" title="Editar {{ $inactive->name }}">Editar</a>
+
+            <form class="form-inline" action="{{ route('admin::users::activate', $inactive->id) }}" method="POST">
+              {{ csrf_field() }}
+              <input name="_method" type="hidden" value="PATCH">
+              <button type="submit" class="btn btn-danger btn-sm" title="Activar {{ $inactive->name }}">Activar</button>
+            </form>
+
+            <form class="form-inline" action="{{ route('admin::users::destroy', $inactive->id) }}" method="POST">
+              {{ csrf_field() }}
+              <input name="_method" type="hidden" value="DELETE">
+              <button type="submit" class="btn btn-danger btn-sm" title="Borrar {{ $inactive->name }}">Borrar</button>
+            </form>
           </td>
         </tr>
       @endforeach

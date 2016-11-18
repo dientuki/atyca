@@ -43,4 +43,9 @@ class User extends Authenticatable
             ->where('active', 0)->get();
     }
 
+    static public function getActiveValue($id){
+        return User::select('activate')
+            ->where('id', $id)->get()->first();
+    }
+
 }

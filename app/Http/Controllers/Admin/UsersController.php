@@ -93,7 +93,9 @@ class UsersController extends Controller
      */
     public function activate(Request $request, $id)
     {
-        //
+        $card = User::getActive($id);
+
+        $data = $request->all();
     }
 
 

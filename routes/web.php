@@ -52,12 +52,13 @@ Route::group(['prefix' => 'user',
 });
 
 
-Route::group(['prefix' => 'admin',
-    'middleware' => ['auth', 'can:admin'],
-    'as' => 'admin::'], function() {
+Route::group(['namespace' => 'Admin',
+              'prefix' => 'admin',
+              'middleware' => ['auth', 'can:admin'],
+              'as' => 'admin::'], function() {
 
     //Dashboard
-    Route::get('dashboard.html', ['uses' => 'Admin\ShowDashboard', 'as' => 'dashboard']);
+    Route::get('dashboard.html', ['uses' => 'ShowDashboard', 'as' => 'dashboard']);
 
     //Spideys
 
@@ -70,9 +71,9 @@ Route::group(['prefix' => 'admin',
         Route::post('', ['uses' => 'UsersController@store', 'as' => 'store']);
         Route::get('create', ['uses' => 'UsersController@create', 'as' => 'create']);
         Route::match(['put', 'patch'], '{spideys}', ['uses' => 'UsersController@update', 'as' => 'update']);
+        */
         Route::delete('{users}', ['uses' => 'UsersController@destroy', 'as' => 'destroy']);
         Route::get('{users}/edit', ['uses' => 'UsersController@edit', 'as' => 'edit']);
-        */
     });
 
 });
