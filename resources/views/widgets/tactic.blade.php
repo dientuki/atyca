@@ -1,5 +1,5 @@
-<div class="tactic clearfix" id="tactic">
-  <div class="main-wrapper">
+<div class="tactic" id="tactic">
+  <div class="main-wrapper clearfix">
     <div class="tactic-item rs-atyca rs-small">
       <a href="#" target="_blank">
         <img src="{{ asset('images/tactic/argenta.png') }}">

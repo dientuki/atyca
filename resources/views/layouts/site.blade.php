@@ -4,7 +4,7 @@
     @include ('main-parts/head')
   </head>
 
-  <body>
+  <body class="is-menu-opene">
     @include ('main-parts/header')
 
     <div class="main-content">

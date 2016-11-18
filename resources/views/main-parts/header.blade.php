@@ -33,5 +33,18 @@
         </li>
       </ul>
     </nav>
+    <div id="main-icon">
+      <div class="main-icon ">
+        <div class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="close-icon">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
