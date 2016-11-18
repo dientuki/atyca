@@ -1,6 +1,5 @@
 const elixir = require('laravel-elixir');
 
-require('laravel-elixir-vue-2');
 
 /*
  |--------------------------------------------------------------------------
@@ -25,12 +24,14 @@ elixir(mix => {
 
               'public/css/site.css');
 
-mix.sass(['normalize.scss',
-      'layout.scss',
-      'common.scss',
-      'admin.scss'],
+  mix.sass(['normalize.scss',
+        'layout.scss',
+        'common.scss',
+        'admin.scss'],
 
-    'public/css/admin.css');
+      'public/css/admin.css');
 
-    mix.webpack(['app.js'], 'public/js/app.js');
+    //mix.webpack(['app.js'], 'public/js/app.js');
+    mix.rollup("app.js");
+
 });

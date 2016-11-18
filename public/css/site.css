@@ -967,6 +967,159 @@ form .text-box {
     margin: 0.4375em 0.9375em 0 0.9375em;
     float: left; }
 
+body.is-menu-opened .main-icon .burger-icon {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s; }
+  body.is-menu-opened .main-icon .burger-icon span {
+    background-color: white;
+    -webkit-transition-property: background-color, -webkit-transform;
+    transition-property: background-color, -webkit-transform;
+    transition-property: transform, background-color;
+    transition-property: transform, background-color, -webkit-transform;
+    -webkit-transition-duration: 0.3s, 0.3s;
+    transition-duration: 0.3s, 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1), cubic-bezier(0.19, 1, 0.22, 1);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1), cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition-delay: 0s,0s;
+    transition-delay: 0s,0s; }
+    body.is-menu-opened .main-icon .burger-icon span:first-child {
+      -webkit-transform: translateY(1em);
+      transform: translateY(1em); }
+    body.is-menu-opened .main-icon .burger-icon span:last-child {
+      -webkit-transform: translateY(-1em);
+      transform: translateY(-1em); }
+
+body.is-menu-opened .main-icon .close-icon {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s; }
+  body.is-menu-opened .main-icon .close-icon span {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s; }
+    body.is-menu-opened .main-icon .close-icon span:first-child {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    body.is-menu-opened .main-icon .close-icon span:last-child {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+
+.main-icon {
+  width: 2.75em;
+  height: 2.4375em;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 2.5em;
+  margin-top: -1.21875em; }
+  .main-icon div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    will-change: transform; }
+  .main-icon span {
+    width: 100%;
+    height: 0.4375em;
+    display: block;
+    will-change: transform; }
+  .main-icon .burger-icon {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s; }
+    .main-icon .burger-icon span {
+      background-color: white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      -webkit-transition-property: background-color, -webkit-transform;
+      transition-property: background-color, -webkit-transform;
+      transition-property: transform, background-color;
+      transition-property: transform, background-color, -webkit-transform;
+      -webkit-transition-duration: 0.3s, 0.3s;
+      transition-duration: 0.3s, 0.3s;
+      -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1), cubic-bezier(0.19, 1, 0.22, 1);
+      transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1), cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition-delay: 0.3s, 0.3s;
+      transition-delay: 0.3s, 0.3s; }
+      .main-icon .burger-icon span:first-child {
+        top: 0; }
+      .main-icon .burger-icon span:nth-child(2) {
+        top: 50%;
+        margin-top: -0.21875em; }
+      .main-icon .burger-icon span:last-child {
+        bottom: 0; }
+  .main-icon .close-icon {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s; }
+    .main-icon .close-icon span {
+      background: white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 50%;
+      margin-top: -0.125em;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+
 /* v1.0.4 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
 .royalSlider {
