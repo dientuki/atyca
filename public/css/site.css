@@ -480,6 +480,22 @@ ol {
     .tactic .tactic-item:first-of-type {
       margin: 0; }
 
+.contact-info {
+  font-size: 0.875em;
+  position: absolute;
+  right: 0;
+  height: 1.4285714286em;
+  line-height: 1.4285714286em;
+  top: 2.1428571429em; }
+
+.contact-info-item {
+  margin-left: 0.9285714286em; }
+  .contact-info-item:first-of-type {
+    margin: 0; }
+
+.contact-info-link:after {
+  line-height: 1.4285714286em; }
+
 .destinations {
   padding: 0 0 4em 0; }
 
@@ -505,25 +521,13 @@ ol {
 
 #header {
   height: 8.75em; }
-  #header .contact-info {
-    font-size: 0.875em;
-    position: absolute;
-    right: 0;
-    height: 1.4285714286em;
-    line-height: 1.4285714286em;
-    top: 2.1428571429em; }
-  #header .contact-info-item {
-    margin-left: 0.9285714286em; }
-    #header .contact-info-item:first-of-type {
-      margin: 0; }
-  #header .contact-info-link:after {
-    line-height: 1.4285714286em; }
-  #header .menu-container {
-    position: absolute;
-    right: 0;
-    height: 2.8125em;
-    line-height: 2.8125em;
-    bottom: 1.375em; }
+
+#primary-navigation {
+  position: absolute;
+  right: 0;
+  height: 2.8125em;
+  line-height: 2.8125em;
+  bottom: 1.375em; }
 
 #header,
 .work-us,
@@ -1030,6 +1034,29 @@ body.is-menu-opened .main-icon .close-icon {
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
+body.is-menu-opened #header .rwd-mobile {
+  max-height: 20.8125em !important;
+  -webkit-transition-property: max-height;
+  transition-property: max-height;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s; }
+
+body.is-menu-opened #header .contact-info .contact-info-item,
+body.is-menu-opened #header .menu-container .menu-item {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s; }
+
 .main-icon {
   width: 2.75em;
   height: 2.4375em;
@@ -1037,7 +1064,9 @@ body.is-menu-opened .main-icon .close-icon {
   cursor: pointer;
   top: 50%;
   right: 2.5em;
-  margin-top: -1.21875em; }
+  margin-top: -1.21875em;
+  display: none;
+  visibility: hidden; }
   .main-icon div {
     position: absolute;
     top: 0;
@@ -1119,6 +1148,31 @@ body.is-menu-opened .main-icon .close-icon {
       transition-delay: 0s;
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg); }
+
+#header .rwd-mobile {
+  will-change: max-height;
+  max-height: 0;
+  -webkit-transition-property: max-height;
+  transition-property: max-height;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s; }
+
+#header .contact-info .contact-info-item,
+#header .menu-container .menu-item {
+  opacity: 0;
+  will-change: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s; }
 
 /* v1.0.4 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
@@ -1886,8 +1940,39 @@ img.rsImg {
     margin: 0 auto; } }
 
 @media screen and (max-width: 52.5em) {
-  #header .logo {
-    left: 1.8125em; } }
+  #header {
+    overflow: visible; }
+    #header .logo {
+      left: 1.8125em; }
+    #header .main-icon {
+      display: block;
+      visibility: visible; }
+    #header .rwd-mobile {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      overflow: hidden; }
+    #header .contact-info,
+    #header #primary-navigation {
+      position: static;
+      height: auto; }
+  .contact-info {
+    background: #336699;
+    padding: 0 1.0714285714em; }
+    .contact-info .contact-info-item {
+      float: none;
+      margin: 0.5714285714em 0 0 0; }
+      .contact-info .contact-info-item:first-of-type {
+        margin-top: 0; }
+    .contact-info .contact-info-link {
+      padding-left: 1.7857142857em; }
+  .menu-container {
+    background: #265686; }
+    .menu-container .menu-item {
+      float: none;
+      margin: 0.5em 0 0 0; }
+      .menu-container .menu-item:first-of-type {
+        margin-top: 0; } }
 
 @media screen and (max-width: 25em) {
   [class*="-left"],

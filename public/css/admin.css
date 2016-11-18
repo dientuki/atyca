@@ -480,6 +480,22 @@ ol {
     .tactic .tactic-item:first-of-type {
       margin: 0; }
 
+.contact-info {
+  font-size: 0.875em;
+  position: absolute;
+  right: 0;
+  height: 1.4285714286em;
+  line-height: 1.4285714286em;
+  top: 2.1428571429em; }
+
+.contact-info-item {
+  margin-left: 0.9285714286em; }
+  .contact-info-item:first-of-type {
+    margin: 0; }
+
+.contact-info-link:after {
+  line-height: 1.4285714286em; }
+
 .destinations {
   padding: 0 0 4em 0; }
 
@@ -505,25 +521,13 @@ ol {
 
 #header {
   height: 8.75em; }
-  #header .contact-info {
-    font-size: 0.875em;
-    position: absolute;
-    right: 0;
-    height: 1.4285714286em;
-    line-height: 1.4285714286em;
-    top: 2.1428571429em; }
-  #header .contact-info-item {
-    margin-left: 0.9285714286em; }
-    #header .contact-info-item:first-of-type {
-      margin: 0; }
-  #header .contact-info-link:after {
-    line-height: 1.4285714286em; }
-  #header .menu-container {
-    position: absolute;
-    right: 0;
-    height: 2.8125em;
-    line-height: 2.8125em;
-    bottom: 1.375em; }
+
+#primary-navigation {
+  position: absolute;
+  right: 0;
+  height: 2.8125em;
+  line-height: 2.8125em;
+  bottom: 1.375em; }
 
 #header,
 .work-us,

@@ -1,6 +1,5 @@
 @import 'mixin';
-
-$fs:16;
+@import 'variables';
 
 [class*="-main"] {
   width: (620em/$fs);
@@ -45,6 +44,31 @@ $fs:16;
   }
 }
 
+.contact-info {
+  font-size: #{$ci/$fs}em;
+  position: absolute;
+  right: 0;
+  height:(20em/$ci);
+  line-height:(20em/$ci);
+  top:(30em/$ci);
+}
+
+.contact-info-item {
+  margin-left: (13em/$ci);
+
+
+  &:first-of-type{
+    margin:0;
+  }
+}
+
+.contact-info-link {
+
+  &:after {
+    line-height:(20em/$ci);
+  }
+}
+
 .destinations {
   padding: 0 0 (64em/$fs) 0;
 }
@@ -80,41 +104,14 @@ $fs:16;
 
 #header {
   height: (140em/$fs);
+}
 
-  $tfs: 14;
-
-  .contact-info {
-    font-size: #{$tfs/$fs}em;
-    position: absolute;
-    right: 0;
-    height:(20em/$tfs);
-    line-height:(20em/$tfs);
-    top:(30em/$tfs);
-  }
-
-  .contact-info-item {
-    margin-left: (13em/$tfs);
-
-
-    &:first-of-type{
-      margin:0;
-    }
-  }
-
-  .contact-info-link {
-
-    &:after {
-      line-height:(20em/$tfs);
-    }
-  }
-
-  .menu-container {
-    position: absolute;
-    right: 0;
-    height: (45em/$fs);
-    line-height: (45em/$fs);
-    bottom:(22em/$fs);
-  }
+#primary-navigation {
+  position: absolute;
+  right: 0;
+  height: (45em/$fs);
+  line-height: (45em/$fs);
+  bottom:(22em/$fs);
 }
 
 #header,

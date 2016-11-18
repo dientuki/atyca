@@ -1,6 +1,5 @@
-let elements = document.querySelectorAll('.afterload');
+import Lazyload from "./modules/Lazyload";
+import Navigation from "./modules/Navigation";
 
-for(var i = 0, l = elements.length; i < l; i++) {
-    elements[i].setAttribute('src', elements[i].dataset['original']);
-    elements[i].classList.remove('afterload');
-}
+new Lazyload();
+new Navigation();

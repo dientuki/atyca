@@ -1,6 +1,6 @@
 /* This is Hell on earth */
 @import 'mixin';
-$fs:16;
+@import 'variables';
 
 @media screen and (min-width: (940em/16)) {
   .main-wrapper {
@@ -19,12 +19,61 @@ $fs:16;
 //menu
 @media screen and (max-width: (840em/16)) {
   #header {
+    overflow: visible;
     .logo {
       left: (29em/$fs);
     }
 
+    .main-icon {
+      @include show();
+    }
 
+    .rwd-mobile {
+      position: absolute;
+      top:100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .contact-info,
+    #primary-navigation{
+      position: static;
+      height: auto;
+    }
   }
+
+  .contact-info {
+    background: #336699;
+    padding: 0 (15em/$ci);
+
+    .contact-info-item {
+      float:none;
+      margin: (8em/$ci) 0 0 0;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    .contact-info-link {
+      padding-left: (25em/$ci);
+    }
+  }
+
+  .menu-container {
+    background: #265686;
+
+    .menu-item {
+      float:none;
+      margin: (8em/$fs) 0 0 0;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
+
 }
 
 @media screen and (max-width: (400em/16)) {

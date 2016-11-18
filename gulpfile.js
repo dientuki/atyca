@@ -32,6 +32,6 @@ elixir(mix => {
       'public/css/admin.css');
 
     //mix.webpack(['app.js'], 'public/js/app.js');
-    mix.rollup("app.js");
+    mix.rollup(['modules/Lazyload.js', 'modules/Navigation.js'], "app.js");
 
 });
