@@ -13,13 +13,8 @@
 <meta content="width=device-width, target-densitydpi=160dpi, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 <meta content="on" http-equiv="cleartype">
 
-@if (App::environment('local'))
-  <link href='{{URL::asset('css/site.css')}}' rel='stylesheet'>
+<link href='{{ elixir('css/site.css', '') }}' rel='stylesheet'>
 
-
-@else
-  <link href='{{URL::asset('css/site.css')}}' rel='stylesheet'>
-@endif
 
 <!-- Favicon -->
 <!--

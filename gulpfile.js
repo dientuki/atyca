@@ -29,8 +29,10 @@ elixir(mix => {
         'common.scss',
         'admin.scss'],
 
-      'public/css/admin.css');
+      'public/css/admin.css')
 
-  mix.webpack(['modules/Lazyload.js', 'modules/Navigation.js', 'app.js'], "public/js/app.js");
+  mix.webpack(['modules/Lazyload.js', 'modules/Navigation.js', 'app.js'], "public/js/app.js")
+
+  mix.version(['public/css/site.css', 'public/css/admin.css', "public/js/app.js"], 'public/')
 
 });
