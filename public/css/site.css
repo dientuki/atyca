@@ -1035,7 +1035,7 @@ body.is-menu-opened .main-icon .close-icon {
       transform: rotate(-45deg); }
 
 body.is-menu-opened #header .rwd-mobile {
-  max-height: 20.8125em !important;
+  max-height: 25em !important;
   -webkit-transition-property: max-height;
   transition-property: max-height;
   -webkit-transition-duration: 0.3s;
@@ -1958,7 +1958,7 @@ img.rsImg {
       height: auto; }
   .contact-info {
     background: #336699;
-    padding: 0 1.0714285714em; }
+    padding: 0 1.0714285714em 1.0714285714em 1.0714285714em; }
     .contact-info .contact-info-item {
       float: none;
       margin: 0.5714285714em 0 0 0; }
@@ -1967,12 +1967,20 @@ img.rsImg {
     .contact-info .contact-info-link {
       padding-left: 1.7857142857em; }
   .menu-container {
-    background: #265686; }
+    background: #265686;
+    padding: 1.0714285714em 0; }
     .menu-container .menu-item {
       float: none;
-      margin: 0.5em 0 0 0; }
-      .menu-container .menu-item:first-of-type {
-        margin-top: 0; } }
+      width: 100%;
+      margin: 0; }
+    .menu-container .menu-link {
+      padding: 0 1.0714285714em;
+      text-align: left;
+      width: auto; }
+    .menu-container .selected,
+    .menu-container .menu-link:hover {
+      border-radius: 0;
+      background: #336699; } }
 
 @media screen and (max-width: 25em) {
   [class*="-left"],

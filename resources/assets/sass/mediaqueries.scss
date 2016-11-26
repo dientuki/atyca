@@ -44,7 +44,7 @@
 
   .contact-info {
     background: #336699;
-    padding: 0 (15em/$ci);
+    padding: 0 (15em/$ci) (15em/$ci) (15em/$ci);
 
     .contact-info-item {
       float:none;
@@ -62,14 +62,25 @@
 
   .menu-container {
     background: #265686;
+    padding: (15em/$ci) 0;
 
     .menu-item {
       float:none;
-      margin: (8em/$fs) 0 0 0;
+      width: 100%;
+      margin:0;
 
-      &:first-of-type {
-        margin-top: 0;
-      }
+    }
+
+    .menu-link {
+      padding:  0 (15em/$ci);
+      text-align: left;
+      width: auto;
+    }
+
+    .selected,
+    .menu-link:hover {
+      border-radius: 0;
+      background: #336699;
     }
   }
 
