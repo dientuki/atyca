@@ -1,0 +1,43 @@
+@import '../mixin';
+@import '../variables';
+
+[class*="-left"],
+[class*="-right"]{
+  float:none;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+[class*="-center"] {
+  margin: 0 auto;
+}
+
+[class*="-main"],
+[class*="-aside"]{
+  width: (620em/$fs);
+}
+
+[class*="-aside"] {
+  width: auto;
+  margin: 0 (10em/$fs);
+}
+
+.tactic {
+  .main-wrapper {
+    width: auto;
+    margin: 0 (10em/$fs);
+  }
+
+  .tactic-item {
+    float:none;
+    margin: (10em/$fs) 0 0 0;
+
+    &:first-of-type {
+      margin: 0;
+    }
+  }
+}
+
+.work-us {
+  @inclue hide();
+}

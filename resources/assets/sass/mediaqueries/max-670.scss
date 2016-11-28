@@ -1,0 +1,25 @@
+/* This is Hell on earth */
+@import '../mixin';
+@import '../variables';
+
+.destinations-list {
+  .destinations-place {
+    width: 100%;
+    margin: (20em/$fs) 0 0 0 !important;
+    padding: 0;
+    height: (52em/$fs);
+
+    &:first-child {
+      margin-top: 0 !important;
+    }
+
+  }
+
+  .destinations-image {
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 100%;
+  }
+}

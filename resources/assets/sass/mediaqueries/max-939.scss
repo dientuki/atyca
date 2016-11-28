@@ -1,0 +1,35 @@
+@import '../mixin';
+@import '../variables';
+
+.main-wrapper {
+  margin: 0 auto;
+  padding: 0 (30em/$fs);
+  width: auto;
+}
+
+#header {
+  .logo {
+    left: (30em/$fs);
+  }
+
+  #primary-navigation,
+  .contact-info {
+    right: (30em/$fs);
+  }
+}
+
+.destinations-list {
+  .destinations-place {
+    width: (460%/939*100);
+    margin: (19%/939*100) 0 0 (19%/939*100);
+    padding-bottom: (52%/834*100);
+
+    &:nth-child(-n+2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+  }
+}
