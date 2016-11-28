@@ -330,6 +330,11 @@ $buttonfs: 10;
     border: solid (1em/$fs) #979797;
     box-sizing: border-box;
   }
+
+  .Wallop-item {
+    display: block;
+    height: 100%;
+  }
 }
 
 .tariff {

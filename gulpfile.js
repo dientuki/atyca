@@ -20,6 +20,7 @@ elixir(mix => {
               'main-icon.scss',
               'royalslider-atyca.scss',
               'pages.scss',
+              'wallop.scss',
               'mediaqueries/mediaqueries.scss'],
 
               'public/css/site.css');
@@ -31,7 +32,7 @@ elixir(mix => {
 
       'public/css/admin.css')
 
-  mix.webpack(['modules/Lazyload.js', 'modules/Navigation.js', 'app.js'], "public/js/app.js")
+  mix.webpack(['modules/Lazyload.js', 'modules/Navigation.js', 'modules/Wallop.js', 'app.js'], "public/js/app.js")
 
   mix.version(['public/css/site.css', 'public/css/admin.css', "public/js/app.js"], 'public/')
 
