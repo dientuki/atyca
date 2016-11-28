@@ -1,10 +1,26 @@
 @import '../mixin';
 @import '../variables';
 
+[class*="-left"],
+[class*="-right"]{
+  float:none;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
 .main-wrapper {
   margin: 0 auto;
   padding: 0 (30em/$fs);
   width: auto;
+
+  > [class*="block-"] {
+    margin-top: (20em/$fs);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 #header {

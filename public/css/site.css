@@ -869,15 +869,16 @@ form .text-box {
 .login-box .button-submit {
   float: left;
   width: 9em;
-  background: white;
-  border: solid 0.1em #a0b2b8;
-  color: #8cc8eb; }
+  color: white;
+  background: #8cc8eb;
+  border: solid 0.1em #8cc8eb; }
 
 .login-box .button-register {
   float: right;
   width: 11em;
-  color: white;
-  background: #8cc8eb; }
+  background: white;
+  border: solid 0.1em #a0b2b8;
+  color: #8cc8eb; }
 
 .login-box .forgot-password {
   font-size: 0.75em;
@@ -1920,10 +1921,20 @@ img.rsImg {
       margin-left: 0; } }
 
 @media screen and (max-width: 58.6875em) {
+  [class*="-left"],
+  [class*="-right"] {
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%; }
   .main-wrapper {
     margin: 0 auto;
     padding: 0 1.875em;
     width: auto; }
+    .main-wrapper > [class*="block-"] {
+      margin-top: 1.25em; }
+      .main-wrapper > [class*="block-"]:first-child {
+        margin-top: 0; }
   #header .logo {
     left: 1.875em; }
   #header #primary-navigation,
@@ -2022,11 +2033,6 @@ img.rsImg {
       background: #336699; } }
 
 @media screen and (max-width: 25em) {
-  [class*="-left"],
-  [class*="-right"] {
-    float: none;
-    margin-right: 0;
-    margin-left: 0; }
   [class*="-center"] {
     margin: 0 auto; }
   [class*="-main"],

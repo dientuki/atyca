@@ -295,16 +295,19 @@ $buttonfs: 10;
   .button-submit {
     float:left;
     width: (90em/$buttonfs);
-    background: white;
-    border: solid (1em/$buttonfs) #a0b2b8;
-    color:#8cc8eb;
+    color:white;
+    background: #8cc8eb;
+    border:solid (1em/$buttonfs) #8cc8eb;
   }
 
   .button-register {
     float:right;
     width: (110em/$buttonfs);
-    color:white;
-    background: #8cc8eb;
+
+
+    background: white;
+    border: solid (1em/$buttonfs) #a0b2b8;
+    color:#8cc8eb;
   }
 
   .forgot-password {

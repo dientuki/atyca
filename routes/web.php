@@ -24,6 +24,10 @@ Route::group(['prefix' => 'private',
 
 });
 
+Route::get('/tarifario.html', function () {
+    return view('private.tarifario')->with('selected','home');
+})->name('tarifario');
+
 
 
 Route::get('/destino/{slug}.html', array('as' => 'destinations.show', 'uses' => 'DestinationsController@show'));
