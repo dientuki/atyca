@@ -76,19 +76,9 @@
 .destinations-list {
   .destinations-place {
     float:left;
-    width: (300em/$fs);
-    margin: (34em/$fs) 0 0 (20em/$fs);
     height: 0;
-    padding-bottom: (52%/940*100);
     position: relative;
-
-    &:nth-child(-n+3) {
-      margin-top: 0;
-    }
-
-   &:nth-child(3n+1) {
-      margin-left: 0;
-   }
+    overflow: hidden;
   }
 }
 

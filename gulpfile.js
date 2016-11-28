@@ -20,7 +20,7 @@ elixir(mix => {
               'main-icon.scss',
               'royalslider-atyca.scss',
               'pages.scss',
-              'mediaqueries.scss'],
+              'mediaqueries/mediaqueries.scss'],
 
               'public/css/site.css');
 

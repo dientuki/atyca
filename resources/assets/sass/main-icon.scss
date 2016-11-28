@@ -1,9 +1,6 @@
 @import 'mixin';
 @import 'variables';
 
-$midTime: .3s;
-$totalTime: $midTime * 2;
-
 body {
 
   &.is-menu-opened {
@@ -70,6 +67,7 @@ body {
     #header  {
       .rwd-mobile {
         max-height: (400em/$fs) !important;
+        left: 0;
 
         transition: {
           property: max-height;
@@ -192,33 +190,6 @@ body {
 
       transform: rotate(0deg);
 
-    }
-  }
-}
-
-#header  {
-  .rwd-mobile {
-    will-change: max-height;
-    max-height: 0;
-
-    transition: {
-      property: max-height;
-      duration: $midTime;
-      timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-      delay: $midTime;
-    }
-  }
-
-  .contact-info .contact-info-item,
-  .menu-container .menu-item{
-    opacity: 0;
-    will-change: opacity;
-
-    transition: {
-      property: opacity;
-      duration: $midTime;
-      timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-      delay:  0s;
     }
   }
 }

@@ -501,15 +501,9 @@ ol {
 
 .destinations-list .destinations-place {
   float: left;
-  width: 18.75em;
-  margin: 2.125em 0 0 1.25em;
   height: 0;
-  padding-bottom: 5.5319148936%;
-  position: relative; }
-  .destinations-list .destinations-place:nth-child(-n+3) {
-    margin-top: 0; }
-  .destinations-list .destinations-place:nth-child(3n+1) {
-    margin-left: 0; }
+  position: relative;
+  overflow: hidden; }
 
 .entry {
   box-sizing: border-box;

@@ -501,15 +501,9 @@ ol {
 
 .destinations-list .destinations-place {
   float: left;
-  width: 18.75em;
-  margin: 2.125em 0 0 1.25em;
   height: 0;
-  padding-bottom: 5.5319148936%;
-  position: relative; }
-  .destinations-list .destinations-place:nth-child(-n+3) {
-    margin-top: 0; }
-  .destinations-list .destinations-place:nth-child(3n+1) {
-    margin-left: 0; }
+  position: relative;
+  overflow: hidden; }
 
 .entry {
   box-sizing: border-box;
@@ -745,10 +739,11 @@ form .text-box {
   display: block;
   color: white;
   font-size: 1.5em;
-  line-height: 2.1666666667em;
   text-align: center;
-  position: relative;
-  text-shadow: 0.0833333333em 0.0833333333em 0.2083333333em #000000; }
+  position: absolute;
+  text-shadow: 0.0833333333em 0.0833333333em 0.2083333333em #000000;
+  width: 100%;
+  height: 100%; }
   .destinations-list .destinations-link:before {
     position: absolute;
     width: 100%;
@@ -768,8 +763,13 @@ form .text-box {
   z-index: 0; }
 
 .destinations-list .destinations-text {
-  position: relative;
-  z-index: 5; }
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0; }
 
 .entry {
   background: white;
@@ -1036,6 +1036,7 @@ body.is-menu-opened .main-icon .close-icon {
 
 body.is-menu-opened #header .rwd-mobile {
   max-height: 25em !important;
+  left: 0;
   -webkit-transition-property: max-height;
   transition-property: max-height;
   -webkit-transition-duration: 0.3s;
@@ -1148,31 +1149,6 @@ body.is-menu-opened #header .menu-container .menu-item {
       transition-delay: 0s;
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg); }
-
-#header .rwd-mobile {
-  will-change: max-height;
-  max-height: 0;
-  -webkit-transition-property: max-height;
-  transition-property: max-height;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s; }
-
-#header .contact-info .contact-info-item,
-#header .menu-container .menu-item {
-  opacity: 0;
-  will-change: opacity;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s; }
 
 /* v1.0.4 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
@@ -1930,16 +1906,56 @@ img.rsImg {
 
 /* This is Hell on earth */
 @media screen and (min-width: 58.75em) {
+  /* This is Hell on earth */
   .main-wrapper {
     width: 58.75em;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .destinations-list .destinations-place {
+    width: 18.75em;
+    margin: 2.125em 0 0 1.25em;
+    padding-bottom: 5.5319148936%; }
+    .destinations-list .destinations-place:nth-child(-n+3) {
+      margin-top: 0; }
+    .destinations-list .destinations-place:nth-child(3n+1) {
+      margin-left: 0; } }
 
 @media screen and (max-width: 58.6875em) {
   .main-wrapper {
-    width: 100%;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    padding: 0 1.875em;
+    width: auto; }
+  #header .logo {
+    left: 1.875em; }
+  #header #primary-navigation,
+  #header .contact-info {
+    right: 1.875em; }
+  .destinations-list .destinations-place {
+    width: 48.98828541%;
+    margin: 2.02342918% 0 0 2.02342918%;
+    padding-bottom: 6.2350119904%; }
+    .destinations-list .destinations-place:nth-child(-n+2) {
+      margin-top: 0; }
+    .destinations-list .destinations-place:nth-child(odd) {
+      margin-left: 0; } }
 
-@media screen and (max-width: 52.5em) {
+@media screen and (max-width: 41.875em) {
+  /* This is Hell on earth */
+  .destinations-list .destinations-place {
+    width: 100%;
+    margin: 1.25em 0 0 0 !important;
+    padding: 0;
+    height: 3.25em; }
+    .destinations-list .destinations-place:first-child {
+      margin-top: 0 !important; }
+  .destinations-list .destinations-image {
+    height: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 100%; } }
+
+@media screen and (max-width: 55.625em) {
   #header {
     overflow: visible; }
     #header .logo {
@@ -1956,6 +1972,29 @@ img.rsImg {
     #header #primary-navigation {
       position: static;
       height: auto; }
+    #header .rwd-mobile {
+      will-change: max-height;
+      max-height: 0;
+      -webkit-transition-property: max-height;
+      transition-property: max-height;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s; }
+    #header .contact-info .contact-info-item,
+    #header .menu-container .menu-item {
+      opacity: 0;
+      will-change: opacity;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
   .contact-info {
     background: #336699;
     padding: 0 1.0714285714em 1.0714285714em 1.0714285714em; }
@@ -2006,5 +2045,18 @@ img.rsImg {
       margin: 0; }
   .work-us {
     @inclue hide(); } }
+
+@media screen and (max-width: 35.625em) {
+  /* This is Hell on earth */
+  .main-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 2.5%; }
+  .main-content::before {
+    background: none !important; }
+  #header .logo {
+    left: 2.5%; }
+  #header #main-icon {
+    right: 2.5%; } }
 
 /*# sourceMappingURL=site.css.map */
