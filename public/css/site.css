@@ -1409,7 +1409,42 @@ body.is-menu-opened #header .menu-container .menu-item {
     .destinations-list .destinations-place:nth-child(-n+2) {
       margin-top: 0; }
     .destinations-list .destinations-place:nth-child(odd) {
-      margin-left: 0; } }
+      margin-left: 0; }
+  .tactic .tactic-item {
+    margin: 0; }
+    .tactic .tactic-item:nth-child(2) {
+      float: right; }
+    .tactic .tactic-item:last-child {
+      margin: 1em 0 0 32.8782707622%; }
+  .main-slider .Wallop-item {
+    position: relative;
+    margin: 1em auto 0 auto;
+    visibility: visible;
+    width: 38.875em; }
+    .main-slider .Wallop-item:first-of-type {
+      margin-top: 0; }
+  .main-slider [class*="Wallop-Arrow"] {
+    display: none;
+    visibility: hidden; } }
+
+@media screen and (max-width: 42.5em) {
+  .tactic .tactic-item {
+    margin: 1em auto 0 auto !important;
+    float: none !important; }
+    .tactic .tactic-item:first-of-type {
+      margin-top: 0 !important; }
+  .main-slider {
+    width: 100% !important; }
+    .main-slider .Wallop-item {
+      width: 100%;
+      padding-bottom: 51.3235294118%;
+      height: 0; }
+      .main-slider .Wallop-item img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0; } }
 
 @media screen and (max-width: 41.875em) {
   /* This is Hell on earth */
@@ -1505,7 +1540,7 @@ body.is-menu-opened #header .menu-container .menu-item {
     margin: 0 0.625em; }
   .tactic .main-wrapper {
     width: auto;
-    margin: 0 0.625em; }
+    margin: 0; }
   .tactic .tactic-item {
     float: none;
     margin: 0.625em 0 0 0; }

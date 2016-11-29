@@ -10,11 +10,15 @@
   @import 'max-939';
 }
 
-
+@media screen and (max-width: (680em/16)) {
+  @import 'max-680';
+}
 
 @media screen and (max-width: (670em/16)) {
   @import 'max-670';
 }
+
+
 
 //menu
 @media screen and (max-width: (890em/16)) {

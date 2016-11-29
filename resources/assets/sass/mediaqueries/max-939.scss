@@ -49,3 +49,35 @@
     }
   }
 }
+
+.tactic {
+
+  .tactic-item {
+    margin: 0;
+
+    &:nth-child(2) {
+      float: right;
+    }
+
+    &:last-child {
+      margin: 1em 0 0 (289%/879*100);
+    }
+  }
+}
+
+.main-slider {
+  .Wallop-item {
+    position: relative;
+    margin: 1em auto 0 auto;
+    visibility: visible;
+    width: (622em/$fs);
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  [class*="Wallop-Arrow"] {
+    @include hide();
+  }
+}
