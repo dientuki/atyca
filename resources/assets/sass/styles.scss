@@ -1,7 +1,5 @@
 @import 'mixin';
-
-$fs:16;
-$buttonfs: 10;
+@import 'variables';
 
 .contact-info {
   .contact-info-item {

@@ -474,9 +474,9 @@ ol {
   padding: 1.5625em 0 1.875em 0; }
   .tactic .tactic-item {
     float: left;
-    width: 18.75em;
-    margin-left: 1.25em;
-    height: 10.5625em; }
+    width: 18.9375em;
+    margin-left: 1.6489361702%;
+    height: 10.6875em; }
     .tactic .tactic-item:first-of-type {
       margin: 0; }
 
@@ -544,6 +544,33 @@ ol {
     background: url(../images/big-bg.jpg) no-repeat center center;
     width: 100%;
     top: 0; }
+
+.main-slider {
+  position: relative; }
+  .main-slider .Wallop-item:before {
+    content: "";
+    background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    position: absolute; }
+  .main-slider img {
+    position: relative;
+    z-index: 0; }
+  .main-slider .main-slider-title {
+    font-size: 1.5em;
+    background: none;
+    position: absolute;
+    left: 0.6666666667em;
+    right: 0.6666666667em;
+    bottom: 1.4583333333em;
+    z-index: 5;
+    color: white; }
+  .main-slider .days {
+    color: #8cc8eb; }
 
 @font-face {
   font-family: 'Avenir Medium';

@@ -1,0 +1,69 @@
+@import 'mixin';
+@import 'variables';
+
+[class*="-SmallArrow"] {
+  [class*="Wallop-Arrow"] {
+    width: (20rem/$fs);
+    height: (20rem/$fs);
+    top: 50%;
+    margin-top: (-20px/2);
+    position: absolute;
+    font-size: 0;
+    cursor: pointer;
+
+    &:before {
+      content:"";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(../images/small-arrow.png) no-repeat center center;
+    }
+
+  }
+
+  .Wallop-ArrowPrevious {
+    left:(7rem/$fs);
+
+    &:before {
+      transform: scaleX(-1);
+    }
+  }
+
+  .Wallop-ArrowNext {
+    right: (7rem/$fs);
+  }
+}
+
+[class*="-BigArrow"] {
+  [class*="Wallop-Arrow"] {
+    width: (41rem/$fs);
+    height: (51rem/$fs);
+    top: 50%;
+    margin-top: (-51px/2);
+    position: absolute;
+    font-size: 0;
+    cursor: pointer;
+    z-index: 5;
+
+    &:before {
+      content:"";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(../images/big-arrow.png) no-repeat center center;
+    }
+
+  }
+
+  .Wallop-ArrowPrevious {
+    left:0;
+
+    &:before {
+      transform: scaleX(-1);
+    }
+  }
+
+  .Wallop-ArrowNext {
+    right: 0;
+  }
+}
