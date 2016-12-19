@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\UserRegistered;
 
 class RegisterController extends Controller
 {
@@ -98,6 +100,9 @@ class RegisterController extends Controller
         event(new Registered($user = $this->create($request->all())));
 
         //$this->guard()->login($user);
+
+        Mail::to($user->email)->send(new UserRegistered($user));
+        Mail::to($user->email)->send(new UserRegistered($user));
 
         return $this->registered($request, $user)
             ?: redirect($this->redirectPath());
