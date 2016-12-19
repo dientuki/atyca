@@ -43,6 +43,12 @@ class User extends Authenticatable
             ->where('active', 0)->get();
     }
 
+    static public function getAdminEmail(){
+        return User::select('email')
+            ->where('rol', 1)
+            ->where('active', true)->get()->first();
+    }
+
     static public function getActiveValue($id){
         return User::select('activate')
             ->where('id', $id)->get()->first();

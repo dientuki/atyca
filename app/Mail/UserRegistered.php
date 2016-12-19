@@ -13,7 +13,7 @@ class UserRegistered extends Mailable
     use Queueable, SerializesModels;
 
     /**
-     * The order instance.
+     * The user instance.
      *
      * @var User
      */
