@@ -31,7 +31,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token'
     ];
 
 
@@ -52,6 +52,14 @@ class User extends Authenticatable
     static public function getActiveValue($id){
         return User::select('activate')
             ->where('id', $id)->get()->first();
+    }
+
+    public function getCountry(){
+        return Country::getCountry($this->fk_country);
+    }
+
+    static public function setActivateValue($id, $value = false){
+        return User::where('id', $id)->update(['active' => $value]);
     }
 
 }

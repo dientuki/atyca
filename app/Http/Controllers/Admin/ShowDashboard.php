@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use Illuminate\Http\Request;
 
 class ShowDashboard extends Controller
 {
@@ -12,9 +13,10 @@ class ShowDashboard extends Controller
    *
    * @return Response
    */
-  public function __invoke()
+  public function __invoke(Request $request)
   {
     $inactives = User::getInactiveUsers();
-    return view('admin/dashboard', compact('inactives'));
+    $status = $request->session()->get('status');
+    return view('admin/dashboard', compact('inactives', 'status'));
   }
 }

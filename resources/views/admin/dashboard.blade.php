@@ -2,7 +2,14 @@
 
 @section ('content')
 
-  @if (isset($inactives))
+  @if (isset($status))
+    <div>
+      {{ $status }}
+    </div>
+  @endif
+
+
+    @if (isset($inactives))
     <table class="table table-hover table-striped" id="list-table">
       <thead>
       <tr>
@@ -21,6 +28,8 @@
           <td>{{ $inactive->country }}</td>
           <td>{{ $inactive->email }}</td>
           <td class="column-action">
+            <a href="{{ route('admin::users::activate', ['users' =>  $inactive->id]) }}" title="activar usuario">aqui</a>
+
             <a href="{{route('admin::users::edit', $inactive->id)}}" class="btn btn-primary btn-sm" role="button" title="Editar {{ $inactive->name }}">Editar</a>
 
             <form class="form-inline" action="{{ route('admin::users::activate', $inactive->id) }}" method="POST">

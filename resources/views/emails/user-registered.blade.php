@@ -1,1 +1,3 @@
-este email esta a nombre de <?php echo $user->name; ?> con el <?php echo $user->email; ?>
+este email  <?php echo $user->email; ?> esta a nombre de <?php echo $user->name; ?> y se ha querido registrar a atyca.
+
+En breve un admin lo autorizara para ver los tarifarios

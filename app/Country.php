@@ -24,4 +24,12 @@ class Country extends Model
     return $query->get();
 
   }
+
+  static public function getCountry($id){
+    return Country::where('id', $id)->value('country');
+  }
+
+  static public function getId($country){
+    return Country::where('country', $country)->value('id');
+  }
 }

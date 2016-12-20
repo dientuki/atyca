@@ -19,7 +19,7 @@ for(var i = 0, l = ws.length; i < l; i++) {
 let t = new TypeAhead(document.getElementById('fk_country'));
 
 t.getItemValue = function(item) {
-  this.element.setAttribute("value", item.id)
+  //this.element.setAttribute("value", item.id)
   return item.value
 };
 

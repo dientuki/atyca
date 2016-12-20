@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -87,27 +88,27 @@ class UsersController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function activate(Request $request, $id)
     {
-        $card = User::getActive($id);
-
-        $data = $request->all();
+        User::setActivateValue($id, true);
+        $request->session()->flash('status', 'Task was successful!');
+        return redirect()->route('admin::dashboard');
     }
 
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function deactivate(Request $request, $id)
     {
-        //
+        User::setActivateValue($id, false);
+        $request->session()->flash('status', 'Task was successful!');
+        return redirect()->route('admin::dashboard');
     }
 }

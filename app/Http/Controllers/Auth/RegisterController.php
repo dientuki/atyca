@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Country;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
@@ -81,7 +82,7 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'business' => $data['business'],
-            'fk_country' => $data['fk_country'],
+            'fk_country' => Country::getId($data['fk_country']),
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);

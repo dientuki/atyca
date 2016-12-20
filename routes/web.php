@@ -73,10 +73,9 @@ Route::group(['namespace' => 'Admin',
     Route::get('dashboard.html', ['uses' => 'ShowDashboard', 'as' => 'dashboard']);
 
     //Spideys
-
     Route::group(['prefix' => 'users',
         'as' => 'users::'], function(){
-        Route::match(['put', 'patch'], '{users}/activate', ['uses' => 'UsersController@activate', 'as' => 'activate']);
+        Route::match(['get', 'put', 'patch'], '{users}/activate', ['uses' => 'UsersController@activate', 'as' => 'activate']);
         Route::match(['put', 'patch'], '{users}/deactivate', ['uses' => 'UsersController@deactivate', 'as' => 'deactivate']);
         /*
         Route::get('', ['uses' => 'UsersController@index', 'as' => 'index']);
