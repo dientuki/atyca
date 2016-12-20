@@ -24,6 +24,14 @@ Route::group(['prefix' => 'private',
 
 });
 
+Route::group(['prefix' => 'api'], function() {
+
+    Route::get('/', array('as' => 'services', 'uses' => 'ServicesController@notHere'));
+
+    Route::get('/countries', array('as' => 'services::countries', 'uses' => 'ServicesController@countries'));
+
+});
+
 Route::get('/tarifario.html', function () {
     return view('private.tarifario')->with('selected','home');
 })->name('tarifario');

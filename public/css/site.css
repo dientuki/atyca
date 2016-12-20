@@ -888,7 +888,8 @@ form .text-box {
   width: 100%; }
 
 .login-box .login-item {
-  margin-top: 0.625em; }
+  margin-top: 0.625em;
+  position: relative; }
 
 .login-box .login-action {
   margin-top: 1.5625em; }
