@@ -1,0 +1,38 @@
+@import 'mixin';
+@import 'variables';
+
+.autocomplete {
+  $tfs: 14;
+  position: relative;
+  z-index: 9;
+
+  ul {
+    font-size: #{$tfs/$fs}em;
+    border: solid (1em/$tfs) #8cc8eb;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: white;
+  }
+
+  li {
+    box-sizing: border-box;
+    height: (28em/$tfs);
+    line-height: (28em/$tfs);
+
+    &:hover,
+    &.active{
+      background: #8cc8eb;
+    }
+  }
+
+  a {
+    display: block;
+    height: 100%;
+    padding: 0 1em;
+  }
+
+  strong {
+    color: #336699;
+  }
+}
