@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
+            <div class="login-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
                 <label for="fk_country">Pais</label>
 
                 <div>

@@ -1368,6 +1368,29 @@ body.is-menu-opened #header .menu-container .menu-item {
 [class*="-BigArrow"] .Wallop-ArrowNext {
   right: 0; }
 
+.autocomplete {
+  position: relative;
+  z-index: 9; }
+  .autocomplete ul {
+    font-size: 0.875em;
+    border: solid 0.0714285714em #8cc8eb;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: white; }
+  .autocomplete li {
+    box-sizing: border-box;
+    height: 2em;
+    line-height: 2em; }
+    .autocomplete li:hover, .autocomplete li.active {
+      background: #8cc8eb; }
+  .autocomplete a {
+    display: block;
+    height: 100%;
+    padding: 0 1em; }
+  .autocomplete strong {
+    color: #336699; }
+
 /* This is Hell on earth */
 @media screen and (min-width: 58.75em) {
   /* This is Hell on earth */
