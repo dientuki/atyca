@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Country;
+use App\Mail\User2Activate;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
