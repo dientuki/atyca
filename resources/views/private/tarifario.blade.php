@@ -5,21 +5,21 @@
     <h6 class="visuallyhidden">Tarifario</h6>
 
     <div class="tariff-box">
-      <a class="tariff-title-wrapper" href="#">>
+      <a class="tariff-title-wrapper" href="{{ asset('files/AtycaCircuitosTarifas.rtf')}}">>
         <div class="tariff-title">
           <span class="big">Circuitos</span>
           <span class="small">por Argentina</span>
         </div>
         <img alt="Circuitos por Argentina" class="afterload" data-original="{{ asset('images/tariff-argentina.jpg')}}"
              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw=="
-             title="Circuitos por Argentina">
+             title="Circuitos por Argentina" />
       </a>
-      <a class="tariff-link" href="#" title="Promociones Buenos Aires">Promociones Buenos Aires</a>
-      <a class="tariff-link" href="#" title="Promociones Usuhaia">Promociones Usuhaia</a>
-      <a class="tariff-link" href="#" title="Promociones NOA">Promociones NOA</a>
+      <a class="tariff-link" href="{{ asset('files/promos-bue.pdf')}}" title="Promociones Buenos Aires">Promociones Buenos Aires</a>
+      <a class="tariff-link" href="{{ asset('files/cenas-bue.pdf')}}" title="Cenas fin de año">Cenas Fin de Año - Buenos Aires</a>
+   
     </div>
     <div class="tariff-box">
-      <a class="tariff-title-wrapper" href="#">
+      <a class="tariff-title-wrapper" href="{{ asset('files/AtycaPaquetes.rtf')}}">
         <div class="tariff-title">
           <span class="small">Hoteles</span>
           <span class="small">Traslados</span>
@@ -29,8 +29,7 @@
              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw=="
              title="Hoteles, traslados, excursiones">
       </a>
-      <a class="tariff-link" href="#" title="Promociones Bariloche">Promociones Bariloche</a>
-      <a class="tariff-link" href="#" title="Promociones Iguazu">Promociones Iguazu</a>
+      <a class="tariff-link" href="{{ asset('files/promos-ush.pdf')}}" title="Promociones Usuhaia">Promociones Usuhaia</a>
     </div>
   </section>
   <div class="block-aside-right info-box">
