@@ -11,6 +11,9 @@
 |
 */
 
+use App\Mail\EmailTest;
+use Illuminate\Support\Facades\Mail;
+
 Route::get('/', function () {
     return view('home')->with('selected','home');
 })->name('home');
@@ -30,6 +33,11 @@ Route::group(['prefix' => 'api'], function() {
 
     Route::get('/countries', array('as' => 'services::countries', 'uses' => 'ServicesController@countries'));
 
+});
+
+Route::get('/testmail', function () {
+    Mail::to('dientuki@gmail.com')->send(new EmailTest());
+    return view('home')->with('selected','home');
 });
 
 /*

@@ -49,21 +49,21 @@
   <div class="main-slider Wallop Wallop-slide-BigArrow block-main-right">
     <div class="Wallop-list">
       <div class="Wallop-item">
-        <a class="main-slider-title" href="files/atyca-glaciares.pdf" target="_blank">
+        <a class="main-slider-title" href="{{ asset('files/atyca-glaciares.pdf') }}" target="_blank">
           Expedicion glaciares
           <span class="days">4 dias / 3 noches</span>
         </a>
         <img src="images/sliders/glaciar.jpg">
       </div>
       <div class="Wallop-item">
-        <a class="main-slider-title" href="files/atyca-adventure.pdf" target="_blank">
+        <a class="main-slider-title" href="{{ asset('files/atyca-adventure.pdf') }}" target="_blank">
           Ushuaia adventure
           <span class="days">4 dias / 3 noches</span>
         </a>
         <img src="images/sliders/adventure.jpg">
       </div>
       <div class="Wallop-item">
-        <a class="main-slider-title" href="files/atyca-vinos.pdf" target="_blank">
+        <a class="main-slider-title" href="{{ asset('files/atyca-vinos.pdf') }}" target="_blank">
           Catedrales del vino
           <span class="days">4 dias / 3 noches</span>
         </a>
