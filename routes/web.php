@@ -14,12 +14,15 @@
 use App\Mail\EmailTest;
 use Illuminate\Support\Facades\Mail;
 
+Route::get('/', array('as' => 'home', 'uses' => 'HomeController@show'));
+/*
 Route::get('/', function () {
     return view('home')->with('selected','home');
-})->name('home');
+})->name('home');*/
 
 Route::group(['prefix' => 'private',
-              'middleware' => ['auth']], function() {
+              'middleware' => ['auth'],
+              'as' => 'private::'], function() {
 
     Route::get('/tarifario.html', function () {
         return view('private.tarifario')->with('selected','home');

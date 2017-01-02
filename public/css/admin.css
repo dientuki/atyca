@@ -703,10 +703,11 @@ form .text-box {
     #header .logo:before {
       display: none;
       visibility: hidden; }
-  #header .menu-container {
-    bottom: auto;
-    top: 50%;
-    margin-top: -1.40625em; }
+
+#primary-navigation {
+  top: 50%;
+  bottom: auto;
+  margin-top: -1.40625em; }
 
 #footer {
   padding: 0.625em 0; }

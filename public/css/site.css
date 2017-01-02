@@ -683,6 +683,11 @@ form .text-box {
     font-size: 0.625em;
     line-height: 1.6em; }
 
+.button-logout {
+  width: 6.8em;
+  color: white;
+  background: #8cc8eb; }
+
 .contact-info .contact-info-item {
   float: left; }
 
@@ -813,6 +818,19 @@ form .text-box {
     margin-top: 1em;
     color: #3c74ac; }
 
+.user-info-box {
+  height: 17em; }
+  .user-info-box .button-logout {
+    margin-top: 2.6em; }
+  .user-info-box .user-info-title {
+    margin-bottom: 1.25em; }
+  .user-info-box .user-info-link {
+    color: #265686;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline; }
+
 .deco-box {
   height: 0;
   padding-bottom: 24.3333333333%;
@@ -834,9 +852,6 @@ form .text-box {
     font-size: 0.75em;
     line-height: 1.1666666667em; }
   .info-box .button-logout {
-    width: 6.8em;
-    color: white;
-    background: #8cc8eb;
     position: absolute;
     right: 0;
     top: 0; }

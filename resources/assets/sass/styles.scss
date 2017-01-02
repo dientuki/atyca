@@ -1,6 +1,12 @@
 @import 'mixin';
 @import 'variables';
 
+.button-logout {
+  width: (68em/$buttonfs);
+  color:white;
+  background: #8cc8eb;
+}
+
 .contact-info {
   .contact-info-item {
     float:left;
@@ -179,6 +185,26 @@
   }
 }
 
+.user-info-box {
+  height: (272em/$fs);
+
+  .button-logout {
+    margin-top: (26em/$buttonfs);
+  }
+
+  .user-info-title {
+    margin-bottom: (20em/$fs);
+  }
+
+  .user-info-link {
+    color: #265686;
+    font-size: (12em/$fs);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
 .deco-box {
   height: 0;
   padding-bottom: (219%/900*100);
@@ -209,9 +235,6 @@
   }
 
   .button-logout {
-    width: (68em/$buttonfs);
-    color:white;
-    background: #8cc8eb;
     position: absolute;
     right: 0;
     top: 0;

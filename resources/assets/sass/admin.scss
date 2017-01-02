@@ -1,7 +1,5 @@
 $fs:16;
 
-
-
 .main-wrapper {
   width: (940em/16);
   margin: 0 auto;
@@ -32,13 +30,13 @@ $fs:16;
       visibility: hidden;
     }
   }
+}
 
-  .menu-container {
-    $h: (45em/$fs);
-    bottom:auto;
-    top:50%;
-    margin-top: ($h/-2);
-  }
+#primary-navigation {
+  $h: (45em/$fs);
+  top:50%;
+  bottom:auto;
+  margin-top: ($h/-2);
 }
 
 #footer {

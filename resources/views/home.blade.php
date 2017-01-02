@@ -3,45 +3,58 @@
 @section ('content')
 
   <div class="login-box block-aside-left">
-    <form class="login-form-arrow" role="form" method="POST" action="{{ route('user::login.post') }}">
-      {{ csrf_field() }}
-      <fieldset>
-        <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
-          @if ($errors->has('email'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-          @endif
-          <label for="email">E-Mail</label>
-          <input id="email" type="email" name="email" class="text-box" value="{{ old('email') }}" required />
+    @if ($is_loggued)
+      <div class="login-form-arrow user-info-box">
+        <div class="user-info-title">
+          Bienvenido {{$user->name}}
         </div>
 
-        <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
+        <a class="user-info-link" href="{{ route('private::tarifario') }}" title="Ver tarifarios">Ver tarifarios</a>
+        <a class="user-info-link hidden" href="{{ route('user::logout') }}" title="Editar mis datos">Editar mis datos</a>
+        <a class="button-logout" href="{{ route('user::logout') }}" title="Salir">Salir</a>
+      </div>
 
-          @if ($errors->has('password'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-          @endif
+    @else
+      <form class="login-form-arrow" role="form" method="POST" action="{{ route('user::login.post') }}">
+        {{ csrf_field() }}
+        <fieldset>
+          <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
+            @if ($errors->has('email'))
+              <span class="help-block">
+                                          <strong>{{ $errors->first('email') }}</strong>
+                                      </span>
+            @endif
+            <label for="email">E-Mail</label>
+            <input id="email" type="email" name="email" class="text-box" value="{{ old('email') }}" required />
+          </div>
+
+          <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
+
+            @if ($errors->has('password'))
+              <span class="help-block">
+                                          <strong>{{ $errors->first('email') }}</strong>
+                                      </span>
+            @endif
 
 
-          <label for="password">Contraseña</label>
-          <input class="text-box" id="password" type="password" name="password">
+            <label for="password">Contraseña</label>
+            <input class="text-box" id="password" type="password" name="password">
+          </div>
+
+        </fieldset>
+        <div class="login-action clearfix">
+          <input class="button-submit" type="submit" value="Ingresar">
+          <a class="button-register" href="{{ route('user::register') }}" title="Registrarse">Registrarse</a>
         </div>
-
-      </fieldset>
-      <div class="login-action clearfix">
-        <input class="button-submit" type="submit" value="Ingresar">
-        <a class="button-register" href="{{ route('user::register') }}" title="Registrarse">Registrarse</a>
-      </div>
-      <div class="forgot-password">
-        <p>Olvidó su contraseña?</p>
-        <p>
-          Contactese a
-          <a class="forgot-password-link" href="mailto:info@atyca.tur.ar" title="info@atyca.tur.ar">info@atyca.tur.ar</a>
-        </p>
-      </div>
-    </form>
+        <div class="forgot-password">
+          <p>Olvidó su contraseña?</p>
+          <p>
+            Contactese a
+            <a class="forgot-password-link" href="mailto:info@atyca.tur.ar" title="info@atyca.tur.ar">info@atyca.tur.ar</a>
+          </p>
+        </div>
+      </form>
+    @endif
     <a class="operator" href="#" title="Ingreso a operadores">Ingreso a operadores</a>
   </div>
 
