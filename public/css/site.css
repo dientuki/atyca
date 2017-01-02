@@ -854,7 +854,8 @@ form .text-box {
   .info-box .button-logout {
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+    color: white; }
   .info-box .info-title {
     color: #265686; }
   .info-box .info-row {
