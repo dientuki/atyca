@@ -9,40 +9,47 @@
   @endif
 
 
-    @if (isset($inactives))
-    <table class="table table-hover table-striped" id="list-table">
-      <thead>
+    @if (isset($users))
+    <table class="list-table" id="list-table">
+      <thead class="hidden">
       <tr>
+        <th>Email</th>
         <th>Contacto</th>
         <th>Empresa</th>
         <th>Pais</th>
-        <th>Email</th>
         <th class="column-action">Accion</th>
       </tr>
       </thead>
       <tbody>
-      @foreach ($inactives as $inactive)
+      @foreach ($users as $user)
         <tr>
-          <td>{{ $inactive->name }}</td>
-          <td>{{ $inactive->business }}</td>
-          <td>{{ $inactive->country }}</td>
-          <td>{{ $inactive->email }}</td>
+          <td class="email">{{ $user->email }}</td>
+          <td>{{ $user->name }}</td>
+          <td>{{ $user->business }}</td>
+          <td>{{ $user->country }}</td>
+
           <td class="column-action">
-            <a href="{{ route('admin::users::activate', ['users' =>  $inactive->id]) }}" title="activar usuario">aqui</a>
+            <div class="">
+              <input type='checkbox' class='ios8-switch' id='checkbox-3' <?php if ($user->active == true) { echo 'checked="checked"'; } ?>>
+              <label for='checkbox-3'></label>
+            </div>
+            <a href="{{ route('admin::users::activate', ['users' =>  $user->id]) }}" title="activar usuario">aqui</a>
 
-            <a href="{{route('admin::users::edit', $inactive->id)}}" class="btn btn-primary btn-sm" role="button" title="Editar {{ $inactive->name }}">Editar</a>
+            <a href="{{route('admin::users::edit', $user->id)}}" class="btn btn-primary btn-sm" role="button" title="Editar {{ $user->name }}">Editar</a>
 
-            <form class="form-inline" action="{{ route('admin::users::activate', $inactive->id) }}" method="POST">
+<!--
+            <form class="form-inline" action="{{ route('admin::users::activate', $user->id) }}" method="POST">
               {{ csrf_field() }}
               <input name="_method" type="hidden" value="PATCH">
-              <button type="submit" class="btn btn-danger btn-sm" title="Activar {{ $inactive->name }}">Activar</button>
+              <button type="submit" class="btn btn-danger btn-sm" title="Activar {{ $user->name }}">Activar</button>
             </form>
 
-            <form class="form-inline" action="{{ route('admin::users::destroy', $inactive->id) }}" method="POST">
+            <form class="form-inline" action="{{ route('admin::users::destroy', $user->id) }}" method="POST">
               {{ csrf_field() }}
               <input name="_method" type="hidden" value="DELETE">
-              <button type="submit" class="btn btn-danger btn-sm" title="Borrar {{ $inactive->name }}">Borrar</button>
+              <button type="submit" class="btn btn-danger btn-sm" title="Borrar {{ $user->name }}">Borrar</button>
             </form>
+            .-->
           </td>
         </tr>
       @endforeach
