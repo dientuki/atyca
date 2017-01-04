@@ -88,6 +88,7 @@ Route::group(['namespace' => 'Admin',
     Route::group(['prefix' => 'users',
         'as' => 'users::'], function(){
         Route::match(['get', 'put', 'patch'], '{users}/activate', ['uses' => 'UsersController@activate', 'as' => 'activate']);
+        Route::get('{users}/toogle', ['uses' => 'UsersController@toogle', 'as' => 'toogle']);
         Route::match(['put', 'patch'], '{users}/deactivate', ['uses' => 'UsersController@deactivate', 'as' => 'deactivate']);
         /*
         Route::get('', ['uses' => 'UsersController@index', 'as' => 'index']);

@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
@@ -58,6 +59,10 @@ class User extends Authenticatable
     static public function getActiveValue($id){
         return User::select('activate')
             ->where('id', $id)->get()->first();
+    }
+
+    static public function toogleActivate($id){
+        return User::where('id', $id)->update(['active' => DB::raw('NOT `active`')]);
     }
 
     public function getCountry(){

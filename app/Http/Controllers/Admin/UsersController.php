@@ -111,4 +111,17 @@ class UsersController extends Controller
         $request->session()->flash('status', 'Task was successful!');
         return redirect()->route('admin::dashboard');
     }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function toogle($id)
+    {
+        User::toogleActivate($id);
+        //$request->session()->flash('status', 'Task was successful!');
+        //return redirect()->route('admin::dashboard');
+    }
 }

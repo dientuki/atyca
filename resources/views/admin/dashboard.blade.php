@@ -29,13 +29,14 @@
           <td>{{ $user->country }}</td>
 
           <td class="column-action">
-            <div class="">
-              <input type='checkbox' class='ios8-switch' id='checkbox-3' <?php if ($user->active == true) { echo 'checked="checked"'; } ?>>
-              <label for='checkbox-3'></label>
-            </div>
-            <a href="{{ route('admin::users::activate', ['users' =>  $user->id]) }}" title="activar usuario">aqui</a>
-
             <a href="{{route('admin::users::edit', $user->id)}}" class="btn btn-primary btn-sm" role="button" title="Editar {{ $user->name }}">Editar</a>
+
+            <div class="checkbox-user">
+              <input type='checkbox' class='ios8-switch' id='checkbox-user-{{ $user->id }}' <?php if ($user->active == true) { echo 'checked="checked"'; } ?> data-action="{{ route('admin::users::toogle', ['users' =>  $user->id]) }}">
+              <label for='checkbox-user-{{ $user->id }}'></label>
+            </div>
+
+
 
 <!--
             <form class="form-inline" action="{{ route('admin::users::activate', $user->id) }}" method="POST">

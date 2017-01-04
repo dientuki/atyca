@@ -14,7 +14,7 @@
     </main>
 
     @include ('main-parts/footer')
-    @include ('main-parts/script')
+    @include ('admin/main-parts/script')
 
   </body>
 
