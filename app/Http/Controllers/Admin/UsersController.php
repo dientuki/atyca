@@ -58,7 +58,12 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::getEdit($id);
+
+        $action    = 'update';
+        //$form_data = array('route' => array('admin::users::update', $user->id), 'method' => 'PATCH');
+
+        return view('admin/users/form', compact('action', 'user'));
     }
 
     /**

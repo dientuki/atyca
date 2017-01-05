@@ -94,8 +94,9 @@ Route::group(['namespace' => 'Admin',
         Route::get('', ['uses' => 'UsersController@index', 'as' => 'index']);
         Route::post('', ['uses' => 'UsersController@store', 'as' => 'store']);
         Route::get('create', ['uses' => 'UsersController@create', 'as' => 'create']);
-        Route::match(['put', 'patch'], '{spideys}', ['uses' => 'UsersController@update', 'as' => 'update']);
         */
+        Route::match(['put', 'patch'], '{users}', ['uses' => 'UsersController@update', 'as' => 'update']);
+
         Route::delete('{users}', ['uses' => 'UsersController@destroy', 'as' => 'destroy']);
         Route::get('{users}/edit', ['uses' => 'UsersController@edit', 'as' => 'edit']);
     });

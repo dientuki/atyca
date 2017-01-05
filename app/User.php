@@ -35,6 +35,12 @@ class User extends Authenticatable
         'password', 'remember_token'
     ];
 
+    static public function getEdit($id){
+        return User::select('users.id as id', 'name', 'email', 'business', 'country', 'active', 'rol')
+            ->join('countries', 'countries.id', '=', 'users.fk_country')
+            ->where('users.id', $id)->get()->first();
+    }
+
     static public function getAllUsers(){
         return User::select('users.id as id', 'name', 'email', 'business', 'country', 'active')
             ->join('countries', 'countries.id', '=', 'users.fk_country')
