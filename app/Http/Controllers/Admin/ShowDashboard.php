@@ -15,8 +15,9 @@ class ShowDashboard extends Controller
    */
   public function __invoke(Request $request)
   {
-    $inactives = User::getInactiveUsers();
+    $users = User::getAllUsers();
     $status = $request->session()->get('status');
-    return view('admin/dashboard', compact('inactives', 'status'));
+    //dd($users);
+    return view('admin/dashboard', compact('users', 'status'));
   }
 }

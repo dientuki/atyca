@@ -43,6 +43,10 @@ elixir(mix => {
       'modules/type-ahead.js',
               'app.js'], "public/js/app.js")
 
-  mix.version(['public/css/site.css', 'public/css/admin.css', "public/js/app.js"], 'public/')
+  mix.webpack(['modules/axios.js',
+    'modules/type-ahead.js',
+    'backend.js'], "public/js/backend.js")
+
+  mix.version(['public/css/site.css', 'public/css/admin.css', "public/js/app.js", "public/js/backend.js"], 'public/')
 
 });

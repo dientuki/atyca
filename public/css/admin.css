@@ -683,6 +683,59 @@ form .text-box {
     font-size: 0.625em;
     line-height: 1.6em; }
 
+/* ios 8 */
+.checkbox-user {
+  display: inline-block;
+  margin-left: 6px; }
+
+input[type="checkbox"].ios8-switch {
+  position: absolute;
+  margin: 5px 0 0 10px;
+  outline: none; }
+  input[type="checkbox"].ios8-switch + label {
+    position: relative;
+    padding: 0 0 0 32px;
+    line-height: 1.3em;
+    cursor: pointer; }
+    input[type="checkbox"].ios8-switch + label:before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 25px;
+      /* x*5 */
+      height: 15px;
+      /* x*3 */
+      border-radius: 10px;
+      /* x*2 */
+      background: #fff;
+      border: 1px solid #d9d9d9;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+    input[type="checkbox"].ios8-switch + label:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0px;
+      top: 0px;
+      width: 15px;
+      /* x*3 */
+      height: 15px;
+      /* x*3 */
+      border-radius: 10px;
+      /* x*2 */
+      background: #fff;
+      border: 1px solid #d9d9d9;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+    input[type="checkbox"].ios8-switch + label:hover:after {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+  input[type="checkbox"].ios8-switch:checked + label:after {
+    margin-left: 10px; }
+  input[type="checkbox"].ios8-switch:checked + label:before {
+    background: #55D069; }
+
 .main-wrapper {
   width: 58.75em;
   margin: 0 auto; }
@@ -693,6 +746,20 @@ form .text-box {
     background: none;
     visibility: hidden;
     display: none; }
+
+table {
+  width: 100%;
+  font-size: 1em; }
+  table tbody td {
+    height: 2.0625em;
+    border-top: solid 0.0625em #8cc8eb; }
+  table tbody tr:first-child td {
+    border: none; }
+  table a,
+  table .email {
+    color: #265686; }
+  table .email {
+    width: 12.5em; }
 
 #header {
   height: 4.375em; }
