@@ -39,7 +39,7 @@ class User extends Authenticatable
         return User::select('users.id as id', 'name', 'email', 'business', 'country', 'active')
             ->join('countries', 'countries.id', '=', 'users.fk_country')
             ->orderBy('email')
-            ->where('rol', 1)->get();
+            ->where('rol', 0)->get();
     }
 
     static public function getInactiveUsers(){

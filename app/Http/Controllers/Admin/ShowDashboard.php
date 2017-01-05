@@ -17,6 +17,7 @@ class ShowDashboard extends Controller
   {
     $users = User::getAllUsers();
     $status = $request->session()->get('status');
+    //dd($users);
     return view('admin/dashboard', compact('users', 'status'));
   }
 }

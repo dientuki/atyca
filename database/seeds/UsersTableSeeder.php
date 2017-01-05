@@ -21,6 +21,15 @@ class UsersTableSeeder extends Seeder
             'rol' => 1
         ]);
 
+        DB::table('users')->insert([
+            'name' => 'Juan Farias',
+            'email' => 'dientuki@gmail.com',
+            'password' => bcrypt('saludos'),
+            'fk_country' => 13,
+            'business' => 'Turimar',
+            'active' => false,
+            'rol' => 0
+        ]);
 
     }
 }

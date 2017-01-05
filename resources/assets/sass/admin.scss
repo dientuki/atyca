@@ -4,6 +4,7 @@ $fs:16;
 
 .checkbox-user {
   display: inline-block;
+  margin-left: 6px;
 }
 
 input[type="checkbox"].ios8-switch {
@@ -79,10 +80,10 @@ input[type="checkbox"].ios8-switch {
   }
 }
 
-.list-table {
-  $tfs: 12;
+table {
+  $tfs: 16;
   width: 100%;
-  font-size: ($tfs/$fs)em;
+  font-size: #{$tfs/$fs}em;
 
   tbody {
     td {
@@ -97,8 +98,12 @@ input[type="checkbox"].ios8-switch {
     }
   }
 
+  a,
   .email {
     color: #265686;
+  }
+
+  .email {
     width: (200em/$tfs);
   }
 }
