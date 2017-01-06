@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Mail\UserActivated;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 
 class UsersController extends Controller
 {
@@ -97,8 +99,10 @@ class UsersController extends Controller
      */
     public function activate(Request $request, $id)
     {
+        $user = User::getEdit($id);
         User::setActivateValue($id, true);
         $request->session()->flash('status', 'Task was successful!');
+        Mail::to($user->email)->send(new UserActivated($user));
         return redirect()->route('admin::dashboard');
     }
 
