@@ -5,7 +5,7 @@
   {!! Form::model($user, array_merge($form_data, array('role' => 'form', 'class' => 'form-two-col'))) !!}
 
     <div class="form-title">
-      Editar usuario
+      {{trans('validation.attributes.' . $action)}} usuario
 
       <div class="checkbox-user">
         <input type='checkbox' class='ios8-switch' id='checkbox-user-{{ $user->id }}' <?php if ($user->active == true) { echo 'checked="checked"'; } ?> data-action="{{ route('admin::users::toogle', ['users' =>  $user->id]) }}">
@@ -78,10 +78,14 @@
       </div>
     </fieldset>
 
-    <div class="form-action">
-      <input class="form-action-element button-submit" type="submit" value="Actualizar">
 
-      <a class="form-action-element form-delete-acount" href="{{ route('admin::users::destroy', $user->id) }}" title="Borrar cuenta">Borrar cuenta</a>
+
+    <div class="form-action">
+      <input class="form-action-element button-submit" type="submit" value="{{ trans('validation.attributes.' . $action)  }}">
+
+      @if ($action == 'update')
+        <a class="form-action-element form-delete-acount" href="{{ route('admin::users::destroy', $user->id) }}" title="Borrar cuenta">Borrar cuenta</a>
+      @endif
     </div>
   {!! Form::close() !!}
 
