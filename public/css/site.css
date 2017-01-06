@@ -466,7 +466,7 @@ ol {
 [class*="-center"] {
   margin: 0 auto; }
 
-.login-box [class*="login-form"] {
+.login-box [class*="form"] {
   padding: 1.25em;
   box-sizing: padding-box; }
 
@@ -646,38 +646,93 @@ form .text-box {
   border-radius: 0.5em;
   background: #265686; }
 
-[class*="login-form"] .text-box {
+[class*="form"] .form-title {
+  font-size: 1.5em;
+  color: #265686;
+  margin-bottom: 0.8333333333em;
+  position: relative; }
+  [class*="form"] .form-title .checkbox-user {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 22px; }
+  [class*="form"] .form-title input {
+    margin-top: 0 !important; }
+
+[class*="form"] .text-box {
   width: 100%; }
 
-[class*="login-form"] .login-item {
+[class*="form"] .form-item {
   margin-top: 0.625em;
   position: relative; }
 
-[class*="login-form"] .login-action {
+[class*="form"] .form-action {
   margin-top: 1.5625em; }
 
-[class*="login-form"] .button-submit {
+[class*="form"] .button-submit {
   float: left;
   width: 9em;
   color: white;
   background: #8cc8eb;
   border: solid 0.1em #8cc8eb; }
 
-[class*="login-form"] .button-register {
+[class*="form"] .button-register {
   float: right;
   width: 11em;
   background: white;
   border: solid 0.1em #a0b2b8;
   color: #8cc8eb; }
 
-[class*="login-form"] .forgot-password {
+[class*="form"] .forgot-password {
   font-size: 0.75em;
   line-height: 1.1666666667em;
   color: #a0b2b8;
   margin-top: 4.1666666667em; }
 
-[class*="login-form"] .forgot-password-link {
+[class*="form"] .forgot-password-link {
   color: #4a90e2; }
+
+[class*="form-two-col"] .text-box {
+  margin: 0; }
+
+[class*="form-two-col"] .form-item {
+  display: -webkit-box;
+  display: flex; }
+  [class*="form-two-col"] .form-item:first-of-type {
+    margin-top: 0; }
+  [class*="form-two-col"] .form-item .form-colaside {
+    -webkit-box-flex: 1;
+    flex: 1 1 0%;
+    flex-basis: 6.4285714286em;
+    max-width: 6.4285714286em;
+    -ms-grid-row-align: center;
+    align-self: center; }
+  [class*="form-two-col"] .form-item .form-colmain {
+    -webkit-box-flex: 1;
+    flex: 1 1 0%; }
+
+[class*="form-two-col"] .form-action {
+  display: -webkit-box;
+  display: flex;
+  padding-left: 5.625em;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-self: center; }
+  [class*="form-two-col"] .form-action .form-action-element {
+    -webkit-box-flex: 1;
+    flex: 1 1 0%;
+    flex-basis: 10em;
+    max-width: 10em;
+    -ms-grid-row-align: center;
+    align-self: center; }
+  [class*="form-two-col"] .form-action .form-delete-acount {
+    color: #265686;
+    text-align: right;
+    flex-basis: 7.5em;
+    max-width: 7.5em;
+    text-decoration: underline; }
 
 #header {
   overflow: hidden; }
@@ -896,7 +951,7 @@ form .text-box {
     .info-box .info-row:first-of-type {
       margin: 0; }
 
-.login-box [class*="login-form"] {
+.login-box [class*="form"] {
   background: white;
   box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
   position: relative; }
@@ -1387,6 +1442,8 @@ body.is-menu-opened #header .menu-container .menu-item {
 .autocomplete {
   position: relative;
   z-index: 9; }
+  .autocomplete .autocomplete-wrapper {
+    position: relative; }
   .autocomplete ul {
     font-size: 0.875em;
     border: solid 0.0714285714em #8cc8eb;

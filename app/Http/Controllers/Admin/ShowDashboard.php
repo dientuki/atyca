@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 class ShowDashboard extends Controller
 {
+  protected $rol =  array('0' => 'Usuario', '1' => 'Administrador');
+
   /**
    * Show the profile for the given user.
    *
@@ -18,6 +20,7 @@ class ShowDashboard extends Controller
     $users = User::getAllUsers();
     $status = $request->session()->get('status');
     $selected = 'dashboard';
+    $rol = $this->rol;
     return view('admin/dashboard', compact('users', 'status', 'selected', 'rol'));
   }
 }

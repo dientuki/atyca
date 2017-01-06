@@ -91,13 +91,12 @@ Route::group(['namespace' => 'Admin',
         Route::get('{users}/toogle', ['uses' => 'UsersController@toogle', 'as' => 'toogle']);
         Route::match(['put', 'patch'], '{users}/deactivate', ['uses' => 'UsersController@deactivate', 'as' => 'deactivate']);
         /*
-        Route::get('', ['uses' => 'UsersController@index', 'as' => 'index']);
         Route::post('', ['uses' => 'UsersController@store', 'as' => 'store']);
         Route::get('create', ['uses' => 'UsersController@create', 'as' => 'create']);
         */
         Route::match(['put', 'patch'], '{users}', ['uses' => 'UsersController@update', 'as' => 'update']);
 
-        Route::delete('{users}', ['uses' => 'UsersController@destroy', 'as' => 'destroy']);
+        Route::get('{users}/destroy', ['uses' => 'UsersController@destroy', 'as' => 'destroy']);
         Route::get('{users}/edit', ['uses' => 'UsersController@edit', 'as' => 'edit']);
     });
 

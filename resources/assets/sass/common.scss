@@ -37,10 +37,6 @@
   font-style: normal;
 }
 
-$buttonfs: 10;
-
-
-
 body {
   font-family: "Avenir Heavy";
   background:  #f2f4f5;
@@ -48,21 +44,19 @@ body {
 
 form {
   label {
-    $tfs: 14;
     display: block;
-    font-size: #{$tfs/$fs}em;
-    line-height: (19em/$tfs);
+    font-size: #{$labelfs/$fs}em;
+    line-height: (19em/$labelfs);
   }
 
   .text-box {
-    $tfs: 14;
-    font-size: #{$tfs/$fs}em;
-    border: solid (1em/$tfs) #8cc8eb;
+    font-size: #{$labelfs/$fs}em;
+    border: solid (1em/$labelfs) #8cc8eb;
     box-sizing: border-box;
-    height: (28em/$tfs);
-    line-height: (19em/$tfs);
+    height: (28em/$labelfs);
+    line-height: (19em/$labelfs);
     padding: 0 1em;
-    margin-top: (5em/$tfs);
+    margin-top: (5em/$labelfs);
   }
 }
 
@@ -110,18 +104,38 @@ form {
   }
 }
 
-[class*="login-form"] {
+[class*="form"] {
+
+  .form-title {
+    $tfs: 24;
+    font-size: #{$tfs/$fs}em;
+    color:#265686;
+    margin-bottom: (20em/$tfs);
+    position: relative;
+
+    .checkbox-user {
+      position: absolute;
+      right: 0;
+      top:50%;
+      transform: translateY(-50%);
+      height: 22px;
+    }
+
+    input {
+      margin-top: 0 !important;
+    }
+  }
 
   .text-box {
     width: 100%;
   }
 
-  .login-item {
+  .form-item {
     margin-top: (10em/$fs);
     position: relative;
   }
 
-  .login-action {
+  .form-action {
     margin-top: (25em/$fs);
   }
 
@@ -154,6 +168,55 @@ form {
   .forgot-password-link {
     color:#4a90e2;
   }
+}
+
+[class*="form-two-col"] {
+
+  .text-box {
+    margin: 0;
+  }
+
+  .form-item {
+    display: flex;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    .form-colaside {
+      flex: 1 1 0%;
+      flex-basis: (90em/$labelfs);
+      max-width: (90em/$labelfs);
+      align-self:  center;
+    }
+
+    .form-colmain {
+      flex: 1 1 0%;
+    }
+  }
+
+  .form-action {
+    display: flex;
+    padding-left: (90em/$fs);
+    justify-content: space-between;
+    align-self:  center;
+
+    .form-action-element {
+      flex: 1 1 0%;
+      flex-basis: (160em/$fs);
+      max-width: (160em/$fs);
+      align-self:  center
+    }
+
+    .form-delete-acount {
+      color: #265686;
+      text-align: right;
+      flex-basis: (120em/$fs);
+      max-width: (120em/$fs);
+      text-decoration: underline;
+    }
+  }
+  
 }
 
 #header {

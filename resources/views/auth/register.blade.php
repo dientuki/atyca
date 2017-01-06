@@ -37,7 +37,7 @@
             <div class="login-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
                 <label for="fk_country">Pais</label>
 
-                <div>
+                <div class="autocomplete-wrapper">
                     <input id="fk_country" type="text" class="text-box" name="fk_country" value="{{ old('fk_country') }}" required autofocus>
 
                     @if ($errors->has('name'))
