@@ -78,6 +78,12 @@ input[type="checkbox"].ios8-switch {
     visibility: hidden;
     display: none;
   }
+
+  > .main-wrapper {
+    padding:  (20em/$fs) (25em/$fs);
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  }
 }
 
 table {

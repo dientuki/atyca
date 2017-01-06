@@ -2,73 +2,81 @@
 
 @section ('content')
 
-  <div class="login-box block-main-left tariff clearfix">
-      {!! Form::model($user, array_merge($form_data, array('role' => 'form', 'class' => 'login-form'))) !!}
+  {!! Form::model($user, array_merge($form_data, array('role' => 'form', 'class' => 'login-form'))) !!}
 
-      <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
-        {!! Form::label('name', 'Contacto')  !!}
+    <div class="login-item {{ $errors->has('email') ? ' has-error' : '' }}">
+      {!! Form::label('email', 'Usuario')  !!}
 
-        <div>
+      <div>
+        {!! Form::text('email', null, array('placeholder' => 'Usuario', 'class'=>'text-box'))  !!}
 
-          {!! Form::text('name', null, array('placeholder' => 'Name', 'class'=>'text-box'))  !!}
-
-          @if ($errors->has('name'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-          @endif
-        </div>
+        @if ($errors->has('email'))
+          <span class="help-block"><strong>{{ $errors->first('email') }}</strong></span>
+        @endif
       </div>
+    </div>
 
-      <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
-        {!! Form::label('business', 'Empresa')  !!}
+    <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
+      {!! Form::label('business', 'Empresa')  !!}
 
-        <div>
-          {!! Form::text('business', null, array('placeholder' => 'Empresa', 'class'=>'text-box'))  !!}
+      <div>
+        {!! Form::text('business', null, array('placeholder' => 'Empresa', 'class'=>'text-box'))  !!}
 
-          @if ($errors->has('name'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-          @endif
-        </div>
+        @if ($errors->has('business'))
+          <span class="help-block"><strong>{{ $errors->first('business') }}</strong></span>
+        @endif
       </div>
+    </div>
 
-      <div class="login-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
-        <label for="fk_country">Pais</label>
+    <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
+      {!! Form::label('name', 'Contacto')  !!}
 
-        <div>
-          <input id="fk_country" type="text" class="text-box" name="fk_country" value="{{ old('fk_country') }}" required autofocus>
+      <div>
 
-          @if ($errors->has('name'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-          @endif
-        </div>
+        {!! Form::text('name', null, array('placeholder' => 'Name', 'class'=>'text-box'))  !!}
+
+        @if ($errors->has('name'))
+          <span class="help-block"><strong>{{ $errors->first('name') }}</strong></span>
+        @endif
       </div>
+    </div>
 
-      <div class="login-item {{ $errors->has('email') ? ' has-error' : '' }}">
-        {!! Form::label('email', 'E-Mail')  !!}
+    <div class="login-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
+      {!! Form::label('country', 'Pais')  !!}
 
-        <div >
-          {!! Form::text('email', null, array('placeholder' => 'E-Mail', 'class'=>'text-box'))  !!}
+      <div>
+        {!! Form::text('country', null, array('placeholder' => 'Pais', 'class'=>'text-box'))  !!}
+        {!! Form::hidden('fk_country', null, array('id' => 'fk_country'))  !!}
 
-          @if ($errors->has('email'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-          @endif
-        </div>
+        @if ($errors->has('fk_country'))
+          <span class="help-block"><strong>{{ $errors->first('fk_country') }}</strong></span>
+        @endif
       </div>
+    </div>
 
+    <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
+      {!! Form::label('rol', 'Rol')  !!}
 
+      <div>
+        {!! Form::select('rol', $rol, $user->rol, array('required' => true) ) !!}
 
-      <div class="login-action clearfix">
-        <input class="button-submit" type="submit" value="Registrarse">
+        @if ($errors->has('fk_country'))
+          <span class="help-block"><strong>{{ $errors->first('fk_country') }}</strong></span>
+        @endif
       </div>
-    {!! Form::close() !!}
+    </div>
 
-  </div>
+    <div class="login-action clearfix">
+      <input class="button-submit" type="submit" value="Actualizar">
+
+    </div>
+  {!! Form::close() !!}
+
+  <form class="form-inline" action="{{ route('admin::users::destroy', $user->id) }}" method="POST">
+    {{ csrf_field() }}
+    <input name="_method" type="hidden" value="DELETE">
+    <button type="submit" class="btn btn-danger btn-sm" title="Borrar {{ $user->name }}">Borrar</button>
+  </form>
+
 
 @endsection

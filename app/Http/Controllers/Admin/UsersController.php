@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 class UsersController extends Controller
 {
+    protected $rol =  array('0' => 'Usuario', '1' => 'Administrador');
     /**
      * Display a listing of the resource.
      *
@@ -62,8 +63,9 @@ class UsersController extends Controller
 
         $action    = 'update';
         $form_data = array('route' => array('admin::users::update', $user->id), 'method' => 'PATCH');
+        $rol = $this->rol;
 
-        return view('admin/users/form', compact('action', 'user', 'form_data'));
+        return view('admin/users/form', compact('action', 'user', 'form_data', 'rol'));
     }
 
     /**
@@ -75,7 +77,13 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::getEdit($id);
+
+        $data = $request->all();
+
+        $user->fill($data)->save();
+
+        return redirect()->route('admin::dashboard');
     }
 
     /**

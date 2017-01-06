@@ -1,13 +1,15 @@
 import axios from 'axios';
 import TypeAhead from 'type-ahead';
 
-let country = document.getElementById('fk_country');
+let country = document.getElementById('country'),
+    fk_country = document.getElementById('fk_country');
 
 if (country != null){
   let t = new TypeAhead(country);
   t.getItemValue = function(item) {
     //this.element.setAttribute("value", item.id)
-    return item.value
+    fk_country.setAttribute("value", item.id);
+    return item.value;
   };
 
   t.getCandidates = function (callback) {

@@ -6,6 +6,9 @@
       <h6 class="visuallyhidden">Navegación</h6>
       <ul class="clearfix menu-container">
         <li class="menu-item">
+          <a class="menu-link {{ isset($selected) && $selected == 'dashboard' ? 'selected' : '' }}" href="{{ route('admin::dashboard') }}" title="Dashboard">Dashboard</a>
+        </li>
+        <li class="menu-item">
           <a class="menu-link {{ isset($selected) && $selected == 'users' ? 'selected' : '' }}" href="{{ route('home') }}" title="Usuarios">Usuarios</a>
         </li>
         <li class="menu-item">
