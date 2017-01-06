@@ -21,8 +21,9 @@ class UsersController extends Controller
         $action = 'create';
         $form_data = array('route' => 'admin::users::store', 'method' => 'POST');
         $rol = $this->rol;
+        $selected = 'users';
 
-        return view('admin/users/form', compact('action', 'user',  'form_data', 'rol'));
+        return view('admin/users/form', compact('action', 'user',  'form_data', 'rol', 'selected'));
     }
 
     /**
