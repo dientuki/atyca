@@ -6,6 +6,10 @@
   position: relative;
   z-index: 9;
 
+  .autocomplete-wrapper {
+    position: relative;
+  }
+
   ul {
     font-size: #{$tfs/$fs}em;
     border: solid (1em/$tfs) #8cc8eb;

@@ -8,15 +8,7 @@ use App\Http\Controllers\Controller;
 
 class UsersController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
+    protected $rol =  array('0' => 'Usuario', '1' => 'Administrador');
 
     /**
      * Show the form for creating a new resource.
@@ -25,7 +17,13 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        $user = new User();
+        $action = 'create';
+        $form_data = array('route' => 'admin::users::store', 'method' => 'POST');
+        $rol = $this->rol;
+        $selected = 'users';
+
+        return view('admin/users/form', compact('action', 'user',  'form_data', 'rol', 'selected'));
     }
 
     /**
@@ -36,18 +34,11 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $data = $request->all();
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
+        User::create($data);
+
+        return redirect()->route('admin::dashboard');
     }
 
     /**
@@ -58,7 +49,13 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::getEdit($id);
+
+        $action    = 'update';
+        $form_data = array('route' => array('admin::users::update', $user->id), 'method' => 'PATCH');
+        $rol = $this->rol;
+
+        return view('admin/users/form', compact('action', 'user', 'form_data', 'rol'));
     }
 
     /**
@@ -70,7 +67,13 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::getEdit($id);
+
+        $data = $request->all();
+
+        $user->fill($data)->save();
+
+        return redirect()->route('admin::dashboard');
     }
 
     /**

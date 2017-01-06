@@ -24,7 +24,7 @@ elixir(mix => {
             'main-icon.scss',
             'pages.scss',
             'wallop.scss',
-        'autocomplete.scss',
+            'autocomplete.scss',
             'mediaqueries/mediaqueries.scss'],
 
             'public/css/site.css');
@@ -32,7 +32,8 @@ elixir(mix => {
   mix.sass(['normalize.scss',
       'layout.scss',
       'common.scss',
-      'admin.scss'],
+      'admin.scss',
+        'autocomplete.scss'],
 
     'public/css/admin.css')
 

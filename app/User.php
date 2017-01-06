@@ -35,11 +35,16 @@ class User extends Authenticatable
         'password', 'remember_token'
     ];
 
-    static public function getAllUsers(){
-        return User::select('users.id as id', 'name', 'email', 'business', 'country', 'active')
+    static public function getEdit($id){
+        return User::select('users.id as id', 'name', 'email', 'business', 'fk_country', 'country', 'active', 'rol')
             ->join('countries', 'countries.id', '=', 'users.fk_country')
-            ->orderBy('email')
-            ->where('rol', 0)->get();
+            ->where('users.id', $id)->get()->first();
+    }
+
+    static public function getAllUsers(){
+        return User::select('users.id as id', 'name', 'email', 'business', 'country', 'active', 'rol')
+            ->join('countries', 'countries.id', '=', 'users.fk_country')
+            ->orderBy('email')->get();
     }
 
     static public function getInactiveUsers(){
