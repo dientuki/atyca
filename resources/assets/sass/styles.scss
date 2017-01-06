@@ -302,48 +302,6 @@
     }
   }
 
-  .text-box {
-    width: 100%;
-  }
-
-  .login-item {
-    margin-top: (10em/$fs);
-    position: relative;
-  }
-
-  .login-action {
-    margin-top: (25em/$fs);
-  }
-
-  .button-submit {
-    float:left;
-    width: (90em/$buttonfs);
-    color:white;
-    background: #8cc8eb;
-    border:solid (1em/$buttonfs) #8cc8eb;
-  }
-
-  .button-register {
-    float:right;
-    width: (110em/$buttonfs);
-
-
-    background: white;
-    border: solid (1em/$buttonfs) #a0b2b8;
-    color:#8cc8eb;
-  }
-
-  .forgot-password {
-    $tfs: 12;
-    font-size: #{$tfs/$fs}em;
-    line-height: (14em/$tfs);
-    color: #a0b2b8;
-    margin-top: (50em/$tfs);
-  }
-
-  .forgot-password-link {
-    color:#4a90e2;
-  }
 }
 
 .tactic {

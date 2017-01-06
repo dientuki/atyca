@@ -58,7 +58,7 @@
       {!! Form::label('rol', 'Rol')  !!}
 
       <div>
-        {!! Form::select('rol', $rol, $user->rol, array('required' => true) ) !!}
+        {!! Form::select('rol', $rol, $user->rol, array('required' => true, 'class'=>'text-box') ) !!}
 
         @if ($errors->has('fk_country'))
           <span class="help-block"><strong>{{ $errors->first('fk_country') }}</strong></span>

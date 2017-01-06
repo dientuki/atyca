@@ -646,6 +646,39 @@ form .text-box {
   border-radius: 0.5em;
   background: #265686; }
 
+[class*="login-form"] .text-box {
+  width: 100%; }
+
+[class*="login-form"] .login-item {
+  margin-top: 0.625em;
+  position: relative; }
+
+[class*="login-form"] .login-action {
+  margin-top: 1.5625em; }
+
+[class*="login-form"] .button-submit {
+  float: left;
+  width: 9em;
+  color: white;
+  background: #8cc8eb;
+  border: solid 0.1em #8cc8eb; }
+
+[class*="login-form"] .button-register {
+  float: right;
+  width: 11em;
+  background: white;
+  border: solid 0.1em #a0b2b8;
+  color: #8cc8eb; }
+
+[class*="login-form"] .forgot-password {
+  font-size: 0.75em;
+  line-height: 1.1666666667em;
+  color: #a0b2b8;
+  margin-top: 4.1666666667em; }
+
+[class*="login-form"] .forgot-password-link {
+  color: #4a90e2; }
+
 #header {
   overflow: hidden; }
   #header .logo {
