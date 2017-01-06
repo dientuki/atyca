@@ -1,0 +1,1 @@
+<p>Enhorabuena <?php echo $user->name; ?>, tu cuenta en <a href="http://atyca.tur.ar">Atyca</a> ha sido activada. Ahora puedes entrar a ver el contenido exclusivo</p>.
