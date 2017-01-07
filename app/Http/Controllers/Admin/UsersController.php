@@ -99,10 +99,12 @@ class UsersController extends Controller
      */
     public function activate(Request $request, $id)
     {
-        $user = User::getEdit($id);
         User::setActivateValue($id, true);
         $request->session()->flash('status', 'Task was successful!');
+
+        $user = User::getEdit($id);
         Mail::to($user->email)->send(new UserActivated($user));
+
         return redirect()->route('admin::dashboard');
     }
 
@@ -128,7 +130,14 @@ class UsersController extends Controller
      */
     public function toogle($id)
     {
+
         User::toogleActivate($id);
+
+        $user = User::getEdit($id);
+
+        if ($user->active == 1) {
+            Mail::to($user->email)->send(new UserActivated($user));
+        }
         //$request->session()->flash('status', 'Task was successful!');
         //return redirect()->route('admin::dashboard');
     }
