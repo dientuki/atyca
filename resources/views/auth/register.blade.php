@@ -7,7 +7,7 @@
             {{ csrf_field() }}
 
             <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
-                <label for="name">Contacto</label>
+                <label class="label"  for="name">Contacto</label>
 
                 <div>
                     <input id="name" type="text" class="text-box" name="name" value="{{ old('name') }}" required autofocus>
@@ -21,7 +21,7 @@
             </div>
 
             <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
-                <label for="business">Empresa</label>
+                <label class="label"  for="business">Empresa</label>
 
                 <div>
                     <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="login-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
-                <label for="fk_country">Pais</label>
+                <label class="label"  for="fk_country">Pais</label>
 
                 <div class="autocomplete-wrapper">
                     <input id="fk_country" type="text" class="text-box" name="fk_country" value="{{ old('fk_country') }}" required autofocus>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="login-item {{ $errors->has('email') ? ' has-error' : '' }}">
-                <label for="email">E-Mail</label>
+                <label class="label"  for="email">E-Mail</label>
 
                 <div >
                     <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
-                <label for="password">Password</label>
+                <label class="label" for="password">Password</label>
 
                 <div>
                     <input id="password" type="password" class="text-box" name="password" required>
@@ -77,7 +77,7 @@
             </div>
 
             <div class="login-item">
-                <label for="password-confirm">Confirm Password</label>
+                <label class="label" for="password-confirm">Confirmar Password</label>
 
                 <div class="col-md-6">
                     <input id="password-confirm" type="password" class="text-box" name="password_confirmation" required>

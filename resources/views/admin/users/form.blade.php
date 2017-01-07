@@ -17,7 +17,7 @@
     <fieldset>
 
       <div class="form-item {{ $errors->has('email') ? ' has-error' : '' }}">
-        {!! Form::label('email', 'Usuario', array('class' => 'form-colaside'))  !!}
+        {!! Form::label('email', 'Usuario', array('class' => 'label form-colaside'))  !!}
 
         <div class="form-colmain">
           {!! Form::text('email', null, array('placeholder' => 'Usuario', 'class'=>'text-box'))  !!}
@@ -29,7 +29,7 @@
       </div>
 
       <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
-        {!! Form::label('business', 'Empresa', array('class' => 'form-colaside'))  !!}
+        {!! Form::label('business', 'Empresa', array('class' => 'label form-colaside'))  !!}
 
         <div class="form-colmain">
           {!! Form::text('business', null, array('placeholder' => 'Empresa', 'class'=>'text-box'))  !!}
@@ -41,7 +41,7 @@
       </div>
 
       <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
-        {!! Form::label('name', 'Contacto', array('class' => 'form-colaside'))  !!}
+        {!! Form::label('name', 'Contacto', array('class' => 'label form-colaside'))  !!}
 
         <div class="form-colmain">
           {!! Form::text('name', null, array('placeholder' => 'Name', 'class'=>'text-box'))  !!}
@@ -53,7 +53,7 @@
       </div>
 
       <div class="form-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
-        {!! Form::label('country', 'Pais', array('class' => 'form-colaside'))  !!}
+        {!! Form::label('country', 'Pais', array('class' => 'label form-colaside'))  !!}
 
         <div class="form-colmain autocomplete-wrapper">
           {!! Form::text('country', null, array('placeholder' => 'Pais', 'class'=>'text-box'))  !!}
@@ -66,7 +66,7 @@
       </div>
 
       <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
-        {!! Form::label('rol', 'Rol', array('class' => 'form-colaside'))  !!}
+        {!! Form::label('rol', 'Rol', array('class' => 'label form-colaside'))  !!}
 
         <div class="form-colmain">
           {!! Form::select('rol', $rol, $user->rol, array('required' => true, 'class'=>'text-box') ) !!}

@@ -8,7 +8,7 @@
   <fieldset>
 
     <div class="form-item {{ $errors->has('email') ? ' has-error' : '' }}">
-      <div class="form-colaside">Usuario</div>
+      <div class="label form-colaside">Usuario</div>
 
       <div class="form-colmain text-box">
         {{ $user->email }}
@@ -16,7 +16,7 @@
     </div>
 
     <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
-      {!! Form::label('business', 'Empresa', array('class' => 'form-colaside'))  !!}
+      {!! Form::label('business', 'Empresa', array('class' => 'label form-colaside'))  !!}
 
       <div class="form-colmain">
         {!! Form::text('business', null, array('placeholder' => 'Empresa', 'class'=>'text-box'))  !!}
@@ -28,7 +28,7 @@
     </div>
 
     <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
-      {!! Form::label('name', 'Contacto', array('class' => 'form-colaside'))  !!}
+      {!! Form::label('name', 'Contacto', array('class' => 'label form-colaside'))  !!}
 
       <div class="form-colmain">
         {!! Form::text('name', null, array('placeholder' => 'Name', 'class'=>'text-box'))  !!}
@@ -40,7 +40,7 @@
     </div>
 
     <div class="form-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
-      {!! Form::label('country', 'Pais', array('class' => 'form-colaside'))  !!}
+      {!! Form::label('country', 'Pais', array('class' => 'label form-colaside'))  !!}
 
       <div class="form-colmain autocomplete-wrapper">
         {!! Form::text('country', null, array('placeholder' => 'Pais', 'class'=>'text-box'))  !!}
@@ -51,6 +51,29 @@
         @endif
       </div>
     </div>
+
+    <div class="form-item {{ $errors->has('password') ? ' has-error' : '' }}">
+      {!! Form::label('password', 'Password', array('class' => 'label form-colaside'))  !!}
+
+      <div class="form-colmain">
+        {!! Form::password('password', array('placeholder' => 'Password', 'class'=>'text-box'))  !!}
+
+        @if ($errors->has('password'))
+          <span class="help-block"><strong>{{ $errors->first('password') }}</strong></span>
+        @endif
+      </div>
+    </div>
+
+    <div class="form-item">
+      {!! Form::label('password-confirm', 'Check Pass', array('class' => 'label form-colaside'))  !!}
+
+      <div class="form-colmain">
+        {!! Form::password('password-confirm', array('placeholder' => 'Confirmar Password', 'class'=>'text-box'))  !!}
+
+      </div>
+    </div>
+
+
 
   </fieldset>
 

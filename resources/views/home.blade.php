@@ -24,7 +24,7 @@
                                           <strong>{{ $errors->first('email') }}</strong>
                                       </span>
             @endif
-            <label for="email">E-Mail</label>
+            <label class="label" for="email">E-Mail</label>
             <input id="email" type="email" name="email" class="text-box" value="{{ old('email') }}" required />
           </div>
 
@@ -37,7 +37,7 @@
             @endif
 
 
-            <label for="password">Contraseña</label>
+            <label class="label" for="password">Contraseña</label>
             <input class="text-box" id="password" type="password" name="password">
           </div>
 

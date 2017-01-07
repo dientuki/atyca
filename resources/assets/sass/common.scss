@@ -43,7 +43,7 @@ body {
 }
 
 form {
-  label {
+  .label {
     display: block;
     font-size: #{$labelfs/$fs}em;
     line-height: (19em/$labelfs);
@@ -54,7 +54,7 @@ form {
     border: solid (1em/$labelfs) #8cc8eb;
     box-sizing: border-box;
     height: (28em/$labelfs);
-    line-height: (19em/$labelfs);
+    line-height: (28em/$labelfs);
     padding: 0 1em;
     margin-top: (5em/$labelfs);
   }
