@@ -597,7 +597,7 @@ body {
   font-family: "Avenir Heavy";
   background: #f2f4f5; }
 
-form label {
+form .label {
   display: block;
   font-size: 0.875em;
   line-height: 1.3571428571em; }
@@ -607,7 +607,7 @@ form .text-box {
   border: solid 0.0714285714em #8cc8eb;
   box-sizing: border-box;
   height: 2em;
-  line-height: 1.3571428571em;
+  line-height: 2em;
   padding: 0 1em;
   margin-top: 0.3571428571em; }
 

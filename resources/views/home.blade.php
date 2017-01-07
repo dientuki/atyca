@@ -10,7 +10,7 @@
         </div>
 
         <a class="user-info-link" href="{{ route('private::tarifario') }}" title="Ver tarifarios">Ver tarifarios</a>
-        <a class="user-info-link hidden" href="{{ route('user::logout') }}" title="Editar mis datos">Editar mis datos</a>
+        <a class="user-info-link" href="{{ route('private::edit') }}" title="Editar mis datos">Editar mis datos</a>
         <a class="button-logout" href="{{ route('user::logout') }}" title="Salir">Salir</a>
       </div>
 
@@ -24,7 +24,7 @@
                                           <strong>{{ $errors->first('email') }}</strong>
                                       </span>
             @endif
-            <label for="email">E-Mail</label>
+            <label class="label" for="email">E-Mail</label>
             <input id="email" type="email" name="email" class="text-box" value="{{ old('email') }}" required />
           </div>
 
@@ -37,7 +37,7 @@
             @endif
 
 
-            <label for="password">Contraseña</label>
+            <label class="label" for="password">Contraseña</label>
             <input class="text-box" id="password" type="password" name="password">
           </div>
 

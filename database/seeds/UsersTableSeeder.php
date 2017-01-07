@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'Atyca',
             'email' => 'info@atyca.tur.ar',
-            'password' => bcrypt('5UrEse'),
+            'password' => '5UrEse',
             'fk_country' => 13,
             'business' => 'Atyca',
             'active' => true,
@@ -24,10 +24,10 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'Juan Farias',
             'email' => 'dientuki@gmail.com',
-            'password' => bcrypt('saludos'),
+            'password' => 'saludos',
             'fk_country' => 13,
             'business' => 'Turimar',
-            'active' => false,
+            'active' => true,
             'rol' => 0
         ]);
 

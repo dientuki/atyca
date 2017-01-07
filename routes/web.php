@@ -20,13 +20,17 @@ Route::get('/', function () {
     return view('home')->with('selected','home');
 })->name('home');*/
 
-Route::group(['prefix' => 'private',
+Route::group(['namespace' => 'UserLogged',
+              'prefix' => 'private',
               'middleware' => ['auth'],
               'as' => 'private::'], function() {
 
     Route::get('/tarifario.html', function () {
         return view('private.tarifario')->with('selected','home');
     })->name('tarifario');
+
+    Route::get('mi-perfil.html', ['uses' => 'UserController@edit', 'as' => 'edit']);
+    Route::match(['put', 'patch'], 'update-profile/{user}', ['uses' => 'UserController@update', 'as' => 'update']);
 
 });
 

@@ -10,7 +10,7 @@
             <div class="login-item">Favor de loguearse antes de entrar</div>
 
             <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
-                <label for="email">E-Mail Address</label>
+                <label class="label"  for="email">E-Mail Address</label>
 
                 <div class="col-md-6">
                     <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required autofocus>
@@ -24,7 +24,7 @@
             </div>
 
             <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
-                <label for="password" class="col-md-4 control-label">Password</label>
+                <label class="label"  for="password" class="col-md-4 control-label">Password</label>
 
                 <div class="col-md-6">
                     <input id="password" type="password" class="text-box" name="password" required>
