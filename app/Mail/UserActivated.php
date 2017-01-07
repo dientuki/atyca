@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class User2Activate extends Mailable
+class UserActivated extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -27,7 +27,7 @@ class User2Activate extends Mailable
     public function __construct(User $user)
     {
         $this->user = $user;
-        $this->subject(trans('email.user2Activate.subject'));
+        $this->subject(trans('email.userActivated.subject'));
     }
 
     /**
@@ -37,6 +37,6 @@ class User2Activate extends Mailable
      */
     public function build()
     {
-        return $this->view('emails/user2activate')->with(['user' => $this->user]);
+        return $this->view('emails/user-activated')->with(['user' => $this->user]);
     }
 }

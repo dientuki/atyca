@@ -27,6 +27,7 @@ class UserRegistered extends Mailable
     public function __construct(User $user)
     {
         $this->user = $user;
+        $this->subject(trans('email.userRegistered.subject'));
     }
 
     /**
