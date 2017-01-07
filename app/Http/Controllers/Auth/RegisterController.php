@@ -85,7 +85,7 @@ class RegisterController extends Controller
             'business' => $data['business'],
             'fk_country' => Country::getId($data['fk_country']),
             'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+            'password' => $data['password'],
         ]);
     }
 

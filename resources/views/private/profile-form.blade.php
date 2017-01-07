@@ -65,10 +65,10 @@
     </div>
 
     <div class="form-item">
-      {!! Form::label('password-confirm', 'Check Pass', array('class' => 'label form-colaside'))  !!}
+      {!! Form::label('password_confirmation', 'Check Pass', array('class' => 'label form-colaside'))  !!}
 
       <div class="form-colmain">
-        {!! Form::password('password-confirm', array('placeholder' => 'Confirmar Password', 'class'=>'text-box'))  !!}
+        {!! Form::password('password_confirmation', array('placeholder' => 'Confirmar Password', 'class'=>'text-box'))  !!}
 
       </div>
     </div>

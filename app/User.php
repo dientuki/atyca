@@ -35,6 +35,17 @@ class User extends Authenticatable
         'password', 'remember_token'
     ];
 
+    /**
+     * Set the user's password.
+     *
+     * @param  string  $value
+     * @return void
+     */
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = bcrypt($value);
+    }
+
     static public function getEdit($id){
         return User::select('users.id as id', 'name', 'email', 'business', 'fk_country', 'country', 'active', 'rol')
             ->join('countries', 'countries.id', '=', 'users.fk_country')

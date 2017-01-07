@@ -10,7 +10,7 @@
         </div>
 
         <a class="user-info-link" href="{{ route('private::tarifario') }}" title="Ver tarifarios">Ver tarifarios</a>
-        <a class="user-info-link hidden" href="{{ route('user::logout') }}" title="Editar mis datos">Editar mis datos</a>
+        <a class="user-info-link" href="{{ route('private::edit') }}" title="Editar mis datos">Editar mis datos</a>
         <a class="button-logout" href="{{ route('user::logout') }}" title="Salir">Salir</a>
       </div>
 

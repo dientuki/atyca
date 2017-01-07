@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\UserLogged;
 
+use App\Http\Requests\EditProfile;
 use App\User;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
@@ -33,7 +33,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(EditProfile $request)
     {
         $user = User::getEdit(Auth::user()->id);
 

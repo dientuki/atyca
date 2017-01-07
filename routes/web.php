@@ -30,7 +30,7 @@ Route::group(['namespace' => 'UserLogged',
     })->name('tarifario');
 
     Route::get('mi-perfil.html', ['uses' => 'UserController@edit', 'as' => 'edit']);
-    Route::match(['put', 'patch'], 'update-profile', ['uses' => 'UserController@update', 'as' => 'update']);
+    Route::match(['put', 'patch'], 'update-profile/{user}', ['uses' => 'UserController@update', 'as' => 'update']);
 
 });
 
