@@ -27,6 +27,7 @@ class UserActivated extends Mailable
     public function __construct(User $user)
     {
         $this->user = $user;
+        $this->subject(trans('email.userActivated.subject'));
     }
 
     /**
