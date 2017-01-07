@@ -34,11 +34,25 @@
                 </div>
             </div>
 
+            <div class="form-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
+                <label class="label"  for="country">Pais</label>
+
+                <div class="form-colmain autocomplete-wrapper">
+                    <input id="country" type="text" class="text-box" name="country" value="{{ old('country') }}" required autofocus>
+                    <input id="fk_country" type="hidden" name="fk_country" value="{{ old('fk_country') }}">
+
+                    @if ($errors->has('country'))
+                        <span class="help-block"><strong>{{ $errors->first('country') }}</strong></span>
+                    @endif
+                </div>
+            </div>
+
+
             <div class="login-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
-                <label class="label"  for="fk_country">Pais</label>
+
 
                 <div class="autocomplete-wrapper">
-                    <input id="fk_country" type="text" class="text-box" name="fk_country" value="{{ old('fk_country') }}" required autofocus>
+
 
                     @if ($errors->has('name'))
                         <span class="help-block">
