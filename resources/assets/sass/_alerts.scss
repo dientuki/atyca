@@ -27,12 +27,17 @@
 
 .alert-close {
   position: absolute;
-  right: 0;
-  top: 1em;
+  right: (15em/$alertfs);
+  top: (15em/$alertfs);
   width: 1em;
   height: 1em;
-  background: red;
+  background: url(../images/icon_help_close.png) no-repeat center center;
   cursor:pointer;
+  opacity: .5;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .alert-success {
