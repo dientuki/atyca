@@ -40,6 +40,8 @@ class UsersController extends Controller
 
         User::create($data);
 
+        Alert::success(trans('users.crud.added'))->flash();
+
         return redirect()->route('admin::dashboard');
     }
 
@@ -75,6 +77,8 @@ class UsersController extends Controller
 
         $user->fill($data)->save();
 
+        Alert::success(trans('users.crud.updated'))->flash();
+
         return redirect()->route('admin::dashboard');
     }
 
@@ -87,6 +91,7 @@ class UsersController extends Controller
     public function destroy($id)
     {
         User::destroy($id);
+        Alert::success(trans('users.crud.deleted'))->flash();
         return redirect()->route('admin::dashboard');
     }
 

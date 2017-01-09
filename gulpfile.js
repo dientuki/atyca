@@ -37,14 +37,16 @@ elixir(mix => {
 
     'public/css/admin.css')
 
-  mix.webpack(['modules/Lazyload.js',
+  mix.webpack(['modules/Autocomplete.js', 'modules/Alert.js', 'modules/Lazyload.js',
              'modules/Navigation.js',
              'modules/Wallop.js',
-    'modules/axios.js',
-      'modules/type-ahead.js',
+              'modules/axios.js',
+    'modules/type-ahead.js',
               'app.js'], "public/js/app.js")
 
-  mix.webpack(['modules/axios.js',
+  mix.webpack(['modules/Autocomplete.js',
+    'modules/Alert.js',
+    'modules/axios.js',
     'modules/type-ahead.js',
     'backend.js'], "public/js/backend.js")
 

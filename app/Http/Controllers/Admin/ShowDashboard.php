@@ -19,11 +19,8 @@ class ShowDashboard extends Controller
   public function __invoke(Request $request)
   {
     $users = User::getAllUsers();
-    $status = $request->session()->get('status');
     $selected = 'dashboard';
     $rol = $this->rol;
-    Alert::success('You have successfully logged in')->flash();
-    Alert::success('You have successfully asdfasdflogged in')->flash();
-    return view('admin/dashboard', compact('users', 'status', 'selected', 'rol'));
+    return view('admin/dashboard', compact('users', 'selected', 'rol'));
   }
 }

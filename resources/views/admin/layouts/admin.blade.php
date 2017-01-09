@@ -5,7 +5,7 @@
   </head>
 
   <body >
-    @include ('admin/widgets/alerts')
+    @include ('widgets/alerts')
 
     @include ('admin/main-parts/header')
 

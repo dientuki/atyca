@@ -1,27 +1,8 @@
-import axios from 'axios';
-import TypeAhead from 'type-ahead';
+import Autocomplete from "./modules/Autocomplete";
+import Alert from "./modules/Alert";
 
-let country = document.getElementById('country'),
-    fk_country = document.getElementById('fk_country');
-
-if (country != null){
-  let t = new TypeAhead(country);
-  t.getItemValue = function(item) {
-    //this.element.setAttribute("value", item.id)
-    fk_country.setAttribute("value", item.id);
-    return item.value;
-  };
-
-  t.getCandidates = function (callback) {
-    axios.get('/api/countries?fk_country=' + this.query )
-        .then(function (response) {
-          callback(response.data);
-        }).catch(function (error) {
-          console.log(error);
-        });
-  };
-}
-
+new Autocomplete();
+new Alert();
 
 let c = document.querySelectorAll('.ios8-switch');
 
