@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Prologue\Alerts\Facades\Alert;
 
 class ShowDashboard extends Controller
 {
@@ -18,9 +19,8 @@ class ShowDashboard extends Controller
   public function __invoke(Request $request)
   {
     $users = User::getAllUsers();
-    $status = $request->session()->get('status');
     $selected = 'dashboard';
     $rol = $this->rol;
-    return view('admin/dashboard', compact('users', 'status', 'selected', 'rol'));
+    return view('admin/dashboard', compact('users', 'selected', 'rol'));
   }
 }

@@ -41,6 +41,8 @@ class UserController extends Controller
 
         $user->fill($data)->save();
 
+        Alert::success(trans('users.loggued.updated'))->flash();
+
         return redirect()->route('private::edit');
     }
 
@@ -53,6 +55,7 @@ class UserController extends Controller
     public function destroy()
     {
         User::destroy(Auth::user()->id);
+        Alert::success(trans('users.loggued.deleted'))->flash();
         return redirect()->route('home');
     }
 }

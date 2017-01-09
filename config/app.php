@@ -179,6 +179,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,
+        'Prologue\Alerts\AlertsServiceProvider',
 
     ],
 
@@ -230,6 +231,7 @@ return [
 
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Alert' => 'Prologue\Alerts\Facades\Alert',
 
     ],
 

@@ -40,6 +40,8 @@ class UsersController extends Controller
 
         User::create($data);
 
+        Alert::success(trans('users.crud.added'))->flash();
+
         return redirect()->route('admin::dashboard');
     }
 
@@ -75,6 +77,8 @@ class UsersController extends Controller
 
         $user->fill($data)->save();
 
+        Alert::success(trans('users.crud.updated'))->flash();
+
         return redirect()->route('admin::dashboard');
     }
 
@@ -87,6 +91,7 @@ class UsersController extends Controller
     public function destroy($id)
     {
         User::destroy($id);
+        Alert::success(trans('users.crud.deleted'))->flash();
         return redirect()->route('admin::dashboard');
     }
 
@@ -100,7 +105,7 @@ class UsersController extends Controller
     public function activate(Request $request, $id)
     {
         User::setActivateValue($id, true);
-        $request->session()->flash('status', 'Task was successful!');
+        Alert::success(trans('users.activate.success'))->flash();
 
         $user = User::getEdit($id);
         Mail::to($user->email)->send(new UserActivated($user));
@@ -118,7 +123,7 @@ class UsersController extends Controller
     public function deactivate(Request $request, $id)
     {
         User::setActivateValue($id, false);
-        $request->session()->flash('status', 'Task was successful!');
+        trans('users.deactivate.success');
         return redirect()->route('admin::dashboard');
     }
 
@@ -138,7 +143,5 @@ class UsersController extends Controller
         if ($user->active == 1) {
             Mail::to($user->email)->send(new UserActivated($user));
         }
-        //$request->session()->flash('status', 'Task was successful!');
-        //return redirect()->route('admin::dashboard');
     }
 }

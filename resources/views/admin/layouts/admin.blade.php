@@ -5,6 +5,8 @@
   </head>
 
   <body >
+    @include ('widgets/alerts')
+
     @include ('admin/main-parts/header')
 
     <main id="main" class="main-content">

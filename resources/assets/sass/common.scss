@@ -60,10 +60,20 @@ form {
   }
 }
 
+@import 'alerts';
+
 .afterload {
   background: url(../images/logo-atyca.svg) no-repeat center center #336699;
   background-size:60% 40%;
   text-indent: -999em;
+}
+
+.alert-wrapper {
+  position: fixed;
+  top: .5em;
+  left: .5em;
+  right: .5em;
+  z-index: 999;
 }
 
 [class*="button"] {

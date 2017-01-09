@@ -2,14 +2,7 @@
 
 @section ('content')
 
-  @if (isset($status))
-    <div>
-      {{ $status }}
-    </div>
-  @endif
-
-
-    @if (isset($users))
+  @if (isset($users))
     <table class="list-table" id="list-table">
       <thead class="hidden">
       <tr>
