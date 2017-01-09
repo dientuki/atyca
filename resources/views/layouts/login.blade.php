@@ -5,6 +5,7 @@
   </head>
 
   <body class="login-page">
+    @include ('widgets/alerts')
     @include ('main-parts/header')
 
     <div class="main-content">

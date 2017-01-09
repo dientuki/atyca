@@ -44,7 +44,7 @@ class UserController extends Controller
 
         Alert::success(trans('users.loggued.updated'))->flash();
 
-        return redirect()->route('private::edit');
+        return redirect()->route('home');
     }
 
     /**
