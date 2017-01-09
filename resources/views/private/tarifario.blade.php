@@ -15,7 +15,6 @@
              title="Circuitos por Argentina" />
       </a>
       <a class="tariff-link" target="_blank" href="{{ asset('files/promos-bue.pdf')}}" title="Promociones Buenos Aires">Promociones Buenos Aires</a>
-      <a class="tariff-link" target="_blank" href="{{ asset('files/cenas-bue.pdf')}}" title="Cenas fin de año">Cenas Fin de Año- Buenos Aires</a>
    
     </div>
     <div class="tariff-box">
