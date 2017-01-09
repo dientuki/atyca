@@ -83,7 +83,7 @@
     <input class="form-action-element button-submit" type="submit" value="{{ trans('buttons.forms.' . $action)  }}">
 
     @if ($action == 'update')
-      <a class="form-action-element form-delete-acount" href="{{ route('admin::users::destroy', $user->id) }}" title="Borrar cuenta">Borrar cuenta</a>
+      <a class="form-action-element form-delete-acount" href="{{ route('private::destroy') }}" title="Borrar cuenta">Borrar cuenta</a>
     @endif
   </div>
   {!! Form::close() !!}

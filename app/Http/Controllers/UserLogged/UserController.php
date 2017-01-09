@@ -56,6 +56,7 @@ class UserController extends Controller
     public function destroy()
     {
         User::destroy(Auth::user()->id);
+        Auth::logout();
         Alert::success(trans('users.loggued.deleted'))->flash();
         return redirect()->route('home');
     }

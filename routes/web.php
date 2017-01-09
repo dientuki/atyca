@@ -32,6 +32,7 @@ Route::group(['namespace' => 'UserLogged',
     Route::get('mi-perfil.html', ['uses' => 'UserController@edit', 'as' => 'edit']);
     Route::match(['put', 'patch'], 'update-profile/{user}', ['uses' => 'UserController@update', 'as' => 'update']);
 
+    Route::get('destroy', ['uses' => 'UserController@destroy', 'as' => 'destroy']);
 });
 
 Route::group(['prefix' => 'api'], function() {
