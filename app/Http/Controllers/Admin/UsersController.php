@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Requests\StoreUser;
+use App\Http\Requests\UpdateUser;
 use App\Mail\UserActivated;
 use App\User;
 use Illuminate\Http\Request;
@@ -35,7 +37,7 @@ class UsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUser $request)
     {
         $data = $request->all();
 
@@ -70,7 +72,7 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateUser $request, $id)
     {
         $user = User::getEdit($id);
 

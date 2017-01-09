@@ -17,10 +17,10 @@
     <fieldset>
 
       <div class="form-item {{ $errors->has('email') ? ' has-error' : '' }}">
-        {!! Form::label('email', 'Usuario', array('class' => 'label form-colaside'))  !!}
+        {!! Form::email('email', 'Email', array('class' => 'label form-colaside'))  !!}
 
         <div class="form-colmain">
-          {!! Form::text('email', null, array('placeholder' => 'Usuario', 'class'=>'text-box'))  !!}
+          {!! Form::text('email', null, array('placeholder' => 'Email', 'class'=>'text-box'))  !!}
 
           @if ($errors->has('email'))
             <span class="help-block"><strong>{{ $errors->first('email') }}</strong></span>
@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
+      <div class="form-item {{ $errors->has('business') ? ' has-error' : '' }}">
         {!! Form::label('business', 'Empresa', array('class' => 'label form-colaside'))  !!}
 
         <div class="form-colmain">
