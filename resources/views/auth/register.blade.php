@@ -38,7 +38,7 @@
                 <label class="label"  for="country">Pais</label>
 
                 <div class="form-colmain autocomplete-wrapper">
-                    <input id="country" type="text" class="text-box" name="country" value="{{ old('country') }}" required autofocus>
+                    <input id="country" type="text" class="text-box" name="country" value="{{ old('country') }}" required>
                     <input id="fk_country" type="hidden" name="fk_country" value="{{ old('fk_country') }}">
 
                     @if ($errors->has('country'))
