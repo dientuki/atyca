@@ -74,6 +74,7 @@ class UsersController extends Controller
      */
     public function update(UpdateUser $request, $id)
     {
+        dd('aca');
         $user = User::getEdit($id);
 
         $data = $request->all();
