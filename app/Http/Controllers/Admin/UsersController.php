@@ -7,6 +7,7 @@ use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
+use Prologue\Alerts\Facades\Alert;
 
 class UsersController extends Controller
 {

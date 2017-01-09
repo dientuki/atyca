@@ -83,7 +83,7 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'business' => $data['business'],
-            'fk_country' => Country::getId($data['fk_country']),
+            'fk_country' => $data['fk_country'],
             'email' => $data['email'],
             'password' => $data['password'],
         ]);
