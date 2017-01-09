@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Prologue\Alerts\Facades\Alert;
 
 class ShowDashboard extends Controller
 {
@@ -21,6 +22,8 @@ class ShowDashboard extends Controller
     $status = $request->session()->get('status');
     $selected = 'dashboard';
     $rol = $this->rol;
+    Alert::success('You have successfully logged in')->flash();
+    Alert::success('You have successfully asdfasdflogged in')->flash();
     return view('admin/dashboard', compact('users', 'status', 'selected', 'rol'));
   }
 }
