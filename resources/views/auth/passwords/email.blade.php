@@ -1,6 +1,5 @@
 @extends('layouts.login')
 
-<!-- Main Content -->
 @section('content')
     <div class="login-box block-aside-center">
 
@@ -14,7 +13,7 @@
             <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
                 <label class="label"  for="email">E-Mail</label>
 
-                <div class="col-md-6">
+                <div>
                     <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required autofocus>
 
                     @if ($errors->has('email'))
