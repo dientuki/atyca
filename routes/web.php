@@ -89,7 +89,7 @@ Route::group(['namespace' => 'Admin',
     //Dashboard
     Route::get('dashboard.html', ['uses' => 'ShowDashboard', 'as' => 'dashboard']);
 
-    //Spideys
+    //Users
     Route::group(['prefix' => 'users',
         'as' => 'users::'], function(){
 
@@ -108,4 +108,3 @@ Route::group(['namespace' => 'Admin',
     });
 
 });
-

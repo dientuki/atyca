@@ -6,7 +6,6 @@ use App\Http\Requests\StoreUser;
 use App\Http\Requests\UpdateUser;
 use App\Mail\UserActivated;
 use App\User;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use Prologue\Alerts\Facades\Alert;
@@ -39,6 +38,7 @@ class UsersController extends Controller
      */
     public function store(StoreUser $request)
     {
+
         $data = $request->all();
 
         User::create($data);
@@ -74,7 +74,6 @@ class UsersController extends Controller
      */
     public function update(UpdateUser $request, $id)
     {
-        dd('aca');
         $user = User::getEdit($id);
 
         $data = $request->all();

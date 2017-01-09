@@ -15,7 +15,7 @@
              title="Circuitos por Argentina" />
       </a>
       <a class="tariff-link" target="_blank" href="{{ asset('files/promos-bue.pdf')}}" title="Promociones Buenos Aires">Promociones Buenos Aires</a>
-   
+
     </div>
     <div class="tariff-box">
       <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/AtycaPaquetes.rtf')}}">
