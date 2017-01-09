@@ -4,11 +4,11 @@ export default class Alert {
     }
 
     init() {
-        let alerts = document.querySelectorAll('.alert');
+        let alerts = document.querySelectorAll('.alert-animation');
 
         for(var i = 0, l = alerts.length; i < l; i++) {
-            alerts.querySelector('.close').addEventListener('click', () => {
-
+            alerts[i].querySelector('.alert-close').addEventListener('click', function() {
+                this.parentNode.parentNode.parentNode.remove();
             });
         }
     }

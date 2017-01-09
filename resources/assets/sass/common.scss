@@ -60,6 +60,8 @@ form {
   }
 }
 
+@import 'alerts';
+
 .afterload {
   background: url(../images/logo-atyca.svg) no-repeat center center #336699;
   background-size:60% 40%;
@@ -72,43 +74,6 @@ form {
   left: .5em;
   right: .5em;
   z-index: 999;
-}
-
-.alert {
-  padding: (15em/$alertfs);
-  border: (1em/$alertfs) solid transparent;
-  border-radius: (4em/$alertfs);
-  font-family: 'Avenir Medium';
-  font-size: #{$alertfs/$fs}em;
-  margin-top: 1em;
-
-  &:first-of-type {
-    margin-top: 0;
-  }
-}
-
-.alert-success {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-}
-
-.alert-info {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-}
-
-.alert-warning {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-}
-
-.alert-danger {
-  color: #a94442;
-  background-color: #f2dede;
-  border-color: #ebccd1;
 }
 
 [class*="button"] {

@@ -1,0 +1,80 @@
+@import 'mixin';
+@import 'variables';
+
+.alert {
+  padding: (15em/$alertfs);
+  border: (1em/$alertfs) solid transparent;
+  border-radius: (4em/$alertfs);
+  font-family: 'Avenir Medium';
+  font-size: #{$alertfs/$fs}em;
+  position: relative;
+}
+
+.alert-wrapper {
+  .alert-fix {
+    padding-top: 1em;
+  }
+
+  .alert-animation {
+
+    &:first-of-type {
+      .alert-fix {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.alert-close {
+  position: absolute;
+  right: 0;
+  top: 1em;
+  width: 1em;
+  height: 1em;
+  background: red;
+  cursor:pointer;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
