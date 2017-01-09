@@ -133,6 +133,10 @@ form {
   .form-item {
     margin-top: (10em/$fs);
     position: relative;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 
   .form-action {
@@ -178,10 +182,6 @@ form {
 
   .form-item {
     display: flex;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
 
     .form-colaside {
       flex: 1 1 0%;

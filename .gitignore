@@ -2,6 +2,7 @@
 /public/storage
 /public/css
 /public/js
+public/rev-manifest.json
 /vendor
 /.idea
 Homestead.json

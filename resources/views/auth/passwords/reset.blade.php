@@ -8,11 +8,11 @@
 
             <input type="hidden" name="token" value="{{ $token }}">
 
-            <div class="login-item">Reset Password</div>
+            <div class="form-item">Reset Password</div>
 
             {{ session('status') }}
 
-            <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
+            <div class="form-item{{ $errors->has('email') ? ' has-error' : '' }}">
                 <label class="label"  for="email">E-Mail</label>
 
                 <div>
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
+            <div class="form-item{{ $errors->has('password') ? ' has-error' : '' }}">
                 <label class="label"  for="password">Password</label>
 
                 <div>
@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="login-item{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+            <div class="form-item{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
                 <label class="label"  for="password-confirm">Confirm Password</label>
                 <div>
                     <input id="password-confirm" type="password" class="text-box" name="password_confirmation" required>
@@ -53,7 +53,7 @@
                 </div>
             </div>
 
-            <div class="login-action clearfix">
+            <div class="form-action clearfix">
                 <input class="button-submit" type="submit" value="Reestablecer">
             </div>
 

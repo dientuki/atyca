@@ -7,7 +7,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "laravel-elixir": "^6.0.0-9",
-    "laravel-elixir-rollup-official": "^1.1.0"
+    "laravel-elixir-rollup-official": "^1.1.0",
+    "laravel-elixir-webpack-official": "^1.0.10"
   },
   "dependencies": {
     "autocompleter": "^1.0.13",

@@ -18,7 +18,7 @@
       <form class="login-form-arrow" role="form" method="POST" action="{{ route('user::login.post') }}">
         {{ csrf_field() }}
         <fieldset>
-          <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
+          <div class="form-item{{ $errors->has('email') ? ' has-error' : '' }}">
             @if ($errors->has('email'))
               <span class="help-block">
                                           <strong>{{ $errors->first('email') }}</strong>
@@ -28,7 +28,7 @@
             <input id="email" type="email" name="email" class="text-box" value="{{ old('email') }}" required />
           </div>
 
-          <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
+          <div class="form-item{{ $errors->has('password') ? ' has-error' : '' }}">
 
             @if ($errors->has('password'))
               <span class="help-block">
@@ -42,7 +42,7 @@
           </div>
 
         </fieldset>
-        <div class="login-action clearfix">
+        <div class="form-action clearfix">
           <input class="button-submit" type="submit" value="Ingresar">
           <a class="button-register" href="{{ route('user::register') }}" title="Registrarse">Registrarse</a>
         </div>

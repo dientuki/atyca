@@ -7,9 +7,9 @@
         <form class="login-form" role="form" method="POST" action="{{ route('user::login.post') }}">
             {{ csrf_field() }}
 
-            <div class="login-item">Favor de loguearse antes de entrar</div>
+            <div class="form-item">Favor de loguearse antes de entrar</div>
 
-            <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
+            <div class="form-item{{ $errors->has('email') ? ' has-error' : '' }}">
                 <label class="label"  for="email">E-Mail Address</label>
 
                 <div>
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
+            <div class="form-item{{ $errors->has('password') ? ' has-error' : '' }}">
                 <label class="label"  for="password" class="col-md-4 control-label">Password</label>
 
                 <div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="login-action clearfix">
+            <div class="form-action clearfix">
                 <input class="button-submit" type="submit" value="Ingresar">
             </div>
 
