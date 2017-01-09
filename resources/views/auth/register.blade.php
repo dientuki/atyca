@@ -6,7 +6,7 @@
         <form class="login-form" role="form" method="POST" action="{{ route('user::register.post') }}">
             {{ csrf_field() }}
 
-            <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
+            <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
                 <label class="label"  for="name">Contacto</label>
 
                 <div>
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            <div class="login-item {{ $errors->has('name') ? ' has-error' : '' }}">
+            <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
                 <label class="label"  for="business">Empresa</label>
 
                 <div>
@@ -48,7 +48,7 @@
             </div>
 
 
-            <div class="login-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
+            <div class="form-item autocomplete {{ $errors->has('name') ? ' has-error' : '' }}">
 
 
                 <div class="autocomplete-wrapper">
@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="login-item {{ $errors->has('email') ? ' has-error' : '' }}">
+            <div class="form-item {{ $errors->has('email') ? ' has-error' : '' }}">
                 <label class="label"  for="email">E-Mail</label>
 
                 <div >
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="login-item{{ $errors->has('password') ? ' has-error' : '' }}">
+            <div class="form-item{{ $errors->has('password') ? ' has-error' : '' }}">
                 <label class="label" for="password">Password</label>
 
                 <div>
@@ -90,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="login-item">
+            <div class="form-item">
                 <label class="label" for="password-confirm">Confirmar Password</label>
 
                 <div class="col-md-6">

@@ -6,11 +6,11 @@
         <form class="login-form" role="form" method="POST" action="{{ route('user::password.email') }}">
             {{ csrf_field() }}
 
-            <div class="login-item">Reset Password</div>
+            <div class="form-item">Reset Password</div>
 
             {{ session('status') }}
 
-            <div class="login-item{{ $errors->has('email') ? ' has-error' : '' }}">
+            <div class="form-item{{ $errors->has('email') ? ' has-error' : '' }}">
                 <label class="label"  for="email">E-Mail</label>
 
                 <div>
