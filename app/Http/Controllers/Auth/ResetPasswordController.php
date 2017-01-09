@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Prologue\Alerts\Facades\Alert;
 
 class ResetPasswordController extends Controller
 {
@@ -38,6 +39,7 @@ class ResetPasswordController extends Controller
      */
     public function redirectPath()
     {
+        Alert::success(trans('passwords.reset'))->flash();
         return property_exists($this, 'redirectTo') ? $this->redirectTo : '/';
     }
 
