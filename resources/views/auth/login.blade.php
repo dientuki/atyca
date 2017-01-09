@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="login-action clearfix">
+            <div class="form-action clearfix">
                 <input class="button-submit" type="submit" value="Ingresar">
             </div>
 

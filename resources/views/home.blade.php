@@ -42,7 +42,7 @@
           </div>
 
         </fieldset>
-        <div class="login-action clearfix">
+        <div class="form-action clearfix">
           <input class="button-submit" type="submit" value="Ingresar">
           <a class="button-register" href="{{ route('user::register') }}" title="Registrarse">Registrarse</a>
         </div>
