@@ -5,7 +5,7 @@
     <h6 class="visuallyhidden">Tarifario</h6>
 
     <div class="tariff-box">
-      <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/AtycaCircuitosTarifas.rtf')}}">>
+      <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Circuitos-Argentina.rtf')}}">>
         <div class="tariff-title">
           <span class="big">Circuitos</span>
           <span class="small">por Argentina</span>
@@ -15,10 +15,12 @@
              title="Circuitos por Argentina" />
       </a>
       <a class="tariff-link" target="_blank" href="{{ asset('files/promos-bue.pdf')}}" title="Promociones Buenos Aires">Promociones Buenos Aires</a>
+      <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-glaciares.pdf')}}" title="Expedición Glaciares">Expedición Glaciares</a>
+      <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-vinos.pdf')}}" title="Catedrales del vino">Catedrales del vino</a>
 
     </div>
     <div class="tariff-box">
-      <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/AtycaPaquetes.rtf')}}">
+      <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Hoteles-Servicios.docx')}}">
         <div class="tariff-title">
           <span class="small">Hoteles</span>
           <span class="small">Traslados</span>
@@ -29,6 +31,9 @@
              title="Hoteles, traslados, excursiones">
       </a>
       <a class="tariff-link" target="_blank" href="{{ asset('files/promos-ush.pdf')}}" title="Promociones Usuhaia">Promociones Usuhaia</a>
+       <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-adventure.pdf')}}" title="Usuhaia adventure">Usuhaia adventure</a>
+              <a class="tariff-link" target="_blank" href="{{ asset('files/Politica-menores.docx')}}" title="Política de menores">Política de menores</a>
+
     </div>
   </section>
   <div class="block-aside-right info-box">
