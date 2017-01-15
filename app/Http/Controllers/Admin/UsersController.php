@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateUser;
 use App\Mail\UserActivated;
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Prologue\Alerts\Facades\Alert;
 
@@ -93,8 +94,13 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        User::destroy($id);
-        Alert::success(trans('users.crud.deleted'))->flash();
+        if (Auth::user()->id == $id){
+            Alert::error(trans('validation.user.delete-my-user'))->flash();
+        } else {
+            User::destroy($id);
+            Alert::success(trans('users.crud.deleted'))->flash();
+        }
+
         return redirect()->route('admin::dashboard');
     }
 

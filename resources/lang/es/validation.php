@@ -97,10 +97,8 @@ return [
     |
     */
 
-    'custom'               => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
-        ],
+    'user' => [
+        'delete-my-user' => 'No puedes borrar tu propio usuario',
     ],
 
     /*
