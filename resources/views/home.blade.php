@@ -10,7 +10,16 @@
         </div>
 
         <a class="user-info-link" href="{{ route('private::tarifario') }}" title="Ver tarifarios">Ver tarifarios</a>
-        <a class="user-info-link" href="{{ route('private::edit') }}" title="Editar mis datos">Editar mis datos</a>
+
+        @if ( Auth::user()->rol == 1)
+          <a class="user-info-link" href="{{ route('admin::dashboard') }}" title="Panel de administracion">Panel de administracion</a>
+          @else
+          <a class="user-info-link" href="{{ route('private::edit') }}" title="Editar mis datos">Editar mis datos</a>
+        @endif
+
+
+
+
         <a class="button-logout" href="{{ route('user::logout') }}" title="Salir">Salir</a>
       </div>
 
