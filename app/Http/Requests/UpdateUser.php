@@ -27,7 +27,8 @@ class UpdateUser extends FormRequest
             'name' => 'required|max:255',
             'business' => 'required|max:255',
             'fk_country' => 'required',
-            'email' => 'required|email|max:255'
+            'email' => 'required|email|max:255',
+            'password' => 'min:6|confirmed'
         ];
     }
 }

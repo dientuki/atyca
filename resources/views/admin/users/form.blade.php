@@ -70,7 +70,7 @@
         </div>
       </div>
 
-      <div class="form-item {{ $errors->has('name') ? ' has-error' : '' }}">
+      <div class="form-item {{ $errors->has('rol') ? ' has-error' : '' }}">
         {!! Form::label('rol', 'Rol', array('class' => 'label form-colaside'))  !!}
 
         <div class="form-colmain">
@@ -81,6 +81,30 @@
           @endif
         </div>
       </div>
+
+      @if ($action == 'update' && Auth::user()->id == $user->id)
+        <div class="form-item {{ $errors->has('password') ? ' has-error' : '' }}">
+          {!! Form::label('password', 'Password', array('class' => 'label form-colaside'))  !!}
+
+          <div class="form-colmain">
+            {!! Form::password('password', array('placeholder' => 'Password', 'class'=>'text-box'))  !!}
+
+            @if ($errors->has('password'))
+              <span class="help-block"><strong>{{ $errors->first('password') }}</strong></span>
+            @endif
+          </div>
+        </div>
+
+        <div class="form-item">
+          {!! Form::label('password_confirmation', 'Check Pass', array('class' => 'label form-colaside'))  !!}
+
+          <div class="form-colmain">
+            {!! Form::password('password_confirmation', array('placeholder' => 'Confirmar Password', 'class'=>'text-box'))  !!}
+
+          </div>
+        </div>
+
+      @endif
     </fieldset>
 
 
