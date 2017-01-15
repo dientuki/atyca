@@ -111,7 +111,7 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function activate(Request $request, $id)
+    public function activate($id)
     {
         User::setActivateValue($id, true);
         Alert::success(trans('users.activate.success'))->flash();
@@ -129,7 +129,7 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function deactivate(Request $request, $id)
+    public function deactivate($id)
     {
         User::setActivateValue($id, false);
         trans('users.deactivate.success');
