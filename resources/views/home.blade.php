@@ -41,7 +41,7 @@
 
             @if ($errors->has('password'))
               <span class="help-block">
-                                          <strong>{{ $errors->first('email') }}</strong>
+                                          <strong>{{ $errors->first('password') }}</strong>
                                       </span>
             @endif
 
@@ -75,21 +75,21 @@
           Expedicion glaciares
           <span class="days">4 dias / 3 noches</span>
         </a>
-        <img src="images/sliders/glaciar.jpg">
+        <img src="{{ asset('images/sliders/glaciar.jpg') }}">
       </div>
       <div class="Wallop-item">
         <a class="main-slider-title" href="{{ asset('files/atyca-adventure.pdf') }}" target="_blank">
           Ushuaia adventure
           <span class="days">4 dias / 3 noches</span>
         </a>
-        <img src="images/sliders/adventure.jpg">
+        <img src="{{ asset('images/sliders/adventure.jpg') }}">
       </div>
       <div class="Wallop-item">
         <a class="main-slider-title" href="{{ asset('files/atyca-vinos.pdf') }}" target="_blank">
           Catedrales del vino
           <span class="days">4 dias / 3 noches</span>
         </a>
-        <img src="images/sliders/vino.jpg">
+        <img src="{{ asset('images/sliders/vino.jpg') }}">
       </div>
 
 
