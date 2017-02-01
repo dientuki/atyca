@@ -96,9 +96,9 @@
   }
 
   .destination-content {
-    $tfs: 12;
+    $tfs: 16;
     font-size: #{$tfs/$fs}em;
-    line-height: (14em/$tfs);
+    line-height: (19em/$tfs);
     color:#3c74ac;
     p {
       margin-top: (14em/$tfs);

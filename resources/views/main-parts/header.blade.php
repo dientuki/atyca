@@ -24,7 +24,7 @@
             <a class="menu-link {{ isset($selected) && $selected == 'empresa' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'empresa']) }}" title="La empresa">La empresa</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#" title="Circuitos">Circuitos</a>
+            <a class="menu-link" href="{{ asset('files/Manual-Circuitos-Argentina.rtf')}}" title="Circuitos">Circuitos</a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#" title="Excursiones">Excursiones</a>
