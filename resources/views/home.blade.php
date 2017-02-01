@@ -17,6 +17,9 @@
           <a class="user-info-link" href="{{ route('private::edit') }}" title="Editar mis datos">Editar mis datos</a>
         @endif
 
+
+
+
         <a class="button-logout" href="{{ route('user::logout') }}" title="Salir">Salir</a>
       </div>
 
@@ -41,6 +44,7 @@
                                           <strong>{{ $errors->first('password') }}</strong>
                                       </span>
             @endif
+
 
             <label class="label" for="password">Contraseña</label>
             <input class="text-box" id="password" type="password" name="password">
