@@ -55,7 +55,9 @@ Route::get('/tarifario.html', function () {
 */
 
 
+Route::get('/excursion/{slug}.html', array('as' => 'destinations.show', 'uses' => 'ExcursionsController@show'));
 Route::get('/destino/{slug}.html', array('as' => 'destinations.show', 'uses' => 'DestinationsController@show'));
+
 Route::get('/{slug}.html', array('as' => 'pages.show', 'uses' => 'PagesController@show'));
 
 
