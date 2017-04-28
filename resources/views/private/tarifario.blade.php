@@ -14,7 +14,7 @@
              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw=="
              title="Circuitos por Argentina" />
       </a>
-      <a class="tariff-link" target="_blank" href="{{ asset('files/promos-bue.pdf')}}" title="Promociones Buenos Aires">Promociones Buenos Aires</a>
+      <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-norte.pdf')}}" title="Promociones Buenos Aires">Comunidades del norte</a>
       <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-glaciares.pdf')}}" title="Expedición Glaciares">Expedición Glaciares</a>
       <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-vinos.pdf')}}" title="Catedrales del vino">Catedrales del vino</a>
 
@@ -30,7 +30,7 @@
              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw=="
              title="Hoteles, traslados, excursiones">
       </a>
-      <a class="tariff-link" target="_blank" href="{{ asset('files/promos-ush.pdf')}}" title="Promociones Usuhaia">Promociones Usuhaia</a>
+      <a class="tariff-link" target="_blank" href="{{ asset('files/Gran-Circuito-Sudamericano.pdf')}}" title="Promociones Usuhaia">Gran Circuito Sudamericano</a>
        <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-adventure.pdf')}}" title="Usuhaia adventure">Usuhaia adventure</a>
               <a class="tariff-link" target="_blank" href="{{ asset('files/Politica-menores.docx')}}" title="Política de menores">Política de menores</a>
 
