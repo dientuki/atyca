@@ -100,7 +100,6 @@
   position: absolute;
   right: 0;
   height: (45em/$fs);
-  line-height: (45em/$fs);
   bottom:(22em/$fs);
 }
 
@@ -111,7 +110,6 @@
   z-index: 5;
 }
 
-#header,
 #footer {
   background: #336699;
 }

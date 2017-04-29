@@ -21,7 +21,10 @@
             <a class="menu-link {{ isset($selected) && $selected == 'home' ? 'selected' : '' }}" href="{{ route('home') }}" title="Inicio">Inicio</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link {{ isset($selected) && $selected == 'empresa' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'empresa']) }}" title="La empresa">La empresa</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'empresa' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'empresa']) }}" title="Sobre Nosotros">Sobre Nosotros</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link {{ isset($selected) && $selected == 'destinos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'destinos']) }}" title="Destinos">Destinos</a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="{{ asset('files/Manual-Circuitos-Argentina.rtf')}}" title="Circuitos">Circuitos</a>
@@ -29,9 +32,11 @@
           <li class="menu-item">
             <a class="menu-link" href="#" title="Excursiones">Excursiones</a>
           </li>
+          <!--
           <li class="menu-item">
-            <a class="menu-link {{ isset($selected) && $selected == 'destinos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'destinos']) }}" title="Destinos">Destinos</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'contactenos' ? 'selected' : '' }}" href="#" title="Contactenos">Contactenos</a>
           </li>
+          -->
         </ul>
       </nav>
     </div>

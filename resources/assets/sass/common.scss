@@ -90,8 +90,7 @@ form {
 .menu-container {
   .menu-item {
     float:left;
-    width: (118em/$fs);
-    margin-left:(8em/$fs);
+    margin-left:(19em/$fs);
 
     &:first-of-type {
       margin-left:0 ;
@@ -99,18 +98,25 @@ form {
   }
 
   .menu-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color:white;
+    $tfs: 14;
     font-size: (14em/$fs);
+    border-radius:(8em/$tfs);
+    display: table-cell;
+    width: (98em/$tfs);
+    height: (45em/$tfs);
+    padding: 0 (10em/$tfs);
+    text-align: center;
+    vertical-align: middle;
+    color:white;
+
+    background-color: rgba(38, 86, 134, 0.1);
+    transition: background-color .5s ease;
+    will-change: transition;
   }
 
   .selected,
   .menu-link:hover {
-    border-radius:(8em/$fs);
-    background: #265686;
+    background-color: #265686;
   }
 }
 
@@ -231,6 +237,7 @@ form {
 
 #header {
   overflow: hidden;
+  background: url(../images/blue-waves-background.png) no-repeat center center #1159a8;
   .logo {
     display: block;
     position: absolute;
