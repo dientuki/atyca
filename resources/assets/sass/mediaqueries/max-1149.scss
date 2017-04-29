@@ -16,6 +16,7 @@
     top:100%;
     width: 100%;
     overflow: hidden;
+    left: 0;
   }
 
   .contact-info,
@@ -52,8 +53,8 @@
 }
 
 .contact-info {
-  background: #336699;
-  padding: 0 (15em/$ci) (15em/$ci) (15em/$ci);
+  background: #1159a8;
+  padding: (15em/$ci);
 
   .contact-info-item {
     float:none;
@@ -77,18 +78,19 @@
     float:none;
     width: 100%;
     margin:0;
-
   }
 
   .menu-link {
     padding:  0 (15em/$ci);
     text-align: left;
     width: auto;
+    border-radius: 0;
+    display: block;
+    line-height: (45em/$ci);;
   }
 
   .selected,
   .menu-link:hover {
-    border-radius: 0;
-    background: #336699;
+    background-color: #336699;
   }
 }

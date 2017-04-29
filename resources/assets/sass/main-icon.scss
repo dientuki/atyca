@@ -67,7 +67,6 @@ body {
     #header  {
       .rwd-mobile {
         max-height: (400em/$fs) !important;
-        left: 0;
 
         transition: {
           property: max-height;
