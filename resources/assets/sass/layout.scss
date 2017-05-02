@@ -94,6 +94,8 @@
 
 #header {
   height: (140em/$fs);
+  z-index:6;
+  position: relative;
 }
 
 #primary-navigation {
@@ -103,7 +105,6 @@
   bottom:(22em/$fs);
 }
 
-#header,
 .work-us,
 #footer{
   position: relative;
