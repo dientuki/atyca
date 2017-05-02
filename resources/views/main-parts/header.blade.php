@@ -30,7 +30,7 @@
             <a class="menu-link" href="{{ asset('files/Manual-Circuitos-Argentina.rtf')}}" title="Circuitos">Circuitos</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#" title="Excursiones">Excursiones</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'excursiones' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'excursiones']) }}" title="Excursiones">Excursiones</a>
           </li>
           <!--
           <li class="menu-item">
