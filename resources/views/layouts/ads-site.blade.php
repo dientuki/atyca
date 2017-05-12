@@ -7,7 +7,7 @@
   <body>
     @include ('widgets/alerts')
 
-    @include ('main-parts/header')
+    @include ('main-parts/newheader')
 
     <div class="main-content">
       <main id="main">
@@ -18,7 +18,9 @@
 
       <aside id="aside">
         @include ('widgets/tactic-1')
-        @include ('widgets/work-us')
+        @include ('widgets/tactic-2')
+        @include ('ads/disney-940x100')
+        @include ('widgets/gob-medals')
       </aside>
     </div>
 

@@ -16,4 +16,14 @@ class HomeController extends Controller
     return view('home', compact('selected', 'is_loggued', 'user'));
 
   }
+
+  public function newhome() {
+
+    $selected = 'home';
+    $is_loggued = Auth::check();
+    $user = Auth::user();
+    //dd($user);
+    return view('newhome', compact('selected', 'is_loggued', 'user'));
+
+  }
 }
