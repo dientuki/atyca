@@ -159,24 +159,6 @@ form {
     margin-top: (25em/$fs);
   }
 
-  .button-submit {
-    float:left;
-    width: (90em/$buttonfs);
-    color:white;
-    background: #8cc8eb;
-    border:solid (1em/$buttonfs) #8cc8eb;
-  }
-
-  .button-register {
-    float:right;
-    width: (110em/$buttonfs);
-
-
-    background: white;
-    border: solid (1em/$buttonfs) #a0b2b8;
-    color:#8cc8eb;
-  }
-
   .forgot-password {
     $tfs: 12;
     font-size: #{$tfs/$fs}em;
@@ -188,6 +170,22 @@ form {
   .forgot-password-link {
     color:#4a90e2;
   }
+}
+
+.button-submit {
+  float:left;
+  width: (90em/$buttonfs);
+  color:white;
+  background: #8cc8eb;
+  border:solid (1em/$buttonfs) #8cc8eb;
+}
+
+.button-register {
+  float:right;
+  width: (110em/$buttonfs);
+  background: white;
+  border: solid (1em/$buttonfs) #a0b2b8;
+  color:#8cc8eb;
 }
 
 [class*="form-two-col"] {

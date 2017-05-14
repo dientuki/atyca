@@ -1,0 +1,8 @@
+@import 'mixin';
+@import 'variables';
+
+.country-selector {
+  background: white;
+  border-radius: (5em/$fs);
+  height: (353em/$fs);
+}
