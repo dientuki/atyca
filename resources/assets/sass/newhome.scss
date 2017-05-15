@@ -26,7 +26,8 @@
     width: (76em/$fs);
     height: (76em/$fs);
     margin: (102em/$fs) auto 0 auto;
-    background: url(../images/flags/argentina.svg) no-repeat center center;;
+    background: url(../images/flags/argentina.svg) no-repeat center center;
+    text-indent: -999em;
   }
 }
 
@@ -36,7 +37,7 @@
   padding-right: (40em/$fs);
 
   .country-list {
-    margin-top: (50em/$fs);
+    margin-top: (38em/$fs);
   }
 
 
