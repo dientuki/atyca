@@ -267,6 +267,10 @@ form {
   padding: (36em/$fs) 0 (20em/$fs) 0;
   color: white;
 
+  &.footer {
+    text-align: left;
+  }
+
   .footer-title{
     $tfs: 12;
     font-size: #{$tfs/$fs}em;

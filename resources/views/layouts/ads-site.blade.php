@@ -20,13 +20,12 @@
         @include ('widgets/tactic-1')
         @include ('widgets/tactic-2')
         @include ('ads/disney-940x100')
-        @include ('widgets/gob-medals')
       </aside>
     </div>
 
 
 
-    @include ('main-parts/footer')
+    @include ('main-parts/newfooter')
   	@include ('main-parts/script')
   	
   </body>
