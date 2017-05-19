@@ -262,14 +262,37 @@ form {
   }
 }
 
-#footer {
+#footer-old {
   text-align: center;
   padding: (36em/$fs) 0 (20em/$fs) 0;
   color: white;
 
-  &.footer {
-    text-align: left;
+  .footer-title{
+    $tfs: 12;
+    font-size: #{$tfs/$fs}em;
+    line-height: (16em/$tfs);
   }
+
+  .footer-title,
+  .footer-highlight {
+    color:#8cc8eb;
+  }
+
+  p {
+    $pfs: 10;
+    font-size: #{$pfs/$fs}em;
+    line-height: (16em/$pfs);
+  }
+}
+
+#footer {
+  margin-top: (36em/$fs);
+
+  .footer {
+    padding: (36em/$fs) 0 (20em/$fs) 0;
+    color: white;
+  }
+
 
   .footer-title{
     $tfs: 12;
