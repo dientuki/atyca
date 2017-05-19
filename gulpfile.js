@@ -25,6 +25,7 @@ elixir(mix => {
             'pages.scss',
             'wallop.scss',
             'autocomplete.scss',
+            'newhome.scss',
             'mediaqueries/mediaqueries.scss'],
 
             'public/css/site.css');

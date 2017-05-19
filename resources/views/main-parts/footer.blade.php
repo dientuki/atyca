@@ -1,4 +1,4 @@
-<footer id="footer">
+<footer id="footer-old">
   <section class="main-wrapper">
     <h2 class="footer-title">Atyca – Operador Mayorista</h2>
     <p>

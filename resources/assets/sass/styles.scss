@@ -431,3 +431,24 @@
     float:left;
   }
 }
+
+.gob-medals{
+  padding: (7em/$fs) 0;
+
+  .gob-medals-container {
+    margin: (-7em/$fs) (-15em/$fs) 0 (-15em/$fs);
+    position: relative;
+  }
+
+  .gob-medals-item {
+    margin: (7em/$fs) (15em/$fs) 0 (15em/$fs);
+    float:left;
+  }
+
+  .qr-code {
+    position: absolute;
+    right: (15em/$fs);
+    top: (7em/$fs);
+    margin: 0;
+  }
+}

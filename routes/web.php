@@ -15,6 +15,7 @@ use App\Mail\EmailTest;
 use Illuminate\Support\Facades\Mail;
 
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@show'));
+Route::get('/new-home.html', array('as' => 'newhome', 'uses' => 'HomeController@newhome'));
 /*
 Route::get('/', function () {
     return view('home')->with('selected','home');

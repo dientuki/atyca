@@ -1,0 +1,32 @@
+/* This is Hell on earth */
+@import '../mixin';
+@import '../variables';
+
+@media screen and (max-width: (606em/16)) {
+  .country-list {
+    .country-list-item {
+      flex-basis: 14%
+    }
+  }
+
+  .country-world {
+    height: auto;
+    padding-bottom: (20em/$fs);
+  }
+}
+
+@media screen and (max-width: (473em/16)) {
+  .country-list {
+    .country-list-item {
+      flex-basis: 13%
+    }
+  }
+}
+
+@media screen and (max-width: (425em/16)) {
+  .country-list {
+    .country-list-item {
+      flex-basis: 18%
+    }
+  }
+}

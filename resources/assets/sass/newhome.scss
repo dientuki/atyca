@@ -1,0 +1,70 @@
+@import 'mixin';
+@import 'variables';
+
+.country-selector {
+  background: white no-repeat center center;
+  border-radius: (5em/$fs);
+  height: (353em/$fs);
+  padding-top: (20em/$fs);
+  box-sizing: border-box;
+
+  .country-selector-title {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .button-submit {
+    float:none;
+    margin: (19em/$buttonfs) auto 0 auto;
+  }
+}
+
+.country-arg {
+  background-image: url(../images/bg-arg.png);
+
+  .country-argentina {
+    width: (76em/$fs);
+    height: (76em/$fs);
+    margin: (102em/$fs) auto 0 auto;
+    background: url(../images/flags/argentina.svg) no-repeat center center;
+    text-indent: -999em;
+  }
+}
+
+.country-world {
+  background-image: url(../images/bg-world.png);
+  padding-left: (40em/$fs);
+  padding-right: (40em/$fs);
+
+  .country-list {
+    margin-top: (38em/$fs);
+  }
+
+
+}
+
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+
+  .country-list-item {
+    width: (50em/$fs);
+    height: (50em/$fs);
+    overflow: hidden;
+    background: no-repeat center center;
+    text-indent: -999em;
+    margin: (10em/$fs);
+    flex-basis: 10%;
+  }
+
+  $countries: ('brasil','chile','mexico','republica-dominicana','venezuela','ecuador','guatemala','eeuu','bolivia','costa-rica','peru','aruba','panama','canada');
+
+  @each $country in $countries {
+    .country-#{$country} {
+      background-image: url(../images/flags/#{$country}.svg);
+    }
+  }
+}
