@@ -2,7 +2,8 @@
 
 @section ('content')
 
-  <?php $excursions = array('Buenos Aires'); ?>
+  <?php $excursions = array('Bariloche','Buenos Aires','Cafayate', 'Cordoba', 'Mendoza', 'Montevideo', 'Ushuaia','Salta','Rio de Janeiro','Santiago de Chile','Puerto Varas','Puerto Madryn','Iguazú','El Calafate'); ?>
+
 
   <section class="destinations">
     <h6 class="visuallyhidden">Excursiones</h6>
