@@ -53,10 +53,10 @@
             </div>
 
             <div class="form-item{{ $errors->has('tel') ? ' has-error' : '' }}">
-                <label class="label"  for="tel">Empresa</label>
+                <label class="label"  for="tel">Teléfono</label>
 
                 <div>
-                    <input id="tel" type="text" class="text-box" name="tel" value="{{ old('tel') }}" required autofocus>
+                    <input id="tel" type="text" class="text-box" name="tel" value="{{ old('tel') }}">
 
                     @if ($errors->has('tel'))
                         <span class="help-block">
@@ -81,7 +81,7 @@
             </div>
 
             <div class="form-item{{ $errors->has('message') ? ' has-error' : '' }}">
-                <label class="label"  for="message">E-Mail Address</label>
+                <label class="label"  for="message">E-Mail</label>
 
                 <div>
                     <textarea id="message" class="textarea" name="message">{{ old('message') }}</textarea>

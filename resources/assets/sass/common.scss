@@ -49,14 +49,26 @@ form {
     line-height: (19em/$labelfs);
   }
 
+  textarea,
   .text-box {
     font-size: #{$labelfs/$fs}em;
     border: solid (1em/$labelfs) #8cc8eb;
     box-sizing: border-box;
-    height: (28em/$labelfs);
-    line-height: (28em/$labelfs);
+
     padding: 0 1em;
     margin-top: (5em/$labelfs);
+  }
+
+  textarea {
+    width: 100%;
+    line-height: (16em/$labelfs);
+    padding: .5em 1em;
+    height: (82em/$labelfs);
+  }
+
+  .text-box {
+    height: (28em/$labelfs);
+    line-height: (28em/$labelfs);
   }
 }
 
