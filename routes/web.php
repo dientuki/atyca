@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@show'));
 Route::get('/new-home.html', array('as' => 'newhome', 'uses' => 'HomeController@newhome'));
+Route::get('/contactenos.html', array('as' => 'newhome', 'uses' => 'HomeController@contactUs'));
 /*
 Route::get('/', function () {
     return view('home')->with('selected','home');
