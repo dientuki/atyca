@@ -46,7 +46,7 @@
 
                     @if ($errors->has('business'))
                         <span class="help-block">
-                                        <strong>{{ $errors->first('business') }}</strong>
+                                        Por favor escriba el nombre de la empresa a la que pertenece.
                                     </span>
                     @endif
                 </div>
@@ -57,10 +57,10 @@
 
                 <div>
                     <input id="tel" type="text" class="text-box" name="tel" value="{{ old('tel') }}" placeholder="Teléfono">
-
+                    
                     @if ($errors->has('tel'))
                         <span class="help-block">
-                                        <strong>{{ $errors->first('tel') }}</strong>
+                                        Por favor brindenos un telefono con código de pais.
                                     </span>
                     @endif
                 </div>
@@ -74,7 +74,7 @@
 
                     @if ($errors->has('email'))
                         <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        Por favor brindenos su correo electrónico.
                                     </span>
                     @endif
                 </div>
@@ -88,7 +88,7 @@
 
                     @if ($errors->has('message'))
                         <span class="help-block">
-                                        <strong>{{ $errors->first('message') }}</strong>
+                                        Por favor brindenos su consulta.
                                     </span>
                     @endif
                 </div>

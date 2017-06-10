@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactForm;
 use App\Mail\ContactFormMail;
+use Illuminate\Support\Facades\Mail;
+use Prologue\Alerts\Facades\Alert;
 
 class ContactusController extends Controller
 {
   public function show() {
-
     $selected = 'contactenos';
     return view('contactUs', compact('selected'));
-
   }
 
   /**
@@ -22,14 +22,11 @@ class ContactusController extends Controller
    */
   public function send(ContactForm $request)
   {
-
-    $data = $request->all();
-
-    Mail::to('dientuki@gmail.com')->send(new ContactFormMail($data));
+    Mail::to('dientuki@gmail.com')->send(new ContactFormMail($request->all()));
 
     Alert::success(trans('contactus.send'))->flash();
 
-    return redirect()->route('admin::dashboard');
+    return redirect()->route('contactus.show');
   }
 
 }

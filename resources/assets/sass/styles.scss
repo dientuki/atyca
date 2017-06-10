@@ -516,4 +516,10 @@
       float: none;
     }
   }
+
+  .help-block {
+    $tfs: 14;
+    font-size: #{$tfs/$fs}em;
+    color:#ff0007;
+  }
 }
