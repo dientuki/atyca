@@ -456,4 +456,64 @@
 .contact-box {
   background: rgba(255, 255, 255, 0.8);
   padding: (23em/$fs) (200em/$fs) (43em/$fs) (200em/$fs);
+
+  .contact-box-title {
+    $tfs: 24;
+    font-size: #{$tfs/$fs}em;
+    color: #265686;
+    line-height: (33em/$tfs);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .contact-box-list-item {
+    $tfs: 14;
+    font-size: #{$tfs/$fs}em;
+    width: 50%;
+    float:left;
+    text-align: center;
+    margin-top: (30em/$tfs);
+  }
+
+  .contact-box-contactname {
+    font-weight: bold;
+  }
+
+  a {
+    color:#4a90e2;
+    text-decoration: underline;
+  }
+
+  label {
+    @include hide();
+  }
+
+  .login-form {
+    margin-top: (70em/$fs);
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+  }
+
+  :-ms-input-placeholder {
+    text-align: center;
+  }
+
+  .form-action {
+    text-align: center;
+
+    .button-submit {
+      display: inline-block;
+      float: none;
+    }
+  }
 }
