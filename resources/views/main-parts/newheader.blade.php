@@ -27,7 +27,7 @@
             <a class="menu-link {{ isset($selected) && $selected == 'destinos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'destinos']) }}" title="Destinos">Destinos</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#" title="Saludias Grupales">Saludias Grupales</a>
+            <a class="menu-link" href="#" title="Salidas Grupales">Salidas Grupales</a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#" title="Grupos e Incentivos">Grupos e Incentivos</a>
