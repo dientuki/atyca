@@ -44,6 +44,10 @@
   }
 }
 
+.tactic-no-padding {
+  padding-top: 0;
+}
+
 .contact-info {
   font-size: #{$ci/$fs}em;
   position: absolute;

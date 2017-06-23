@@ -1,4 +1,4 @@
-<div class="tactic">
+<div class="tactic tactic-no-padding">
   <div class="main-wrapper clearfix">
     <div class="tactic-item Wallop Wallop-slide-SmallArrow">
       <div class="Wallop-list">
