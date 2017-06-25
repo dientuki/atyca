@@ -12,8 +12,6 @@
           <img src="{{ asset('images/tactic/alvear.png') }}">
         </a>
       </div>
-      <span class="Wallop-ArrowPrevious">Anterior</span>
-      <span class="Wallop-ArrowNext">Siguiente</span>
     </div>
     <div class="tactic-item Wallop Wallop-slide-SmallArrow">
       <div class="Wallop-list">
@@ -27,8 +25,6 @@
           <img src="{{ asset('images/tactic/rojo.png') }}">
         </a>
       </div>
-      <span class="Wallop-ArrowPrevious">Anterior</span>
-      <span class="Wallop-ArrowNext">Siguiente</span>
     </div>
     <div class="tactic-item Wallop Wallop-slide-SmallArrow">
       <div class="Wallop-list">
@@ -42,8 +38,6 @@
           <img src="{{ asset('images/tactic/crucero.png') }}">
         </a>
       </div>
-      <span class="Wallop-ArrowPrevious">Anterior</span>
-      <span class="Wallop-ArrowNext">Siguiente</span>
     </div>
   </div>
 

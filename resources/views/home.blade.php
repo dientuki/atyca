@@ -91,11 +91,7 @@
         </a>
         <img src="{{ asset('images/sliders/vino.jpg') }}">
       </div>
-
-
     </div>
-    <span class="Wallop-ArrowPrevious">Anterior</span>
-    <span class="Wallop-ArrowNext">Siguiente</span>
   </div>
 
 @endsection
