@@ -17,9 +17,8 @@
       </main>
 
       <aside id="aside">
-        @include ('widgets/tactic-1')
-        @include ('widgets/tactic-2')
         @include ('ads/disney-940x100')
+        @include ('widgets/tactic-1')
       </aside>
     </div>
 
