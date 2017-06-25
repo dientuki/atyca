@@ -26,7 +26,8 @@
       showNextClass: 'Wallop-item--showNext',
       hidePreviousClass: 'Wallop-item--hidePrevious',
       hideNextClass: 'Wallop-item--hideNext',
-      carousel: true
+      carousel: true,
+      autoplay: undefined
     };
 
     // Whitelist elements which contain `length`
@@ -67,6 +68,12 @@
       _this.event.detail.currentItemIndex = _this.currentItemIndex;
       _this.$selector.dispatchEvent(_this.event);
     }, 0);
+
+    if (this.options.autoplay != undefined){
+      setInterval(function() {
+        _this.next();
+      }, this.options.autoplay);
+    }
   }
 
   var selectorPool = [];
