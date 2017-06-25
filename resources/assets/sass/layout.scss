@@ -44,6 +44,10 @@
   }
 }
 
+.banner-940x100 {
+  margin-top: (25em/$fs);
+}
+
 .contact-info {
   font-size: #{$ci/$fs}em;
   position: absolute;
