@@ -68,7 +68,7 @@
   </div>
 
 
-  <div class="main-slider Wallop Wallop-slide-BigArrow block-main-right w-automatic">
+  <div class="main-slider Wallop Wallop-slide-BigArrow block-main-right">
     <div class="Wallop-list">
       <div class="Wallop-item">
         <a class="main-slider-title" href="{{ asset('files/atyca-glaciares.pdf') }}" target="_blank">

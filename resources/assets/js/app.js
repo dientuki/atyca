@@ -9,19 +9,12 @@ new Navigation();
 new Autocomplete();
 new Alert();
 
-let ws = document.querySelectorAll('.Wallop'),
-    aws = [];
+let ws = document.querySelectorAll('.Wallop');
 
 for(var i = 0, l = ws.length; i < l; i++) {
-  aws[i] = new Wallop(ws[i], {
+  new Wallop(ws[i], {
     buttonPreviousClass: 'Wallop-ArrowPrevious',
     buttonNextClass: 'Wallop-ArrowNext'
   });
-
-  if (ws[i].classList.contains('w-automatic')){
-    let automatic = i;
-    setInterval(function(){
-      aws[automatic].next();
-    },5000)
-  }
 }
+
