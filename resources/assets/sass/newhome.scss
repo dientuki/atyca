@@ -60,7 +60,7 @@
     flex-basis: 10%;
   }
 
-  $countries: ('brasil','chile','mexico','republica-dominicana','venezuela','ecuador','guatemala','eeuu','bolivia','costa-rica','peru','aruba','panama','canada');
+  $countries: ('colombia','mexico', 'comunidad-economica-europea','eeuu','peru','brasil', 'guatemala', 'republica-dominicana', 'uruguay', 'chile', 'ecuador','venezuela');
 
   @each $country in $countries {
     .country-#{$country} {
