@@ -9,3 +9,5 @@ Homestead.json
 Homestead.yaml
 .env
 *.map
+/public/media
+.DS_Store
