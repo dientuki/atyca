@@ -3,25 +3,25 @@
 @section('content')
 
     <section class="contact-box block-center">
-        <h6 class="contact-box-title">Contactenos</h6>
+        <h6 class="contact-box-title">Contáctenos</h6>
         <ul class="contact-box-list clearfix">
             <li class="contact-box-list-item">
-                <p>Contacto Comercial Receptivo</p>
+                <p class="contact-box-contactname">Contacto Comercial Receptivo</p>
                 <p>Operadores mayoristas del exterior</p>
-                <p class="contact-box-contactname">Pablo Martin</p>
+                <p>Pablo Martin</p>
                 <p>Mail <a href="mailto:pablo.martin@atyca.tur.ar">pablo.martin@atyca.tur.ar</a></p>
                 <p>Skype <a href="skype:atyca.pablo.martin?call" target="_blank">atyca.pablo.martin</a></p>
             </li>
             <li class="contact-box-list-item">
-                <p>Contacto Comercial Emisivo</p>
+                <p class="contact-box-contactname">Contacto Comercial Emisivo</p>
                 <p>Agencias de viajes de Argentina</p>
-                <p class="contact-box-contactname">Diego Gutierrez</p>
+                <p>Diego Gutierrez</p>
                 <p>Mail <a href="mailto:diego.gutierrez@atyca.tur.ar">diego.gutierrez@atyca.tur.ar</a></p>
                 <p>Skype <a href="skype:atyca.diego.gutierrez?call" target="_blank">atyca.diego.gutierrez</a></p>
             </li>
             <li class="contact-box-list-item">
-                <p>Contacto Administrativo</p>
-                <p class="contact-box-contactname">Leandro Gutierrez</p>
+                <p class="contact-box-contactname">Contacto Administrativo</p>
+                <p>Leandro Gutierrez</p>
                 <p>Mail <a href="mailto:administracion@atyca.tur.ar">administracion@atyca.tur.ar</a></p>
                 <p>Skype <a href="skype:atyca.administracion?call" target="_blank">atyca.administracion</a></p>
             </li>

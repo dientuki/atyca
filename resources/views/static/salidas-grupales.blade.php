@@ -1,20 +1,16 @@
-@extends('layouts.site')
+@extends('layouts.ads-site')
 
 @section ('content')
 
-  <article class="entry block-main-left">
-    <h1 class="entry-title">La empresa</h1>
+  <article class="entry ">
+    <h1 class="entry-title">Salidas Grupales</h1>
     <div class="entry-content">
       <p>
-        Atyca es una empresa de viajes y turismo integrada por un equipo de profesionales con amplia trayectoria, conocimiento y experiencia en el mundo del turismo. Cuenta con la infraestructura y la tecnología adecuada para responder a las exigencias de sus deseos de manera ágil y efectiva; asumiendo el compromiso de brindar todo su conocimiento profesional.
+        Las Salidas Grupales ofrecen la posibilidad de viajar en grupo con un coordinador permanente, con personas con las que compartirás el mismo interés, en una fecha definida y con un circuito a recorrer. Siempre es una excelente opción para personas que viajan solas o que no encuentran acompañante, como para todos aquellos que deseen compartir gastos y abaratar costos. Además, permite la posibilidad de conocer gente y entablar nuevas amistades, ya que el viaje se desarrolla en un marco de continua contención y apoyo, en el que solo debes disfrutar del mismo sin preocuparte por absolutamente nada.
       </p>
-      <p>
-        Modernas oficinas emplazadas en el corazón de la Ciudad de Buenos Aires; innovación permanente; creatividad y profesionalidad de sus agentes; y orientación destinada a satisfacer cada una de sus necesidades se plasman día a día en la forma de trabajar en Atyca, persiguiendo siempre el objetivo de marcar la diferencia en todo momento.
-      </p>
+    
     </div>
   </article>
-  <div class="block-aside-right deco-box">
-    <img>
-  </div>
+
 
 @endsection

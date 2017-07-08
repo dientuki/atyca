@@ -1,20 +1,17 @@
-@extends('layouts.site')
+@extends('layouts.ads-site')
 
 @section ('content')
 
-  <article class="entry block-main-left">
-    <h1 class="entry-title">La empresa</h1>
+  <article class="entry ">
+    <h1 class="entry-title">Grupos e incentivos</h1>
     <div class="entry-content">
       <p>
-        Atyca es una empresa de viajes y turismo integrada por un equipo de profesionales con amplia trayectoria, conocimiento y experiencia en el mundo del turismo. Cuenta con la infraestructura y la tecnología adecuada para responder a las exigencias de sus deseos de manera ágil y efectiva; asumiendo el compromiso de brindar todo su conocimiento profesional.
-      </p>
-      <p>
-        Modernas oficinas emplazadas en el corazón de la Ciudad de Buenos Aires; innovación permanente; creatividad y profesionalidad de sus agentes; y orientación destinada a satisfacer cada una de sus necesidades se plasman día a día en la forma de trabajar en Atyca, persiguiendo siempre el objetivo de marcar la diferencia en todo momento.
-      </p>
+   En Atyca contamos con el conocimiento, la capacidad y una vasta experiencia en lo que respecta a Grupos e Incentivos, adaptándonos a las necesidades particulares de cada cliente. Nos hacemos cargo de todo el proceso: desde el asesoramiento, planificación, organización y diseño hasta la prestación de todo tipo de servicios, y contención en destino las 24hs del día. Atyca coordina y ejecuta cada aspecto para que su viaje sea un completo éxito.
+
+    </p>
+   
     </div>
   </article>
-  <div class="block-aside-right deco-box">
-    <img>
-  </div>
+
 
 @endsection
