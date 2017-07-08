@@ -9,9 +9,9 @@ use Prologue\Alerts\Facades\Alert;
 
 class ContactusController extends Controller
 {
-  public function show() {
+  public function showW() {
     $selected = 'contactenos';
-    return view('contactUs', compact('selected'));
+    return view('contactUsWorld', compact('selected'));
   }
 
   /**
@@ -20,13 +20,33 @@ class ContactusController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function send(ContactForm $request)
+  public function sendW(ContactForm $request)
   {
     Mail::to('dientuki@gmail.com')->send(new ContactFormMail($request->all()));
 
-    Alert::success(trans('contactus.send'))->flash();
+    Alert::success(trans('contactus-world.send'))->flash();
 
-    return redirect()->route('contactus.show');
+    return redirect()->route('contactus-world.show');
+  }
+
+  public function showAR() {
+    $selected = 'contactenos';
+    return view('contactUsAR', compact('selected'));
+  }
+
+  /**
+   * Store a newly created resource in storage.
+   *
+   * @param  \Illuminate\Http\Request  $request
+   * @return \Illuminate\Http\Response
+   */
+  public function sendAR(ContactForm $request)
+  {
+    Mail::to('dientuki@gmail.com')->send(new ContactFormMail($request->all()));
+
+    Alert::success(trans('contactus-ar.send'))->flash();
+
+    return redirect()->route('contactus-ar.show');
   }
 
 }

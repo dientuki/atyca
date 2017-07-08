@@ -33,7 +33,7 @@
             </li>
         </ul>
 
-        <form class="login-form" role="form" method="POST" action="{{ route('contactus.send') }}">
+        <form class="login-form" role="form" method="POST" action="{{ route('contactus-world.send') }}">
             {{ csrf_field() }}
 
             <div class="form-item contact-box-title">Dejemos su mensaje</div>

@@ -16,8 +16,11 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@show'));
 Route::get('/new-home.html', array('as' => 'newhome', 'uses' => 'HomeController@newhome'));
-Route::get('/contactenos.html', array('as' => 'contactus.show', 'uses' => 'ContactusController@show'));
-Route::post('/contactenos.html', array('as' => 'contactus.send', 'uses' => 'ContactusController@send'));
+Route::get('/contactenos-mundo.html', array('as' => 'contactus-world.show', 'uses' => 'ContactusController@showW'));
+Route::post('/contactenos-mundo.html', array('as' => 'contactus-world.send', 'uses' => 'ContactusController@sendW'));
+
+Route::get('/contactenos-argentina.html', array('as' => 'contactus-ar.show', 'uses' => 'ContactusController@showAR'));
+Route::post('/contactenos-argentina.html', array('as' => 'contactus-ar.send', 'uses' => 'ContactusController@sendAR'));
 /*
 Route::get('/', function () {
     return view('home')->with('selected','home');
