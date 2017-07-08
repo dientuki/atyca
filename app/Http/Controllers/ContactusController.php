@@ -9,6 +9,8 @@ use Prologue\Alerts\Facades\Alert;
 
 class ContactusController extends Controller
 {
+  private $email = 'info@atyca.tur.ar';
+
   public function showW() {
     $selected = 'contactenos';
     return view('contactUsWorld', compact('selected'));
@@ -22,7 +24,7 @@ class ContactusController extends Controller
    */
   public function sendW(ContactForm $request)
   {
-    Mail::to('dientuki@gmail.com')->send(new ContactFormMail($request->all()));
+    Mail::to($this->email)->send(new ContactFormMail($request->all()));
 
     Alert::success(trans('contactus-world.send'))->flash();
 
@@ -42,7 +44,7 @@ class ContactusController extends Controller
    */
   public function sendAR(ContactForm $request)
   {
-    Mail::to('dientuki@gmail.com')->send(new ContactFormMail($request->all()));
+    Mail::to($this->email)->send(new ContactFormMail($request->all()));
 
     Alert::success(trans('contactus-ar.send'))->flash();
 
