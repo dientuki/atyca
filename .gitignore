@@ -2,6 +2,7 @@
 /public/storage
 /public/css
 /public/js
+/public/media
 public/rev-manifest.json
 /vendor
 /.idea
