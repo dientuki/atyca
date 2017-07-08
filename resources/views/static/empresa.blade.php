@@ -2,7 +2,7 @@
 
 @section ('content')
 
-  <article class="entry block-main-left">
+  <article class="entry ">
     <h1 class="entry-title">La empresa</h1>
     <div class="entry-content">
       <p>
@@ -13,8 +13,6 @@
       </p>
     </div>
   </article>
-  <div class="block-aside-right deco-box">
-    <img>
-  </div>
+
 
 @endsection

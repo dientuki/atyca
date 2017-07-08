@@ -57,10 +57,10 @@
     background: no-repeat center center;
     text-indent: -999em;
     margin: (10em/$fs);
-    flex-basis: 10%;
+    flex-basis: 12%;
   }
 
-  $countries: ('brasil','chile','mexico','republica-dominicana','venezuela','ecuador','guatemala','eeuu','bolivia','costa-rica','peru','aruba','panama','canada');
+  $countries: ('colombia','mexico', 'comunidad-economica-europea','eeuu','peru','brasil', 'guatemala', 'republica-dominicana', 'uruguay', 'chile', 'ecuador','venezuela');
 
   @each $country in $countries {
     .country-#{$country} {

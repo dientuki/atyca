@@ -12,12 +12,11 @@
   <div class="block-main-right country-selector country-world">
     <div class="country-selector-title">Clientes del Exterior</div>
 
-    <?php $countries = array('Brasil','Chile','Mexico', 'República Dominicana','Venezuela', 'Ecuador', 'Guatemala','EE.UU','Bolivia',   'Costa Rica',    'Perú', 'Aruba', 'Panama', 'Canada'); $r = array()?>
+    <?php $countries = array('Colombia','Mexico', 'Comunidad Economica Europea','EE.UU','Perú','Brasil', 'Guatemala', 'República Dominicana', 'Uruguay', 'Chile', 'Ecuador','Venezuela');?>
 
     <ul class="country-list">
       @foreach ($countries as $country)
         <li class="country-list-item country-{{ str_slug($country)  }}">{{$country}}</li>
-        <?php $r[] = str_slug($country); ?>
       @endforeach
     </ul>
     <a class="button-submit" href="#">Ingresar</a>

@@ -21,19 +21,19 @@
             <a class="menu-link {{ isset($selected) && $selected == 'home' ? 'selected' : '' }}" href="{{ route('home') }}" title="Inicio">Inicio</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link {{ isset($selected) && $selected == 'empresa' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'empresa']) }}" title="Sobre Nosotros">Sobre Nosotros</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'sobre-nosotros' ? 'sobre-nosotros' : '' }}" href="{{ route('pages.show', ['slug' => 'sobre-nosotros']) }}" title="Sobre Nosotros">Sobre Nosotros</a>
           </li>
           <li class="menu-item">
             <a class="menu-link {{ isset($selected) && $selected == 'destinos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'destinos']) }}" title="Destinos">Destinos</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#" title="Saludias Grupales">Saludias Grupales</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'salidas-grupales' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'salidas-grupales']) }}" title="Salidas Grupales">Salidas Grupales</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#" title="Grupos e Incentivos">Grupos e Incentivos</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'grupos-e-incentivos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'grupos-e-incentivos']) }}" title="Grupos e Incentivos">Grupos e Incentivos</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#" title="Condiciones Generales">Condiciones Generales</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'condiciones-generales' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'condiciones-generales']) }}" title="Condiciones Generales">Condiciones Generales</a>
           </li>
           <li class="menu-item">
             <a class="menu-link {{ isset($selected) && $selected == 'contactenos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'contactenos']) }}" title="Contactenos">Contactenos</a>

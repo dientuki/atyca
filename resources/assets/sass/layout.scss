@@ -44,6 +44,10 @@
   }
 }
 
+.banner-940x100 {
+  margin-top: (25em/$fs) !important;
+}
+
 .contact-info {
   font-size: #{$ci/$fs}em;
   position: absolute;
@@ -109,10 +113,6 @@
 #footer-old{
   position: relative;
   z-index: 5;
-}
-
-.footer {
-  background: #336699;
 }
 
 .main-content {

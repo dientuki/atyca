@@ -10,7 +10,7 @@
             <div class="form-item">Favor de loguearse antes de entrar</div>
 
             <div class="form-item{{ $errors->has('email') ? ' has-error' : '' }}">
-                <label class="label"  for="email">E-Mail Address</label>
+                <label class="label"  for="email">E-Mail</label>
 
                 <div>
                     <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required autofocus>

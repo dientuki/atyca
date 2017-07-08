@@ -11,5 +11,9 @@ return [
 
     'userRegistered' => [
         'subject' => 'Usuario registrado'
+    ],
+
+    'contactForm' => [
+        'subject' => 'Consulta enviada'
     ]
 ];

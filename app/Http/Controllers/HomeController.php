@@ -26,4 +26,11 @@ class HomeController extends Controller
     return view('newhome', compact('selected', 'is_loggued', 'user'));
 
   }
+
+  public function contactUs() {
+
+    $selected = 'contactenos';
+    return view('contactUs', compact('selected'));
+
+  }
 }
