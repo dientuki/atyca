@@ -53,6 +53,12 @@
 
 .banner-940x100 {
   margin-top: (25em/$fs) !important;
+  width: (940em/$fs);
+  height: (100em/$fs);
+
+  a {
+    display: block;
+  }
 }
 
 .contact-info {
