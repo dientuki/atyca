@@ -36,7 +36,7 @@
             <a class="menu-link {{ isset($selected) && $selected == 'condiciones-generales' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'condiciones-generales']) }}" title="Condiciones Generales">Condiciones Generales</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link {{ isset($selected) && $selected == 'contactenos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'contactenos']) }}" title="Contactenos">Contactenos</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'contactenos' ? 'selected' : '' }}" href="{{ route('contactus-world.show') }}" title="Contactenos">Contactenos</a>
           </li>
         </ul>
       </nav>
