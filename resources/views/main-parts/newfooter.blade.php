@@ -15,7 +15,7 @@
         Email:
         <a class="footer-highlight" href="mailto:info@atyca.tur.ar" title="info@atyca.tur.ar">info@atyca.tur.ar</a>
         Tel: (Lu. a Vi. 10:00hs a 19:00hs.):
-        <span class="footer-highlight" title="Tel: (Lu. a Vi. 10:00hs a 19:00hs.)">+54-11-4371-187</span></p>
+        <span class="footer-highlight" title="Tel: (Lu. a Vi. 10:00hs a 19:00hs.)">+54-11-4371-1878</span></p>
           <p>Móvil (Fuera de horario comercial):
       
     
