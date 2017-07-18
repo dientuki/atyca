@@ -5,7 +5,7 @@
     <section class="contact-box block-center">
         <h6 class="contact-box-title">Contáctenos</h6>
         <ul class="contact-box-list clearfix">
-            <li class="contact-box-list-item">
+            <li class="contact-box-list-item" style="float:none;width:100%">
                 <p class="contact-box-contactname">Contacto Comercial Emisivo</p>
                 <p>Agencias de viajes de Argentina</p>
                 <p>Diego Gutierrez</p>
@@ -17,17 +17,17 @@
         <form class="login-form" role="form" method="POST" action="{{ route('contactus-ar.send') }}">
             {{ csrf_field() }}
 
-            <div class="form-item contact-box-title">Dejemos su mensaje</div>
+            <div class="form-item contact-box-title">Déjemos su mensaje</div>
 
             <div class="form-item{{ $errors->has('business') ? ' has-error' : '' }}">
-                <label class="label"  for="business">Empresa</label>
+                <label class="label"  for="business">Nombre</label>
 
                 <div>
-                    <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus placeholder="Empresa">
+                    <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus placeholder="Nombre">
 
                     @if ($errors->has('business'))
                         <span class="help-block">
-                                        Por favor escriba el nombre de la empresa a la que pertenece.
+                                        Por favor escriba un nombre.
                                     </span>
                     @endif
                 </div>
@@ -62,14 +62,14 @@
             </div>
 
             <div class="form-item{{ $errors->has('message') ? ' has-error' : '' }}">
-                <label class="label"  for="message">Consulta</label>
+                <label class="label"  for="message">Mensaje</label>
 
                 <div>
-                    <textarea id="message" class="textarea" name="message" placeholder="Consulta">{{ old('message') }}</textarea>
+                    <textarea id="message" class="textarea" name="message" placeholder="Mensaje">{{ old('message') }}</textarea>
 
                     @if ($errors->has('message'))
                         <span class="help-block">
-                                        Por favor brindenos su consulta.
+                                        Por favor brindenos su mensaje.
                                     </span>
                     @endif
                 </div>
