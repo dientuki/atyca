@@ -36,17 +36,17 @@
         <form class="login-form" role="form" method="POST" action="{{ route('contactus-world.send') }}">
             {{ csrf_field() }}
 
-            <div class="form-item contact-box-title">Déjemos su mensaje</div>
+            <div class="form-item contact-box-title">Déjenos su mensaje</div>
 
             <div class="form-item{{ $errors->has('business') ? ' has-error' : '' }}">
-                <label class="label"  for="business">Nombre</label>
+                <label class="label"  for="business">Empresa</label>
 
                 <div>
-                    <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus placeholder="Nombre">
+                    <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus placeholder="Empresa">
 
                     @if ($errors->has('business'))
                         <span class="help-block">
-                                        Por favor escriba un nombre.
+                                        Por favor escriba el nombre de su empresa.
                                     </span>
                     @endif
                 </div>
