@@ -1,7 +1,7 @@
 <header id="header">
   <h1 class="visuallyhidden">Atyca</h1>
   <div class="main-wrapper">
-    <a class="logo" href="{{ route('home') }}" title="Home">Home</a>
+    <a class="logo" href="{{ route('newhome') }}" title="Home">Home</a>
     <div class="rwd-mobile">
       <ul class="contact-info">
         <li class="contact-info-item">
