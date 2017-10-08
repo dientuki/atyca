@@ -19,7 +19,7 @@
         <li class="country-list-item country-{{ str_slug($country)  }}">{{$country}}</li>
       @endforeach
     </ul>
-    <a class="button-submit" href="{{ route('contactus-world.show') }}">Ingresar</a>
+    <a class="button-submit" href="{{ route('home') }}">Ingresar</a>
   </div>
 
 @endsection

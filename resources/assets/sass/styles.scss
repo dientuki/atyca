@@ -181,7 +181,6 @@
     color: #3c74ac;
     font-size: #{$tfs/$fs}em;
     line-height: 1em;
-    text-align: justify;
   }
 }
 
@@ -498,7 +497,7 @@
   }
 
   .login-form {
-    margin-top: (38em/$fs);
+    margin-top: (70em/$fs);
   }
 
   ::-webkit-input-placeholder {
