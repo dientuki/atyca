@@ -15,9 +15,9 @@ use App\Mail\EmailTest;
 use Illuminate\Support\Facades\Mail;
 
 Route::get('/', array('as' => 'newhome', 'uses' => 'HomeController@newhome'));
-//Route::get('/clientes-exterior.html', array('as' => 'home', 'uses' => 'HomeController@show'));
-Route::get('/clientes-exterior.html', array('as' => 'contactus-world.show', 'uses' => 'ContactusController@showW'));
-Route::post('/clientes-exterior.html', array('as' => 'contactus-world.send', 'uses' => 'ContactusController@sendW'));
+Route::get('/clientes-exterior.html', array('as' => 'home', 'uses' => 'HomeController@show'));
+Route::get('/clientes-ex.html', array('as' => 'contactus-world.show', 'uses' => 'ContactusController@showW'));
+Route::post('/clientes-ex.html', array('as' => 'contactus-world.send', 'uses' => 'ContactusController@sendW'));
 
 Route::get('/clientes-argentina.html', array('as' => 'contactus-ar.show', 'uses' => 'ContactusController@showAR'));
 Route::post('/clientes-argentina.html', array('as' => 'contactus-ar.send', 'uses' => 'ContactusController@sendAR'));
@@ -35,23 +35,6 @@ Route::group(['namespace' => 'UserLogged',
               'middleware' => ['auth'],
               'as' => 'private::'], function() {
 
-    /*
-    Route::get('/tarifario.html', function () {
-        $selected = 'home';
-
-        switch (Auth::user()->fk_country) {
-            case 13:
-                $country = strtolower(Auth::user()->getCountry());
-            break;
-            default:
-                $country = 'mundo';
-            break;
-        }
-
-        return view('private.tarifario', compact($selected, $country));
-    })->name('tarifario');
-    */
-
     Route::get('/tarifario.html', ['uses' => 'UserController@show', 'as' => 'tarifario']);
 
     Route::get('mi-perfil.html', ['uses' => 'UserController@edit', 'as' => 'edit']);
@@ -59,9 +42,6 @@ Route::group(['namespace' => 'UserLogged',
 
     Route::get('destroy', ['uses' => 'UserController@destroy', 'as' => 'destroy']);
 });
-
-
-
 
 Route::group(['prefix' => 'api'], function() {
 
