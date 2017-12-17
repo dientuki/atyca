@@ -7,7 +7,6 @@
     @include('private.' . $country . '.tarifario')
 
   </section>
-
   <div class="block-aside-right info-box">
 
     @include('private.' . $country . '.info')

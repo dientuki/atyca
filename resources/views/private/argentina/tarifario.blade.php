@@ -9,8 +9,9 @@
          title="Circuitos por Argentina" />
   </a>
   <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-norte.pdf')}}" title="Promociones Buenos Aires">Comunidades del norte</a>
-  <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-glaciares.pdf')}}" title="Expedición Glaciares">Expedición Glaciares</a>
+  <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-vuelta-norte.pdf')}}" title="Expedición Glaciares">Vuelta al Norte</a>
   <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-vinos.pdf')}}" title="Catedrales del vino">Catedrales del vino</a>
+  <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-ciudades-sur.pdf')}}" title="Catedrales del vino">Grandes Ciudades del Sur</a>
 
 </div>
 <div class="tariff-box">
