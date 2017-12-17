@@ -10,6 +10,20 @@ use Prologue\Alerts\Facades\Alert;
 
 class UserController extends Controller
 {
+    public function show() {
+        $selected = 'home';
+
+        switch (Auth::user()->fk_country) {
+            case 13:
+                $country = strtolower(Auth::user()->getCountry());
+                break;
+            default:
+                $country = 'mundo';
+                break;
+        }
+
+        return view('private.tarifario', compact('selected', 'country'));
+    }
 
     /**
      * Show the form for editing the specified resource.
