@@ -78,12 +78,6 @@ class LoginController extends Controller
             $this->redirectTo = $this->redirectAdmin;
         }
 
-        /*
-        if (Auth::user()-> == 1){
-            $this->redirectTo = $this->redirectAdmin;
-        }
-        */
-
         return $this->authenticated($request, $this->guard()->user())
             ?: redirect()->intended($this->redirectPath());
     }
