@@ -140,6 +140,10 @@
       background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(black,.3));
       z-index: 1;
       left: 0;
+
+      .destinations-country & {
+        @include hide();
+      }
     }
   }
 

@@ -21,4 +21,17 @@
       margin-left: 0;
     }
   }
+
+  .destinations-country {
+    width: (220em/$fs);
+    margin: (34em/$fs) 0 0 (20em/$fs);
+
+    &:nth-child(-n+4) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4n+1) {
+      margin-left: 0;
+    }
+  }
 }
