@@ -40,7 +40,7 @@
 
 <p class="destination-title">Safari Náutico - Navegación Brazo Rico</p>
 <span><strong>Salidas:</strong> Diarias: 10:15 horas, 11:30 horas, 12:30 horas, 14:15 horas, 15:30 horas. </span><br>
-<span><strong>Duraci&oacute;n:</strong> 1 hora aproximadamente</span>
+<span><strong>Otras salidas con un mínimo de 10 pasajeros: </strong>16:30 y 17:30hrs.</span>
 <br>
 <p>La excursión consiste en una navegación de una (1) hora por el Brazo Rico, que permite apreciar la majestuosa pared sur del Glaciar Perito Moreno. Esta pared de hielo glaciar tiene aproximadamente 60m de altura y más 100m por debajo del nivel del lago. El barco se acerca a unos 200m del lugar donde el Glaciar toca la Península de Magallanes, y luego recorre en toda su extensión (casi 3km) la pared sur permitiendo disfrutar de los desprendimientos que se producen a diario y la mágica belleza de sus seracs, grietas e intensos azules. Este servicio se efectúa con la embarcación Yagán, con capacidad para 110 pasajeros. El embarque se realiza en el puerto ubicado en la bahía “Bajo de las Sombras”, aproximadamente a 7 km antes del Mirador del glaciar. Es muy recomendable para completar la visita al glaciar ya que desde las pasarelas no es visible la pared sur en toda su magnificencia. </p>
 <p>Se dispone de un Mini Bus que efectúa el enlace desde el puerto al Mirador del glaciar (mínimo 5 pasajeros). Guía de turismo bilingüe.
@@ -50,10 +50,12 @@
 
 
 <p class="destination-title">Ríos de Hielo Express</p>
-<span><strong>Salidas:</strong> Diarias </span><br>
+<span><strong>Salidas:</strong> Todos los días. </span><br>
 <span><strong>Duraci&oacute;n:</strong> zarpe 09:00hs / regreso 14:30hs aprox.</span>
 <br>
-<p>La excursión consiste en una navegación de una (1) hora por el Brazo Rico, que permite apreciar la majestuosa pared sur del Glaciar Perito Moreno. Esta pared de hielo glaciar tiene aproximadamente 60m de altura y más 100m por debajo del nivel del lago. El barco se acerca a unos 200m del lugar donde el Glaciar toca la Península de Magallanes, y luego recorre en toda su extensión (casi 3km) la pared sur permitiendo disfrutar de los desprendimientos que se producen a diario y la mágica belleza de sus seracs, grietas e intensos azules. Este servicio se efectúa con la embarcación Yagán, con capacidad para 110 pasajeros. El embarque se realiza en el puerto ubicado en la bahía “Bajo de las Sombras”, aproximadamente a 7 km antes del Mirador del glaciar. Es muy recomendable para completar la visita al glaciar ya que desde las pasarelas no es visible la pared sur en toda su magnificencia. Se dispone de un Mini Bus que efectúa el enlace desde el puerto al Mirador del glaciar (minimo 5 pasajeros). Guia de turismo bilingüe. </p>
+<p>El horario de embarque, en Punta Bandera (a 47 km de El Calafate), será 08:30 am y la partida será a las 09:00 am. Navegaremos a través del Brazo Norte del Lago Argentino hasta llegar al Canal Upsala, donde nos encontraremos con una espectacular Barrera de Hielo. Navegaremos entre icebergs hasta llegar al frente del Glaciar Upsala, cuya superficie de 800 kilómetros cuadrados equivale 4 veces a la Ciudad de Buenos Aires. Nuestro próximo destino será el Glaciar Spegazzini, el más alto del Parque Nacional. Camino a este glaciar podremos observar el Glaciar Seco. El regreso al Puerto Privado de Punta Bandera será a las 02:00 pm aproximadamente, según embarcación. </p>
+<p><i>El recorrido puede ser modificado en función de las condiciones climáticas y de seguridad y por decisión del capitán de la embarcación.</i>
+</p>
 <br><br>
 
 

@@ -37,6 +37,16 @@ class HomeController extends Controller
 
   }
 
+  public function homeForm() {
+
+    $selected = 'home';
+    $is_loggued = Auth::check();
+    $user = Auth::user();
+    //dd($user);
+    return view('arhome-form', compact('selected', 'is_loggued', 'user'));
+
+  }
+
   public function contactUs() {
 
     $selected = 'contactenos';

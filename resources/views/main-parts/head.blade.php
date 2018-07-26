@@ -6,6 +6,7 @@
 </title>
 <meta name="description">
 <link rel="canonical">
+<link rel="shortcut icon" type="image/x-icon" href="../public/favicon.ico">
 
 <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
 <meta content="True" name="HandheldFriendly">

@@ -5,7 +5,7 @@
   <div class="block-aside-left country-selector country-arg">
     <div class="country-selector-title">Clientes de Argentina</div>
     <div class="country-argentina">Argentina</div>
-    <a class="button-submit" href="{{ route('contactus-ar.show') }}">Ingresar</a>
+    <a class="button-submit" href="{{ route('home-ar') }}">Ingresar</a>
   </div>
 
 

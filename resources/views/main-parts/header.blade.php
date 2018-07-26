@@ -2,6 +2,9 @@
   <h1 class="visuallyhidden">Atyca</h1>
   <div class="main-wrapper">
     <a class="logo" href="{{ route('newhome') }}" title="Home">Home</a>
+<!--     <a class="aniversario" href="#" title="Aniversario">aniversario</a>
+ -->
+
     <div class="rwd-mobile">
       <ul class="contact-info">
         <li class="contact-info-item">
@@ -15,6 +18,7 @@
         </li>
       </ul>
       <nav id="primary-navigation">
+
         <h6 class="visuallyhidden">Navegación</h6>
         <ul class="clearfix menu-container">
           <li class="menu-item">

@@ -6,7 +6,7 @@
     <a class="Wallop-item" href="https://www.cruceandino.com/" target="_blank">
       <img alt="Crucero Andino"  src="{{ asset('images/ads/andino.png') }}" title="Crucero Andino" />
     </a>
-    <a class="Wallop-item" href="http://www.alvearpalace.com/" target="_blank">
+    <a class="Wallop-item" href="https://www.australis.com/site/" target="_blank">
       <img alt="Crucero Australis"  src="{{ asset('images/ads/australis.png') }}" title="Crucero Australis" />
     </a>
   </div>

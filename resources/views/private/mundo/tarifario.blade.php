@@ -1,5 +1,5 @@
 <div class="tariff-box">
-  <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Circuitos-Argentina.rtf')}}">>
+  <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Circuitos-Argentina-2018-2019.RTF')}}">>
     <div class="tariff-title">
       <span class="big">Circuitos</span>
       <span class="small">por Argentina</span>
@@ -15,7 +15,7 @@
 
 </div>
 <div class="tariff-box">
-  <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Hoteles-Servicios.docx')}}">
+  <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Hoteles-Servicios-y-Minipaquetes-2018.pdf')}}">
     <div class="tariff-title">
       <span class="small">Hoteles</span>
       <span class="small">Traslados</span>
@@ -27,6 +27,6 @@
   </a>
   <a class="tariff-link" target="_blank" href="{{ asset('files/Gran-Circuito-Sudamericano.pdf')}}" title="Promociones Usuhaia">Gran Circuito Sudamericano</a>
   <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-adventure.pdf')}}" title="Usuhaia adventure">Usuhaia adventure</a>
-  <a class="tariff-link" target="_blank" href="{{ asset('files/Politica-menores.docx')}}" title="Política de menores">Política de menores</a>
+  <a class="tariff-link" target="_blank" href="{{ asset('files/patagonia-profunda.pdf')}}" title="Patagonia Profunda">Patagonia Profunda</a>
 
 </div>

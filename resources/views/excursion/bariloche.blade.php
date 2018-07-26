@@ -22,11 +22,11 @@
 <p class="destination-title"><strong>EXCURSIONES EN BARILOCHE</strong></p>
 <br><br>
 
-<p class="destination-title">City Tour Panor&aacute;mico</p>
-<span><strong>Salidas:</strong> Lunes a Lunes AM / PM </span><br>
+<p class="destination-title">Circuito Chico y Punto Panorámico</p>
+<span><strong>Salidas:</strong>Diarias </span><br>
 <span><strong>Duraci&oacute;n:</strong> medio d&iacute;a</span>
 <br>
-<p>Esta excursi&oacute;n transmite la emoci&oacute;n de un Buenos Aires m&uacute;ltiple. Conoceremos el s&iacute;mbolo de nuestra ciudad: el Obelisco Recorreremos plazas como las de Mayo, San Mart&iacute;n, Alvear, del Congreso; avenidas: Corrientes, De Mayo, 9 de Julio, entre otras; barrios con historia como La Boca, San Telmo, suntuosos como Palermo y Recoleta, modernos como Puerto Madero; los parques, Lezama, Tres de Febrero, zonas comerciales y financieras y Estadio de F&uacute;tbol, etc.&nbsp;&nbsp;</p>
+<p>La excursión es de medio día y opera por la mañana. El viaje se inicia desde Bariloche bordeando el Lago Nahuel Huapi. A la altura del km. 8 esta Playa Bonita, desde donde se ve la Isla Huemul. Diez kms. más adelante se llega al pie del Cerro Campanario donde hay una aerosilla que llega hasta la cumbre (1050 m), desde donde se aprecia una de las más bellas y fascinantes vistas de la región. Continuando el trayecto se atraviesa el puente Angostura sobre el río del mismo nombre, que une los Lagos Moreno y Nahuel Huapi, y luego Bahía López al pie del cerro del mismo nombre. Más adelante esta el punto panorámico, un balcón natural con vista espectacular. Luego se pasa por el puente sobre el lago Moreno y se comienza a bordear la Laguna El Trébol de regreso a la ciudad, cerrando el Circuito Chico.</p>
 <br><br>
 
 
@@ -68,12 +68,21 @@
 <span><strong>Salidas:</strong> Diarias. La excursión NO se suspende por lluvia. Consultar operatividad 01 de Enero, 01 de Mayo y 25 Diciembre. </span><br>
 <span><strong>Duraci&oacute;n:</strong>10.30hs a 18.15hs</span>
 <br>
-<p>Paseo lacustre que nos lleva hasta el extremo oeste del Lago Nahuel Huapi, hasta adentrarnos en la cordillera y su selva valdiviana. Se visita la cascada y el lago de Los Cantaros. Opcional Lago Frías. Descripción del programa Saliendo de Puerto Pañuelo, se navega por el Brazo Blest hacia la cordillera, pasando cerca del famoso islote Centinela donde descansan los restos del Dr. Perito Francisco Pascacio Moreno. Así, usted llega a Puerto Cantaros, donde realizan una caminata hasta el Lago Los Cantaros, pasando por la Cascada Los Cántaros, y finalizando el recorrido con un imponente alerce milenario. Se regresa por el mismo camino, y tiene la opción de volver a embarcar para ir a Puerto Blest propiamente dicho, o realizar a pie el sendero de 2km aprox, por la selva valdiviana, donde la vegetación es frondosa ya que este sitio es uno de los puntos más húmedos de la Patagonia. En Puerto Blest hay un restaurant y tienen tiempo libre para almorzar. También pueden llevar su vianda. Esta excursión cuenta con Opcional a Lago Frías Partiendo de Puerto Blest recorrerá unos pocos km. en bus en medio de un paisaje boscoso hasta llegar a Puerto Alegre. Allí se embarcará en un catamarán para navegar las verdes aguas del lago Frías, observando de fondo el imponente Cerro Tronador. El trayecto finaliza en Puerto Frías, donde está el puesto de Gendarmería Nacional y el límite con Chile. Se regresa por el mismo camino. (este opcional se contrata únicamente en forma local en Bariloche el mismo día). 
+<p>Paseo lacustre que nos lleva hasta el extremo oeste del Lago Nahuel Huapi, hasta adentrarnos en la cordillera y su selva valdiviana. Se visita la cascada y el lago de Los Cantaros. Opcional Lago Frías. Descripción del programa Saliendo de Puerto Pañuelo, se navega por el Brazo Blest hacia la cordillera, pasando cerca del famoso islote Centinela donde descansan los restos del Dr. Perito Francisco Pascacio Moreno. Así, usted llega a Puerto Cantaros, donde realizan una caminata hasta el Lago Los Cantaros, pasando por la Cascada Los Cántaros, y finalizando el recorrido con un imponente alerce milenario. Se regresa por el mismo camino, y tiene la opción de volver a embarcar para ir a Puerto Blest propiamente dicho, o realizar a pie el sendero de 2km aprox, por la selva valdiviana, donde la vegetación es frondosa ya que este sitio es uno de los puntos más húmedos de la Patagonia. En Puerto Blest hay un restaurant y tienen tiempo libre para almorzar. También pueden llevar su vianda. Esta excursión cuenta con Opcional a Lago Frías Partiendo de Puerto Blest recorrerá unos pocos km. en bus en medio de un paisaje boscoso hasta llegar a Puerto Alegre. Allí se embarcará en un catamarán para navegar las verdes aguas del lago Frías, observando de fondo el imponente Cerro Tronador. El trayecto finaliza en Puerto Frías, donde está el puesto de Gendarmería Nacional y el límite con Chile. Se regresa por el mismo camino. (este opcional se contrata únicamente en forma local en Bariloche el mismo día).
 Sugerencias: Llevar ropa y calzado cómodos. Cámara de fotos. No Incluye: ingreso a parques nacionales, tasa de puerto pañuelo, extensión Lago Frías ni almuerzo.
  </p>
 <br><br>
 
 
+<p class="destination-title">San Martin de los Andes por 7 Lagos</p>
+<span><strong>Salidas:</strong> Todo el año </span><br>
+<span><strong>Duraci&oacute;n:</strong>Día Completo</span>
+<br>
+<p>El recorrido de este hermoso circuito incluye toda la gama de paisajes que se pueden disfrutar en esta privilegiada región.<br>
+La Primera parada en este paseo sería en la Ciudad de Villa la Angostura donde se tendrá tiempo para conocer el centro y su calle principal. Continua tomando la Ruta de los 7 Lagos hacia San Martín en un camino boscoso que cruza ríos y arroyos y bordea varios lagos: Nahuel Huapi, Correntoso, Espejo, Escondido, Villarino, Falkner y Machónico. <br>Bordeando el Lago Lacar se llega a San Martín de los Andes para almorzar y conocer la ciudad, su calle principal y la costa del Lago. El regreso es por ruta pavimentada que pasa por Junín de Los Andes, La Rinconada, Collon Cura y empalma la Ruta Nac. Nº 40, con un paisaje rural y de estepa, atravesado por hermosísimos ríos cordilleranos que fluyen hacia el Limay. Así se llegaría a Confluencia Traful, en donde a este mágico paisaje se suman las figuras rocosas del "Valle Encantado" y la sorprendente formación de "El Anfiteatro". Bordeando el río hasta su naciente en el Lago Nahuel Huapi, se retorna a Bariloche tras haber realizado esta completísima excursión.<br>
+*No incluye Almuerzo
+ </p>
+<br><br>
 
 
 </div>
