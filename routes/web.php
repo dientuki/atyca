@@ -16,14 +16,19 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/', array('as' => 'newhome', 'uses' => 'HomeController@newhome'));
 Route::get('/clientes-exterior.html', array('as' => 'home', 'uses' => 'HomeController@show'));
+
 Route::get('/clientes-ex.html', array('as' => 'contactus-world.show', 'uses' => 'ContactusController@showW'));
 Route::post('/clientes-ex.html', array('as' => 'contactus-world.send', 'uses' => 'ContactusController@sendW'));
 
 Route::get('/clientes-argentina.html', array('as' => 'contactus-ar.show', 'uses' => 'ContactusController@showAR'));
 Route::post('/clientes-argentina.html', array('as' => 'contactus-ar.send', 'uses' => 'ContactusController@sendAR'));
 
-Route::get('/clientes-argentina-login.html', array('as' => 'home', 'uses' => 'HomeController@arshow'));
+Route::get('/clientes-argentina-login.html', array('as' => 'home-ar', 'uses' => 'HomeController@arshow'));
 Route::post('/clientes-argentina-login.html', array('as' => 'contactus-ar.send', 'uses' => 'ContactusController@sendAR'));
+
+Route::get('/clientes-argentina-form.html', array('as' => 'form-ar', 'uses' => 'HomeController@homeForm'));
+
+
 
 /*
 Route::get('/', function () {
