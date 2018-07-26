@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Ocean Drive</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/estilos.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Tinos:400italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+<script type="text/javascript" src="js/contacto.js"></script>
+<script type="text/javascript" src="js/vanadium.js"></script>
+<script type="text/javascript" language="javascript">
+
+$(document).ready(function(){
+  $(".titulo").click(function(){
+    $(".content").slideToggle();
+	$(".mas").toggleClass("cerrar");
+  });
+});
+
+</script>
+</head>
+<body>
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="complejo.html">El Complejo</a>&nbsp;</li>
+        <li><a href="departamento.html">El Departamento</a>&nbsp;</li>
+        <li><a href="servicios.html">Servicios</a>&nbsp;</li>
+        <li><a href="actividades.html">Actividades</a>&nbsp;</li>
+        <li><a href="contacto.html">Contacto</a>&nbsp;</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="wrapper ">
+    <div class="bottom">
+      <div class="titulo">CONTACTO
+        <div class="mas"></div>
+      </div>
+      <div class="content" style="display:block;">
+        <div class="linea"> </div>
+        <div class="formulario">
+          <form method="post" action="consultas.php">
+            <div class="campo">
+              <label>Nombre:</label>
+              <input name="nombre" type="text" id="nombre"  class=":required" />
+            </div>
+            <div class="campo">
+              <label>Teléfono:</label>
+              <input name="telefono" type="text" id="telefono" class=":integer" />
+            </div>
+            <div class="campo">
+              <label> Email:</label>
+              <input name="email" type="text" id="email"  class=":email :required" />
+            </div>
+            <div class="campo">
+              <label> Consulta:</label>
+              <textarea name="consulta" type="text" id="consulta" class=":required" ></textarea>
+            </div>
+            <input type="submit" name="btsend" id="btsend" value="Enviar"  />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
