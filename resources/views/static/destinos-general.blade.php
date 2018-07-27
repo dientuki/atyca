@@ -2,7 +2,7 @@
 
 @section ('content')
 
-  <?php $destinations = array('Argentina','Brasil','Canada','Chile','Ecuador','EEUU','Guatemala','Mexico','República Dominicana','Uruguay','Venezuela'); ?>
+  <?php $destinations = array('Argentina', 'Aruba', 'Bolivia', 'Brasil','Canadá','Chile', 'Costa Rica', 'Ecuador','EEUU','Guatemala','México', 'Panama', 'Perú', 'República Dominicana','Uruguay','Venezuela'); ?>
 
   <section class="destinations">
     <h6 class="visuallyhidden">Destinos</h6>
