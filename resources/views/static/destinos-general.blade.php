@@ -12,7 +12,7 @@
 
         <?php $slug = str_slug($destination); ?>
         <li class="destinations-country">
-          <a class="destinations-link" href="{{ route('destinations.show', ['slug' => $slug]) }}" title="{{ $destination  }}">
+          <a class="destinations-link" href="#" title="{{ $destination  }}"><!-- {{ route('destinations.show', ['slug' => $slug]) }} -->
             <img alt="{{ $destination  }}" class="afterload destinations-flag" data-original="{{ asset('images/flags/'.$slug.'.png') }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" title="{{ $destination  }}">
             @if ($destination == 'República Dominicana')
               <span class="destinations-text">R. Dominicana</span>
