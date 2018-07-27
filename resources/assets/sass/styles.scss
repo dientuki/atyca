@@ -140,10 +140,28 @@
       background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(black,.3));
       z-index: 1;
       left: 0;
+    }
+  }
 
-      .destinations-country & {
+  .destinations-country {
+    $pfs: 22;
+    .destinations-link {
+      font-size: #{$pfs/$fs}em;
+      padding: (5em/$pfs);
+      box-sizing: border-box;
+      background: white;
+      text-align: left;
+      text-shadow: none;
+      color: black;
+
+      &:before {
         @include hide();
       }
+    }
+
+    .destinations-flag {
+      width: (53em/$pfs);
+      height: (35em/$pfs);
     }
   }
 
@@ -156,13 +174,15 @@
     z-index: 0;
   }
 
-  .destinations-text {
-    position: absolute;
-    width: 100%;
-    z-index: 5;
-    top:50%;
-    transform: translateY(-50%);
-    left: 0;
+  .destinations-place {
+    .destinations-text {
+      position: absolute;
+      width: 100%;
+      z-index: 5;
+      top:50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
   }
 }
 
