@@ -123,8 +123,8 @@
   .destinations-link {
     $pfs: 24;
     display: block;
-    color:white;
-    font-size: #{$pfs/$fs}em;
+/*    color:white;
+*/    font-size: #{$pfs/$fs}em;
     //line-height: (52em/$pfs);
     text-align: center;
     position: absolute;
