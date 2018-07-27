@@ -14,7 +14,13 @@
         <li class="destinations-country">
           <a class="destinations-link" href="{{ route('destinations.show', ['slug' => $slug]) }}" title="{{ $destination  }}">
             <img alt="{{ $destination  }}" class="afterload destinations-flag" data-original="{{ asset('images/flags/'.$slug.'.png') }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" title="{{ $destination  }}">
-            <span class="destinations-text">{{ $destination  }}</span>
+            @if ($destination == 'República Dominicana')
+              <span class="destinations-text">R. Dominicana</span>
+            @else
+              <span class="destinations-text">{{ $destination  }}</span>
+
+            @endif
+
           </a>
         </li>
 
