@@ -7,7 +7,7 @@
   <body>
     @include ('widgets/alerts')
 
-    @include ('main-parts/newheader')
+    @include ('main-parts/header')
 
     <div class="main-content">
       <main id="main">
@@ -17,14 +17,13 @@
       </main>
 
       <aside id="aside">
-        @include ('ads/cruceros-940x100')
-        @include ('widgets/tactic-1-new')
+        @include ('widgets/home-argentinos')
       </aside>
     </div>
 
 
 
-    @include ('main-parts/newfooter')
+    @include ('main-parts/footer')
   	@include ('main-parts/script')
 
   </body>

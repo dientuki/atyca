@@ -555,3 +555,236 @@
     color:#ff0007;
   }
 }
+
+
+
+
+/* Salidas grupales */
+
+#salidas-cards .tariff-box{
+
+
+    margin-right: 40px;
+    margin-top: 30px;
+  }
+#salidas-cards  .tit{
+  color: #fff;
+  height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+      line-height: 40px;
+
+}
+
+#salidas-cards .paq1 .tit{
+    background-color: #91271d;
+
+}
+
+#salidas-cards .paq1 .date{
+    color: #91271d;
+
+}
+
+#salidas-cards .paq2 .tit{
+    background-color: #d58324;
+
+}
+
+#salidas-cards .paq2 .date{
+    color: #91271d;
+
+}
+
+#salidas-cards .paq3 .tit{
+    background-color: #47934f;
+
+}
+
+#salidas-cards .paq3 .date{
+    color: #47934f;
+
+}
+
+#salidas-cards .paq4 .tit{
+    background-color: #c75039;
+
+}
+
+#salidas-cards .paq4 .date{
+    color: #c75039;
+
+}
+
+#salidas-cards .paq5 .tit{
+    background-color: #7d438e;
+
+}
+
+#salidas-cards .paq5 .date{
+    color: #7d438e;
+
+}
+
+#salidas-cards .paq6 .tit{
+    background-color: #3c92ab;
+
+}
+
+#salidas-cards .paq6 .date{
+    color: #3c92ab;
+
+}
+
+#salidas-cards .paq7 .tit{
+    background-color: #1c5271;
+
+}
+
+#salidas-cards .paq7 .date{
+    color: #1c5271;
+
+}
+
+#salidas-cards .paq8 .tit{
+    background-color: #24532b;
+
+}
+
+#salidas-cards .paq8 .date{
+    color: #24532b;
+
+}
+
+#salidas-cards .paq9 .tit{
+    background-color: #bdb824;
+
+}
+
+#salidas-cards .paq9 .date{
+    color: #bdb824;
+
+}
+
+#salidas-cards .paq10 .tit{
+    background-color: #0040ff;
+
+}
+
+
+#salidas-cards .paq12 .tit{
+    background-color: #b9b9b9;
+
+}
+
+#salidas-cards .paq12 .date{
+    color:red;
+
+}
+
+
+#salidas-cards .img{
+      background-size: cover;
+      width: 100%;
+      height: 180px
+}
+#salidas-cards .paq1 .img{
+      background-image: url(../images/salida-cuba.png);
+
+}
+
+#salidas-cards .paq2 .img{
+    background-image: url(../images/salida-guatemala.png);
+}
+
+#salidas-cards .paq3 .img{
+      background-image: url(../images/salida-igr.png);
+}
+
+#salidas-cards .paq4 .img{
+    background-image: url(../images/salida-norte.png);
+}
+
+#salidas-cards .paq5 .img{
+      background-image: url(../images/salida-ecuador.png);
+}
+
+#salidas-cards .paq6 .img{
+    background-image: url(../images/salida-peru.png);
+}
+
+#salidas-cards .paq7 .img{
+      background-image: url(../images/salida-cine.png);
+
+}
+#salidas-cards .paq8 .img{
+      background-image: url(../images/salida-calafate.png);
+
+}
+
+#salidas-cards .paq9 .img{
+      background-image: url(../images/salida-mexico.png);
+
+}
+
+#salidas-cards .paq10 .img{
+      background-image: url(../images/salida-uruguay.png);
+
+}
+
+#salidas-cards .paq12 .img{
+      background-image: url(../images/igr-agotado.png);
+
+}
+
+
+#salidas-cards .det{
+  background-color: #F5F5F5;
+  color: #4A4A4A;
+  padding: 5px;
+}
+
+
+
+#salidas-cards  .date{
+  background-color: #FDFDFD;
+  height: 35px;
+  border-top: 1px solid #E1E6E8;
+    text-align: center;
+    line-height: 35px;
+
+}
+
+
+
+.bold{
+font-family: "AvenirLTStd-Black"}
+
+
+
+
+
+/* This is Hell on earth */
+@media screen and (max-width: 37.875em) {
+  .country-list .country-list-item {
+    flex-basis: 16%;
+  }
+  .country-world {
+    height: auto;
+    padding-bottom: 1.25em;
+    background-image: url(../images/bg-world-mobile.png);
+  }
+}
+
+@media screen and (max-width: 29.5625em) {
+  .country-list .country-list-item {
+    flex-basis: 14%;
+  }
+}
+
+@media screen and (max-width: 26.5625em) {
+  .country-list .country-list-item {
+    flex-basis: 18%;
+  }
+}
+

@@ -1,4 +1,4 @@
-@extends('layouts.ads-site')
+@extends('layouts.home-general')
 
 @section ('content')
 

@@ -1,4 +1,4 @@
-@extends('layouts.ads-site')
+@extends('layouts.home-argentinos')
 
 @section ('content')
 
@@ -71,12 +71,12 @@
 
 <div class="main-slider Wallop Wallop-slide-BigArrow block-main-right">
   <div class="Wallop-list">
-   
+
     <div class="Wallop">
       <a href="{{ route('form-ar') }}" >
         <img src="{{ asset('images/cotizaciones-banner.png') }}">
       </a>
-      
+
     </div>
   </div>
 </div>
