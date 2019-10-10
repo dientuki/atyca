@@ -15,11 +15,15 @@
         </div>
       </main>
 
+ <aside id="aside">
+         @include ('widgets/tactic-1')
+
+      </aside>
     </div>
 
-    @include ('main-parts/footer')
+    @include ('main-parts/newfooter')
   	@include ('main-parts/script')
-  	
+
   </body>
 
 </html>

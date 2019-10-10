@@ -88,33 +88,33 @@
 
       </div></a>
 
--->
+-->   <!--
 
-      <a class="card" target="_blank" href="https://docs.google.com/document/d/1bxpCpTWSXv6FpuGo5009_BnQOCNI4ML19dzOSAIE12g/edit?usp=sharing" title="Calafate y Ushuaia">
+      <a class="card" target="_blank" href="https://docs.google.com/document/d/1bxpCpTWSXv6FpuGo5009_BnQOCNI4ML19dzOSAIE12g/view?usp=sharing" title="Calafate y Ushuaia">
         <div class="tariff-box paq8" style="">
 
           <div class="tit" >USHUAIA y CALAFATE</div>
           <div class="img" ></div>
           <div class="det" >Ushuaia - El Calafate<br><br><span class="bold">8 días, 7 noches</span></div>
-          <div class="date" >29 de septiembre de 2018</div>
+          <div class="date" style="color: red;" >CUPO COMPLETO</div>
 
 
 
         </div></a>
 
-        <a class="card" target="_blank" href="https://docs.google.com/document/d/1LgClQkJ-bE_EiBgWKE1GxHeBtF26ZQTWU4gFNYVm--M/edit?usp=sharing" title="Puerto Iguazú">
+        <a class="card" target="_blank" href="https://docs.google.com/document/d/1LgClQkJ-bE_EiBgWKE1GxHeBtF26ZQTWU4gFNYVm--M/view?usp=sharing" title="Puerto Iguazú">
           <div class="tariff-box paq3" style="">
 
             <div class="tit" >PUERTO IGUAZÚ</div>
             <div class="img" ></div>
-            <div class="det" >Cataratas Argentinas - Cataratas Brasileras<br><span class="bold">5 días, 4 noches</span></div>
-            <div class="date" >15 de noviembre de 2018</div>
+            <div class="det"  >Cataratas Argentinas - Cataratas Brasileras<br><span class="bold">5 días, 4 noches</span></div>
+            <div class="date" style="color: red;" >CUPO COMPLETO</div>
 
 
 
           </div></a>
 
-          <a class="card" target="_blank" href="https://docs.google.com/document/d/10-ATPrB2_12Z1CrICU0xNxcPc9zbh1ELdHYWx-BZ8_k/edit?usp=sharing" title="Uruguay">
+       <a class="card" target="_blank" href="https://docs.google.com/document/d/10-ATPrB2_12Z1CrICU0xNxcPc9zbh1ELdHYWx-BZ8_k/edit?usp=sharing" title="Uruguay">
             <div class="tariff-box paq10" style="">
 
               <div class="tit" >URUGUAY
@@ -132,21 +132,87 @@
 
 
 
-   <a class="card" target="_blank" href="https://docs.google.com/document/d/1911YkSQ7ML0ne0YCxnYHtS6H9Fq3olLbIf8ZKxnYVww/edit?usp=sharing" title="Festival de Cine en Cuba">
+   <a class="card" target="_blank" href="https://docs.google.com/document/d/1911YkSQ7ML0ne0YCxnYHtS6H9Fq3olLbIf8ZKxnYVww/view?usp=sharing" title="Festival de Cine en Cuba">
 <div class="tariff-box paq7" style="">
 
   <div class="tit" >Festival de Cine en Cuba</div>
     <div class="img" ></div>
     <div class="det" >La Habana - Cayo Santa Maria<br><br><span class="bold">14 días, 13 noches</span></div>
-    <div class="date" >05 de diciembre de 2018</div>
+            <div class="date" style="color: red;" >CUPO COMPLETO</div>
+
+
+
+</div></a>
+ -->
+
+
+   <a class="card" target="_blank" href="#" title="Navegá la cordillera">
+<div class="tariff-box paq10" style="">
+
+  <div class="tit" >Navegá la cordillera</div>
+    <div class="img" ></div>
+    <div class="det" >Bariloche, Peulla, Puerto Varas<br><br><span class="bold">8 días, 7 noches</span></div>
+        <div class="date"  >FINALIZADO</div>
+
+
+
+</div></a>
+
+   <a class="card"  href="https://docs.google.com/document/d/1_B8asAXVANQFYOVw-eUOP0fl5IY1MBY0nBPHwmESWSI/view?usp=sharing" title="Norte con Iruya">
+<div class="tariff-box paq1" style="">
+
+  <div class="tit" >Norte con Iruya</div>
+    <div class="img" ></div>
+    <div class="det" >Salta, Purmamarca, Iruya.<br><br><span class="bold">8 días, 7 noches</span></div>
+    <div class="date" >20 de julio de 2019 - Vac. de invierno</div>
 
 
 
 </div></a>
 
 
+<a class="card"  href="https://docs.google.com/document/d/1IS4WB7qzN9vqBHB7HpVoPKTX7dsrW70SgiTcIwZAglw/edit?usp=sharing" title="Puerto Iguazú">
+  <div class="tariff-box paq3" style="">
+
+    <div class="tit" >CATARATAS DEL IGUAZÚ</div>
+    <div class="img" ></div>
+    <div class="det" >Cat. Argentinas - Cat. Brasileras<br><br><span class="bold">5 días, 4 noches</span></div>
+    <div class="date"  >28 de julio 2019 – Vac. de invierno.</div>
 
 
+
+  </div></a>
+
+
+<a class="card"  href="https://docs.google.com/document/d/1dweEcskTkPdZd6eRyoTyO5MWupdtkR3678DpbMXVGrk/edit?usp=sharing_eip&ts=5cdb003e" title="Puerto Iguazú">
+  <div class="tariff-box paq3" style="">
+
+    <div class="tit" >CATARATAS DEL IGUAZÚ</div>
+    <div class="img" ></div>
+    <div class="det" >Cat. Argentinas - Cat. Brasileras<br><br><br></div>
+    <div class="date" style="line-height: 18px;">28 de julio 2019 – Vac. de invierno<br>11 de octubre 2019 – Feriado</div>
+
+
+
+  </div></a>
+
+  <a class="card" target="_blank" href="https://docs.google.com/document/d/1tp_6xcTo8eiuSWTS7r5g1uqbxUqzj7dGzn0i1sT_cC4/edit?ts=5cdb0866" title="Calafate y Ushuaia">
+        <div class="tariff-box paq8" style="">
+
+          <div class="tit" >USHUAIA y CALAFATE</div>
+          <div class="img" ></div>
+          <div class="det" >Ushuaia - El Calafate<br><br><span class="bold">8 días, 7 noches</span></div>
+          <div class="date">25 de enero 2020 - Verano</div>
+
+
+
+
+        </div></a>
+
+
+
+
+</div></a>
 
 <!--
     <a class="card" target="_blank" href="https://docs.google.com/document/d/1GW8Vy3oCx5DvCvscZobSAre9nId7BC9jQCnBX4J9ABU/edit?usp=sharing" title="Mexico">

@@ -1,5 +1,5 @@
 <div class="tariff-box">
-  <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Circuitos-Argentina-2018-2019.RTF')}}">>
+  <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Circuitos-Argentina 2019-2020.rtf')}}">>
     <div class="tariff-title">
       <span class="big">Circuitos</span>
       <span class="small">por Argentina</span>
@@ -8,14 +8,14 @@
          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw=="
          title="Circuitos por Argentina" />
   </a>
-  <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-norte.pdf')}}" title="Promociones Buenos Aires">Comunidades del norte</a>
-  <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-vuelta-norte.pdf')}}" title="Expedición Glaciares">Vuelta al Norte</a>
-  <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-vinos.pdf')}}" title="Catedrales del vino">Catedrales del vino</a>
-  <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-ciudades-sur.pdf')}}" title="Catedrales del vino">Grandes Ciudades del Sur</a>
+  <a class="tariff-link" target="_blank" href="{{ asset('files/Gran-Circuito-Sudamericano.pdf')}}" title="Promociones Usuhaia">Gran Circuito Sudamericano</a>
+    <a class="tariff-link" target="_blank" href="{{ asset('files/patagonia-profunda.pdf')}}" title="Patagonia Profunda">Patagonia Profunda</a>
+
+
 
 </div>
 <div class="tariff-box">
-  <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Hoteles-Servicios-y-Minipaquetes-2018.pdf')}}">
+  <a class="tariff-title-wrapper" target="_blank" href="{{ asset('files/Atyca-Manual-Hoteles-Servicios-y-Minipaquetes-2018.DOCX')}}">
     <div class="tariff-title">
       <span class="small">Hoteles</span>
       <span class="small">Traslados</span>
@@ -25,8 +25,6 @@
          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw=="
          title="Hoteles, traslados, excursiones">
   </a>
-  <a class="tariff-link" target="_blank" href="{{ asset('files/Gran-Circuito-Sudamericano.pdf')}}" title="Promociones Usuhaia">Gran Circuito Sudamericano</a>
   <a class="tariff-link" target="_blank" href="{{ asset('files/tarifarios-adventure.pdf')}}" title="Usuhaia adventure">Usuhaia adventure</a>
-  <a class="tariff-link" target="_blank" href="{{ asset('files/patagonia-profunda.pdf')}}" title="Patagonia Profunda">Patagonia Profunda</a>
 
 </div>
