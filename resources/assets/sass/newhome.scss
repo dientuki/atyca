@@ -39,7 +39,19 @@
   .country-list {
     margin-top: (38em/$fs);
   }
+}
 
+.contact-form-home {
+  margin-top: (20em/$fs);
+  background: white;
+  border-radius: (5em/$fs);
+  padding: (20em/$fs) (40em/$fs);
+  box-sizing: border-box;
+
+  .contact-box-title {
+    font-weight: bold;
+    text-align: center;
+  }
 
 }
 

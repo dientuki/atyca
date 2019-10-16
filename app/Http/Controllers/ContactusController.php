@@ -51,4 +51,19 @@ class ContactusController extends Controller
     return redirect()->route('contactus-ar.show');
   }
 
+  /**
+   * Store a newly created resource in storage.
+   *
+   * @param  \Illuminate\Http\Request  $request
+   * @return \Illuminate\Http\Response
+   */
+  public function send(ContactForm $request)
+  {
+    Mail::to($this->email)->send(new ContactFormMail($request->all()));
+
+    Alert::success(trans('contactus.send'))->flash();
+
+    return redirect()->route('newhome');
+  }
+
 }

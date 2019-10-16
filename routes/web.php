@@ -15,6 +15,8 @@ use App\Mail\EmailTest;
 use Illuminate\Support\Facades\Mail;
 
 Route::get('/', array('as' => 'newhome', 'uses' => 'HomeController@newhome'));
+Route::post('/', array('as' => 'contactus.send', 'uses' => 'ContactusController@send'));
+
 Route::get('/clientes-exterior.html', array('as' => 'home', 'uses' => 'HomeController@show'));
 
 Route::get('/clientes-ex.html', array('as' => 'contactus-world.show', 'uses' => 'ContactusController@showW'));
