@@ -47,7 +47,12 @@
 
   .contact-box-title {
     font-weight: bold;
-    text-align: center;
+    font-size: (18em/$fs);
+    margin-bottom: 1em;
+  }
+  
+  .button-submit {
+    float: right;
   }
 
 }
