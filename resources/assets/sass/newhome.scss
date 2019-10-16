@@ -42,10 +42,7 @@
 }
 
 .contact-form-home {
-  margin-top: (20em/$fs);
-  background: white;
-  border-radius: (5em/$fs);
-  padding: (20em/$fs) (40em/$fs);
+  padding: (20em/$fs) 0 0 0;
   box-sizing: border-box;
 
   .contact-box-title {
@@ -53,6 +50,17 @@
     text-align: center;
   }
 
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+  .form-item {
+    margin-top: 0;
+    flex-basis: 49%;
+
+  }
 }
 
 .country-list {

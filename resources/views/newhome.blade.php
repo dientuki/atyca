@@ -29,46 +29,35 @@
 
     <div class="form-item contact-box-title">Déjenos su mensaje</div>
 
-    <div class="form-item{{ $errors->has('business') ? ' has-error' : '' }}">
-      <label class="label"  for="business">Empresa</label>
+    <div class="flex">
+      <div class="form-item{{ $errors->has('business') ? ' has-error' : '' }}">
+        <label class="label"  for="business">Nombre</label>
 
-      <div>
-        <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus placeholder="Empresa">
+        <div>
+          <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus placeholder="Empresa">
 
-        @if ($errors->has('business'))
-          <span class="help-block">
-                                        Por favor escriba el nombre de su empresa.
+          @if ($errors->has('business'))
+            <span class="help-block">
+                                        Por favor escriba su nombre.
                                     </span>
-        @endif
+          @endif
+        </div>
       </div>
-    </div>
 
-    <div class="form-item{{ $errors->has('tel') ? ' has-error' : '' }}">
-      <label class="label"  for="tel">Teléfono</label>
+      <div class="form-item{{ $errors->has('email') ? ' has-error' : '' }}">
+        <label class="label"  for="email">E-Mail</label>
 
-      <div>
-        <input id="tel" type="text" class="text-box" name="tel" value="{{ old('tel') }}" placeholder="Teléfono">
+        <div>
+          <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required placeholder="E-Mail">
 
-        @if ($errors->has('tel'))
-          <span class="help-block">
-                                        Por favor brindenos un telefono con código de pais.
-                                    </span>
-        @endif
-      </div>
-    </div>
-
-    <div class="form-item{{ $errors->has('email') ? ' has-error' : '' }}">
-      <label class="label"  for="email">E-Mail</label>
-
-      <div>
-        <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required placeholder="E-Mail">
-
-        @if ($errors->has('email'))
-          <span class="help-block">
+          @if ($errors->has('email'))
+            <span class="help-block">
                                         Por favor brindenos su correo electrónico.
                                     </span>
-        @endif
+          @endif
+        </div>
       </div>
+
     </div>
 
     <div class="form-item{{ $errors->has('message') ? ' has-error' : '' }}">
