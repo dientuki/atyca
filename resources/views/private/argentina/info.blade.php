@@ -3,12 +3,12 @@
 
   <p>
     Mail:
-    <a href="mailto:ventas3@atyca.tur.ar" title="ventas3@atyca.tur.ar">ventas3@atyca.tur.ar</a>
+    <a href="mailto:reservas@atyca.tur.ar" title="reservas@atyca.tur.ar">reservas@atyca.tur.ar</a>
   </p>
 
   <p>
     Skype:
-    <a href="skype:atyca3.skype?chat" title="atyca3.skype">atyca3.skype</a>
+    <a href="skype:atyca.skype?chat" title="atyca.skype">atyca.skype</a>
   </p>
 </div>
 <div class="info-row">

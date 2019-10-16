@@ -2,7 +2,7 @@
 
 @section ('content')
   <section class="entry block-main-left tariff clearfix">
-    <h6 class="visuallyhidden">Tarifario</h6>
+    <h6 class="tariff-title-container">Tarifarios</h6>
 
     @include('private.' . $country . '.tarifario')
 
