@@ -2,7 +2,11 @@
 
 @section ('content')
   <section class="entry block-main-left tariff clearfix">
-    <h6 class="tariff-title-container">Tarifarios</h6>
+    @if ($country == 'mundo')
+      <h6 class="tariff-title-container">Manuales 2019/2020 (Haga click para descargar)</h6>
+    @else
+      <h6 class="tariff-title-container">Tarifarios</h6>
+    @endif
 
     @include('private.' . $country . '.tarifario')
 

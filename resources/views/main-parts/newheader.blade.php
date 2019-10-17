@@ -29,7 +29,7 @@
             <a class="menu-link {{ isset($selected) && $selected == 'destinos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'destinos-general']) }}" title="Destinos">Destinos</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link {{ isset($selected) && $selected == 'salidas-grupales' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'salidas-grupales']) }}" title="Salidas Grupales">Salidas Grupales</a>
+            <a class="menu-link {{ isset($selected) && $selected == 'salidas-grupales' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'salidas-grupales']) }}" title="Salidas Grupales">Salidas Grupales y cupos</a>
           </li>
           <li class="menu-item">
             <a class="menu-link {{ isset($selected) && $selected == 'grupos-e-incentivos' ? 'selected' : '' }}" href="{{ route('pages.show', ['slug' => 'grupos-e-incentivos']) }}" title="Grupos e Incentivos">Grupos e Incentivos</a>

@@ -34,7 +34,7 @@
         <label class="label"  for="business">Nombre</label>
 
         <div>
-          <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus placeholder="Empresa">
+          <input id="business" type="text" class="text-box" name="business" value="{{ old('business') }}" required autofocus>
 
           @if ($errors->has('business'))
             <span class="help-block">
@@ -48,7 +48,7 @@
         <label class="label"  for="email">E-Mail</label>
 
         <div>
-          <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required placeholder="E-Mail">
+          <input id="email" type="email" class="text-box" name="email" value="{{ old('email') }}" required>
 
           @if ($errors->has('email'))
             <span class="help-block">
@@ -64,7 +64,7 @@
       <label class="label"  for="message">Mensaje</label>
 
       <div>
-        <textarea id="message" class="textarea" name="message" placeholder="Mensaje">{{ old('message') }}</textarea>
+        <textarea id="message" class="textarea" name="message">{{ old('message') }}</textarea>
 
         @if ($errors->has('message'))
           <span class="help-block">

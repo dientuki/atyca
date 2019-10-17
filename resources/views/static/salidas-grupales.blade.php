@@ -44,7 +44,7 @@
     <div class="tit" >CATARATAS DEL IGUAZÚ</div>
     <div class="img" ></div>
     <div class="det" >Cat. Argentinas - Cat. Brasileras<br><br><span class="bold">4 días, 3 noches</span></div>
-    <div class="date">11 de octubre 2019 – Feriado</div>
+    <div class="date">09 de abril 2020 - Semana Santa</div>
 
 
 
