@@ -2,7 +2,8 @@
 
 @section ('content')
 
-  <?php $destinations = array('Bariloche','Buenos Aires','Cafayate','Ushuaia','Salta','Rio de Janeiro','Santiago de Chile','Puerto Varas','Puerto Madryn','Cruce Andino','Iguazú','El Calafate'); ?>
+  <?php //$destinations = array('Bariloche','Buenos Aires','Cafayate','Ushuaia','Salta','Rio de Janeiro','Santiago de Chile','Puerto Varas','Puerto Madryn','Cruce Andino','Iguazú','El Calafate'); ?>
+  <?php $destinations = array('Bariloche','Buenos Aires','Calafate', 'Iguazú', 'Puerto Madryn', 'Puerto Varas', 'Rio de Janeiro', 'Salta', 'Santiago de Chile'); ?>
 
   <section class="destinations">
     <h6 class="visuallyhidden">Destinos</h6>
