@@ -12,7 +12,6 @@ class HomeController extends Controller
     $selected = 'home';
     $is_loggued = Auth::check();
     $user = Auth::user();
-    //dd($user);
     return view('home', compact('selected', 'is_loggued', 'user'));
 
   }
@@ -32,7 +31,6 @@ class HomeController extends Controller
     $selected = 'home';
     $is_loggued = Auth::check();
     $user = Auth::user();
-    //dd($user);
     return view('arhome', compact('selected', 'is_loggued', 'user'));
 
   }

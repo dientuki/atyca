@@ -7,7 +7,7 @@
   <body>
     @include ('widgets/alerts')
 
-    @include ('main-parts/header')
+    @include ('main-parts/newheader')
 
     <div class="main-content">
       <main id="main">
@@ -23,7 +23,7 @@
 
 
 
-    @include ('main-parts/footer')
+    @include ('main-parts/newfooter')
   	@include ('main-parts/script')
 
   </body>
