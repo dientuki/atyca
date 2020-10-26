@@ -1,4 +1,4 @@
-@extends('layouts.home-general')
+@extends('layouts.home-header-chico')
 
 @section ('content')
 
