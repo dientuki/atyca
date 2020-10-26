@@ -19,7 +19,7 @@
 
         <a class="card" target="_blank"
            href="https://docs.google.com/document/d/1tp_6xcTo8eiuSWTS7r5g1uqbxUqzj7dGzn0i1sT_cC4/edit?ts=5cdb0866"
-           title="Calafate y Ushuaia">
+           title="Calafate y Ushuaia" target="_blank">
           <div class="tariff-box paq8" style="">
 
             <div class="tit">USHUAIA y CALAFATE</div>
@@ -33,9 +33,9 @@
 
 
         <a class="card"
-           href="https://docs.google.com/document/d/1IS4WB7qzN9vqBHB7HpVoPKTX7dsrW70SgiTcIwZAglw/edit?usp=sharing"
-           title="Puerto Iguazú">
-          <div class="tariff-box paq3" style="">
+           href="https://docs.google.com/document/d/1dweEcskTkPdZd6eRyoTyO5MWupdtkR3678DpbMXVGrk/edit?usp=sharing"
+           title="Puerto Iguazú" target="_blank">
+          <div class="tariff-box paq3" style="" >
 
             <div class="tit">CATARATAS DEL IGUAZÚ</div>
             <div class="img"></div>
@@ -47,19 +47,19 @@
         </a>
 
         <a class="card"
-           href="https://docs.google.com/document/d/1_B8asAXVANQFYOVw-eUOP0fl5IY1MBY0nBPHwmESWSI/view?usp=sharing"
-           title="Norte con Iruya">
-          <div class="tariff-box paq1" style="">
+           href="https://docs.google.com/document/d/1QteWfO5TwXR4K8f0EnM96eu0hV-FYLBrTaRVgzDowZg/edit?usp=sharing"
+           title="Norte con Iruya" target="_blank">
+          <div class="tariff-box paq1" style="" >
 
-            <div class="tit">Norte con Iruya</div>
+            <div class="tit">Norte Argentino</div>
             <div class="img"></div>
-            <div class="det">Salta, Purmamarca, Iruya.<br><br><span class="bold">8 días, 7 noches</span></div>
-            <div class="date">4 de abril de 2020 - Semana santa</div>
+            <div class="det">Salta, Purmamarca, Humahuaca.<br><br><span class="bold">8 días, 7 noches</span></div>
+            <div class="date">4 de abril de 2020 - Semana Santa</div>
 
 
           </div>
         </a>
-
+<!--
         <a class="card"
            href="https://docs.google.com/document/d/1dweEcskTkPdZd6eRyoTyO5MWupdtkR3678DpbMXVGrk/edit?usp=sharing_eip&ts=5cdb003e"
            title="Puerto Iguazú">
@@ -73,7 +73,7 @@
 
           </div>
         </a>
-
+ -->
 
       </section>
 

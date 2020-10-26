@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    @include ('main-parts/head')
+    @include ('main-parts/newheader')
   </head>
 
   <body>

@@ -30,8 +30,6 @@ Route::post('/clientes-argentina-login.html', array('as' => 'contactus-ar.send',
 
 Route::get('/clientes-argentina-form.html', array('as' => 'form-ar', 'uses' => 'HomeController@homeForm'));
 
-
-
 /*
 Route::get('/', function () {
     return view('home')->with('selected','home');
